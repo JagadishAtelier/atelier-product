@@ -1,0 +1,73 @@
+/* ===== Blue Theme Overrides ===== */
+:root {
+  --primary-color: #0d6efd;       /* main blue */
+  --primary-hover: #0b5ed7;       /* darker hover */
+  --primary-light: #3b82f6;       /* lighter accent */
+  --primary-bg: #e0f2fe;          /* pale background */
+  --secondary-color: #1d4ed8;     /* deeper tone */
+  --text-primary: #0d6efd;
+  --link-color: #0d6efd;
+  --link-hover-color: #0b5ed7;
+}
+
+/* Primary buttons */
+.btn-primary {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  color: #fff !important;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--primary-hover) !important;
+  border-color: var(--primary-hover) !important;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Outline buttons */
+.btn-outline-primary {
+  border-color: var(--primary-color) !important;
+  color: var(--primary-color) !important;
+}
+.btn-outline-primary:hover {
+  background-color: var(--primary-color) !important;
+  color: #fff !important;
+}
+
+/* Backgrounds and highlights */
+.bg-primary {
+  background-color: var(--primary-color) !important;
+  color: #fff !important;
+}
+.bg-primary-light {
+  background-color: var(--primary-bg) !important;
+}
+.text-primary {
+  color: var(--text-primary) !important;
+}
+
+/* Links */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+/* Accent borders and highlights */
+.border-primary {
+  border-color: var(--primary-color) !important;
+}
+.badge-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* Optional card/section highlight */
+.card-header,
+.section-header {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+  color: #fff;
+}

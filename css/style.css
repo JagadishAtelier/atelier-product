@@ -3078,7 +3078,7 @@ figure {
   font-weight: var(--font-weight--medium);
 }
 .footer-layout.grid-2-cols {
-  grid-row-gap: 10rem;
+  grid-row-gap: 5rem;
 }
 .footer-legal-link {
   color: var(--_colors---text--soft-400);
@@ -3840,7 +3840,7 @@ figure {
   height: 3rem;
 }
 .cta-marquee {
-  padding-top: var(--_spacing---space--spacing-7xl);
+  padding-top: var(--_spacing---space--spacing-sm);
   padding-bottom: var(--_spacing---space--spacing-sm);
   grid-column-gap: 1rem;
   width: 100%;
@@ -4482,4 +4482,8 @@ figure {
   #w-node-_7965a752-8912-8219-6d9c-915355668e48-ec1ac126 {
     order: -9999;
   }
+}
+#wcvq0d1gbh21762603009917.widget-visible {
+  display: none !important;
+  visibility: hidden !important;
 }
