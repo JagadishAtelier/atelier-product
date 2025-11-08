@@ -3744,9 +3744,29 @@ figure {
 .pricing-tab-pane {
   position: relative;
 }
+.product-image {
+  overflow: hidden; /* ensures the rounded corners apply cleanly */
+  border-radius: 10px;
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-image img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
 .pricing-content {
-  grid-column-gap: var(--_spacing---space--spacing-3xl);
-  grid-row-gap: var(--_spacing---space--spacing-3xl);
+  grid-column-gap: var(--_spacing---space--spacing-xl);
+  grid-row-gap: var(--_spacing---space--spacing-xl);
   flex-flow: column;
   display: flex;
   position: relative;
