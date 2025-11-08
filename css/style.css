@@ -3800,7 +3800,7 @@ figure {
   padding-left: var(--_spacing---space--spacing-2xl);
   grid-column-gap: 1.25rem;
   grid-row-gap: 1.25rem;
-  text-align: center;
+  text-align:justify;
   flex-flow: column;
   justify-content: flex-start;
   align-items: center;
