@@ -4576,9 +4576,10 @@ figure {
 }
 
 .services-grid > .service-card img {
-  height: 200px;
+  height: 150px;
   width: 100%;
   object-fit: cover;
+  border-radius: 12px;
 }
 
 .service-card:hover {
@@ -4602,8 +4603,9 @@ figure {
 .service-card img {
   width: 100%;
   height: auto;
-   mix-blend-mode:;
   margin-top: 10px;
+  width: 100%;
+  object-fit: cover;
 }
 
 /* -----------------------------------
