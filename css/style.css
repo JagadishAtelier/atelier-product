@@ -2805,6 +2805,10 @@ figure {
   letter-spacing: var(--_typography---text-eyebrow--letter-spacing);
   text-transform: uppercase;
 }
+.text-style-eyebrow.is-big {
+  font-size: 1.875rem;
+  font-weight: 800 !important;
+}
 .text-style-eyebrow.is-small {
   font-size: 0.875rem;
 }
@@ -3820,7 +3824,7 @@ figure {
   padding-left: var(--_spacing---space--spacing-2xl);
   grid-column-gap: 1.25rem;
   grid-row-gap: 1.25rem;
-  text-align:justify;
+  text-align: justify;
   flex-flow: column;
   justify-content: flex-start;
   align-items: center;
@@ -4486,4 +4490,178 @@ figure {
 #wcvq0d1gbh21762603009917.widget-visible {
   display: none !important;
   visibility: hidden !important;
+}
+.services-section {
+  padding: 70px 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+}
+
+.section-label {
+  display: inline-block;
+  padding: 6px 18px;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 15px;
+  color: #dad9d9;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+}
+
+/* ------ GRID CARDS ------- */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+/* ------ TWO SIDE-BY-SIDE CARDS ------- */
+
+.service-card-column {
+  display: flex;
+  margin-top: 25px;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  gap: 25px;
+}
+
+.service-card-column .service-card {
+  flex: 1;
+  max-height: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  text-align: left;
+}
+
+.service-card-column .service-card img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.service-card-column .service-card p {
+  font-size: 16px;
+  color: #d3d2d2;
+}
+
+/* ------ COMMON CARD STYLING ------- */
+
+.service-card {
+  text-align: left;
+  padding: var(--_spacing---space--spacing-3xl);
+  border-radius: var(--radius--xlarge);
+  background-color: var(--_colors---background--surface-900);
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: auto;
+  display: flex;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.services-grid > .service-card img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+}
+
+.service-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: #ebebeb;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.service-card img {
+  width: 100%;
+  height: auto;
+   mix-blend-mode:;
+  margin-top: 10px;
+}
+
+/* -----------------------------------
+   RESPONSIVENESS
+-------------------------------------- */
+
+/* Tablet (≤1024px) */
+@media (max-width: 1024px) {
+  .service-card-column {
+    gap: 20px;
+  }
+  .service-card-column .service-card {
+    gap: 15px;
+  }
+}
+
+/* Mobile Landscape / Small Tablet (≤768px) */
+@media (max-width: 768px) {
+  .service-card-column {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .service-card-column .service-card {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .service-card-column .service-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
+
+  .section-subtitle {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+}
+
+/* Mobile Portrait (≤480px) */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 24px;
+  }
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    padding: 20px;
+  }
+
+  .service-card-column .service-card img {
+    height: 150px;
+  }
 }
