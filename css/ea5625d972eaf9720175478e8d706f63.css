@@ -6,10 +6,10 @@
   --e-global-color-6c28644: #3f4263;
   --e-global-color-52fbe71: #0067ff;
   --e-global-color-24bf359: #545ab3;
-  --e-global-color-257bd39: #f3f2ff;
-  --e-global-color-d219f72: #eeeef975;
-  --e-global-color-b133616: #444462;
-  --e-global-color-bd59b2d: #ffffff78;
+  --e-global-color-257bd39: #000000;
+  --e-global-color-d219f72: #0a0a0a;
+  --e-global-color-b133616: #111111;
+  --e-global-color-bd59b2d: #fcf9f9fa;
   --e-global-color-c619742: #efedff;
   --e-global-color-a9687d6: #37368e;
   --e-global-typography-primary-font-family: "Roboto";
@@ -149,10 +149,19 @@ h1.entry-title {
   > .elementor-motion-effects-layer {
   background-color: #fff0;
   background-image: linear-gradient(
-    90deg,
-    var(--e-global-color-257bd39) 0%,
-    var(--e-global-color-d219f72) 75%
+    180deg,
+    var(--e-global-color-257bd39) 0%,#7e7ef8 85%
   );
+}
+.text-color-gradient {
+  background-image: linear-gradient(
+    180deg,
+    #fff,
+    #f1efef
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 .elementor-15066 .elementor-element.elementor-element-20d5296d {
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
@@ -1386,11 +1395,7 @@ h1.entry-title {
   > .elementor-motion-effects-container
   > .elementor-motion-effects-layer {
   background-color: #fff0;
-  background-image: linear-gradient(
-    90deg,
-    var(--e-global-color-257bd39) 0%,
-    var(--e-global-color-d219f72) 75%
-  );
+  background-image: linear-gradient(182deg, #7e7ef8 10%, #060606 75%);
 }
 .elementor-15066 .elementor-element.elementor-element-1f3b63e4 {
   --display: flex;
