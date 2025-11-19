@@ -2003,7 +2003,7 @@ body {
 
   @supports (color: color-mix(in lab, red, red)) {
     p {
-      color: color-mix(in oklab, var(--color-secondary) 60%, transparent);
+       color: color-mix(in oklab, var(--color-accent) 60%, transparent);
     }
   }
 

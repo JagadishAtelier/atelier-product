@@ -4671,3 +4671,49 @@ blockquote {
 .main-img{
   margin: 0 0 !important ;
 }
+.gradient-text{
+  background-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(90deg, #C421FF 0%, #14E0FF 100%);
+}
+
+/* Main icon wrapper */
+.pxl-icon-box__icon-gradient {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    z-index: 3; /* icon above layers */
+}
+
+/* BEFORE → Gradient background */
+.pxl-icon-box__icon-gradient::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    background: linear-gradient(180deg, #0a69d5 -31.8%, #04acbd 100%);
+    filter: blur(3px);
+    z-index: 1;
+}
+
+/* AFTER → White border ring */
+.pxl-icon-box__icon-gradient::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    border: 6px solid rgba(255, 255, 255, .32);
+    z-index: 2;
+}
+
+/* SVG should stay above the effects */
+.pxl-icon-box__icon-gradient svg {
+    position: relative;
+    z-index: 3;
+}
