@@ -40,6 +40,7 @@
   </script>
   <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
   <link href="images/app-icon.png" rel="apple-touch-icon" />
+  <link rel="stylesheet" href="assets/main.css" />
   <!-- Please keep this css code to improve the font quality -->
   <style>
     * {
@@ -100,274 +101,395 @@
     </div>
   </div>
   <main class="page-main">
-    <section class="hero-section is-home">
-      <div class="hero-background-wrap">
-        <div class="hero-blob-center"></div>
-        <div class="hero-blob-left"></div>
-        <div class="hero-blob-right"></div>
-        <img src="images/hero-background-shape.png" loading="eager" sizes="(max-width: 1440px) 100vw, 1440px" srcset="
-              images/hero-background-shape-p-500.png   500w,
-              images/hero-background-shape-p-1080.png 1080w,
-              images/hero-background-shape.png        1440w
-            " alt="" class="hero-bakground-pattern" />
-      </div>
-      <div class="container padding-top-hero">
-        <div class="section-layout">
-          <div class="section-header">
-            <div class="section-header-content">
-              <div data-w-id="1ccf3138-f4a8-f438-d24b-08c4b45a6c5f" class="eyebrow-wrap">
-                <div class="eyebrow-layout">
-                  <div class="text-style-eyebrow">More than a platform</div>
+    <section class="pt-[115px] pb-[97px] overflow-hidden">
+      <div class="max-w-[1365px] mx-auto">
+        <div class="relative">
+          <!-- BG -->
+          <figure
+            class="absolute animate-pulse !my-0 -z-10 max-w-[1365px] -top-5 left-[50%] translate-x-[-50%] w-full h-full overflow-hidden [mask-image:linear-gradient(180deg,transparent,black,transparent)] [mask-size:100%_100%] [mask-repeat:no-repeat]">
+            <img src="images/ns-img-dark-126.svg" alt="Decorative background pattern"
+              class="size-full object-cover hidden dark:inline-block" />
+          </figure>
+
+          <div class="main-container">
+            <div
+              class="flex items-start gap-12 xl:gap-0 flex-col lg:flex-row justify-between pt-4 lg:pt-[200px] pb-[110px]">
+              <!-- Text -->
+              <div class="lg:max-w-[490px] xl:max-w-[629px] w-full space-y-7 lg:space-y-14 text-center md:text-left">
+                <div class="space-y-4">
+                  <h1 data-ns-animate data-delay="0.2">
+                    Boost your business with smart Products
+                  </h1>
+                  <span data-ns-animate data-delay="0.3" class="text-gray-50">
+                    Atelier Tech brings you a powerful, all-in-one smart
+                    application designed to streamline your operations,
+                    empower your team, and accelerate growth—no matter your
+                    industry.
+                  </span>
+                </div>
+
+                <!-- Button -->
+                <div data-ns-animate data-delay="0.4" class="w-full md:w-auto">
+                  <a href="smart-solutions-contact.html" rel="noopener noreferrer"
+                    class="btn btn-lg btn-primary hover:btn-secondary w-[90%] md:w-auto">
+                    <span>Book a strategy call</span>
+                  </a>
                 </div>
               </div>
-              <div class="section-header-text-wrap text-align-center">
-                <h1 class="section-header-title text-color-gradient">
-                  Empowering Your Startup with Atelier Products for Growth
-                </h1>
-                <div class="section-header-text text-style-large w-richtext">
-                  <p>
-                    Empower your team with an all-in-one solution designed to
-                    streamline workflows, boost collaboration, and drive
-                    productivity.
-                  </p>
+
+              <!-- Floating elements section -->
+              <div class="relative" aria-hidden="true">
+                <!-- income -->
+                <div data-ns-animate data-delay="0.3"
+                  class="absolute -left-0.5 md:left-[41px] top-[-5px] lg:-top-[110px] lg:-left-[120px] xl:left-[-111px] 2xl:-left-[120px]">
+                  <div class="max-w-[103px] bg-white rounded-xl p-4 space-y-2 flex-1 text-left">
+                    <div class="flex items-center justify-start gap-2 text-tagline-2 text-secondary">
+                      <span class="bg-ns-red flex items-center justify-center rounded-full size-[18px] p-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="9" viewBox="0 0 8 9" fill="none"
+                          aria-hidden="true" focusable="false">
+                          <path
+                            d="M7.8842 4.49692C7.81538 4.42054 7.72089 4.37564 7.62101 4.37185C7.51393 4.36976 7.41095 4.41514 7.33717 4.49692L4.39555 7.59633L4.39555 0.407818C4.39277 0.18381 4.2211 0.00292873 4.0085 0C3.79589 0.00292873 3.62422 0.18381 3.62144 0.407818L3.62144 7.59633L0.679823 4.49692C0.581182 4.39007 0.435935 4.34679 0.298794 4.38337C0.161654 4.41996 0.0534544 4.53085 0.0149541 4.67428C-0.0235462 4.81771 0.0135021 4.97189 0.112143 5.07873L3.72465 8.88503C3.87798 9.03832 4.11836 9.03832 4.27169 8.88503L7.8842 5.07873C7.95828 5.00206 8 4.89724 8 4.78783C8 4.67841 7.95828 4.57359 7.8842 4.49692Z"
+                            class="fill-secondary dark:fill-accent"></path>
+                        </svg>
+                      </span>
+                      Income
+                    </div>
+                    <div class="text-lg flex items-center font-medium leading-[1.5] text-secondary">
+                      $<span data-counter data-number="48000">48,000</span>
+                    </div>
+                  </div>
                 </div>
+
+                <!-- avatar -->
+                <figure data-ns-animate data-delay="0.4"
+                  class="absolute max-w-[96px] md:max-w-[119px] lg:max-w-[104px] xl:max-w-[119px] overflow-hidden rounded-xl left-[-5px] top-[117px] lg:top-2.5 lg:left-[-222px] xl:left-[-203px] 2xl:-left-[132px] z-[1] md:left-[23px] xl:top-6 2xl:top-2.5">
+                  <div class="bg-white rounded-xl p-6">
+                    <img
+                      class="inline-block size-16 h-auto sm:size-14 rounded-full bg-linear-[156deg,_#FFF_32.92%,_#C6F56F_91%]"
+                      src="images/ns-avatar-9.png" alt="Avatar 1" />
+                  </div>
+                </figure>
+
+                <!-- transfer success -->
+                <figure data-ns-animate data-delay="0.6"
+                  class="absolute lg:top-40 md:max-w-[153px] max-w-[153px] top-[250px] left-[-5px] overflow-hidden rounded-xl lg:left-[-223px] xl:left-[-206px] 2xl:-left-[151px] z-[1] md:left-[9px] md:top-[271px]">
+                  <div class="flex items-center flex-col bg-secondary gap-1 p-4 rounded-xl">
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="37" height="36" viewBox="0 0 37 36" fill="none"
+                        aria-hidden="true" focusable="false">
+                        <path d="M13.0703 18.0011L16.6853 21.6311L23.9303 14.3711" stroke="#C6F56F" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path
+                          d="M16.6253 3.67547C17.6603 2.79047 19.3553 2.79047 20.4053 3.67547L22.7753 5.71547C23.2253 6.10547 24.0653 6.42047 24.6653 6.42047H27.2153C28.8053 6.42047 30.1103 7.72547 30.1103 9.31547V11.8655C30.1103 12.4505 30.4253 13.3055 30.8153 13.7555L32.8553 16.1255C33.7403 17.1605 33.7403 18.8555 32.8553 19.9055L30.8153 22.2755C30.4253 22.7255 30.1103 23.5655 30.1103 24.1655V26.7155C30.1103 28.3055 28.8053 29.6105 27.2153 29.6105H24.6653C24.0803 29.6105 23.2253 29.9255 22.7753 30.3155L20.4053 32.3555C19.3703 33.2405 17.6753 33.2405 16.6253 32.3555L14.2553 30.3155C13.8053 29.9255 12.9653 29.6105 12.3653 29.6105H9.77031C8.18031 29.6105 6.87531 28.3055 6.87531 26.7155V24.1505C6.87531 23.5655 6.56031 22.7255 6.18531 22.2755L4.16031 19.8905C3.29031 18.8555 3.29031 17.1755 4.16031 16.1405L6.18531 13.7555C6.56031 13.3055 6.87531 12.4655 6.87531 11.8805V9.30047C6.87531 7.71047 8.18031 6.40547 9.77031 6.40547H12.3653C12.9503 6.40547 13.8053 6.09047 14.2553 5.70047L16.6253 3.67547Z"
+                          stroke="#C6F56F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </span>
+                    <span class="text-white">Transfer success!</span>
+                  </div>
+                </figure>
+
+                <!-- main image -->
+                <figure data-ns-animate data-delay="0.6"
+                  class="main-img p-2.5 bg-white dark:bg-background-9 rounded-xl max-w-[280px] md:max-w-[403px] lg:max-w-[275px] xl:max-w-[408px] 2xl:max-w-[408px] w-full relative left-[30px] md:left-[160px] lg:left-[-109px] xl:left-[-107px] 2xl:left-[-3px] top-[100px] lg:top-[3px]">
+                  <img src="images/ns-img-188.png" alt="Application dashboard interface"
+                    class="rounded-xl dark:hidden" />
+                </figure>
+
+                <!-- expenses -->
+                <div data-ns-animate data-delay="0.4"
+                  class="absolute sm:max-w-[333px] max-w-[200px] w-full top-[-4px] lg:top-[-111px] xl:top-[-111px] right-[-104px] lg:right-[5px] xl:right-[75px] md:top-[-6px] md:right-[-85px]">
+                  <div class="bg-white rounded-xl p-4 space-y-2 flex-1 text-left">
+                    <div class="flex items-center justify-start gap-2 text-tagline-2 text-secondary">
+                      <span
+                        class="bg-ns-green dark:bg-background-9 flex items-center justify-center rounded-full size-[18px] p-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="9" viewBox="0 0 8 9" fill="none"
+                          aria-hidden="true" focusable="false" class="fill-secondary dark:fill-accent">
+                          <path
+                            d="M7.8842 4.50308C7.81538 4.57946 7.72089 4.62436 7.62101 4.62815C7.51393 4.63024 7.41095 4.58486 7.33717 4.50308L4.39555 1.40367L4.39555 8.59218C4.39277 8.81619 4.2211 8.99707 4.0085 9C3.79589 8.99707 3.62422 8.81619 3.62144 8.59218L3.62144 1.40367L0.679823 4.50308C0.581182 4.60993 0.435935 4.65321 0.298794 4.61663C0.161654 4.58004 0.0534544 4.46915 0.0149541 4.32572C-0.0235462 4.18229 0.0135021 4.02811 0.112143 3.92127L3.72465 0.114967C3.87798 -0.0383222 4.11836 -0.0383222 4.27169 0.114967L7.8842 3.92127C7.95828 3.99794 8 4.10276 8 4.21217C8 4.32159 7.95828 4.42641 7.8842 4.50308Z">
+                          </path>
+                        </svg>
+                      </span>
+                      Expenses
+                    </div>
+                    <div class="text-lg flex items-center font-medium leading-[1.5] text-secondary">
+                      $<span data-counter data-number="2321">2,321</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- right floating decorative images -->
+                <figure data-ns-animate data-delay="0.5"
+                  class="hidden md:block absolute shadow-2 lg:top-[-12px] xl:top-[-4px] 2xl:-top-12 lg:right-1.5 xl:right-[76px] 2xl:right-[-53px] max-w-[231px] overflow-hidden rounded-[10px] md:right-[-207px] md:top-[52px]">
+                  <img src="images/ns-img-189.svg" alt="" class="size-full object-cover" />
+                </figure>
+
+                <figure data-ns-animate data-delay="0.6"
+                  class="absolute top-[164px] lg:top-[129px] xl:top-[187px] 2xl:top-[189px] shadow-2 right-[-83px] max-w-[222px] w-full overflow-hidden rounded-[10px] md:right-[-247px] md:top-[287px] lg:right-[8px] 2xl:right-[-98px]">
+                  <img src="images/ns-img-190.png" alt="" class="size-full object-cover" />
+                </figure>
+
+                <figure data-ns-animate data-delay="0.7" data-direction="right" data-offset="120" data-progress-item
+                  data-progress-value="88" data-progress-duration="2.5"
+                  class="absolute top-[234px] lg:top-[206px] xl:top-[266px] shadow-2 max-[376px]:right-[-71px] right-[-88px] lg:right-[6px] xl:right-[7px] 2xl:right-[-167px] max-w-[189px] md:max-w-[288px] xl:max-w-[288px] lg:max-w-[225px] w-full md:right-[-313px] md:top-[366px]">
+                  <figure class="finance-intro-badge space-y-2 bg-white dark:bg-background-6 p-4 rounded-xl">
+                    <figcaption class="flex justify-between gap-2">
+                      <span class="text-tagline-1 font-normal dark:text-accent">
+                        Credit limit
+                      </span>
+                      <span
+                        class="text-lg flex items-center font-medium leading-[1.5] text-secondary dark:text-accent">$
+                        <span data-counter data-number="53224" data-speed="2000" data-interval="200" data-rooms="5"
+                          data-height-space="2.5">53,224</span>
+                      </span>
+                    </figcaption>
+                    <div class="flex items-center justify-between gap-1" role="status" aria-label="Credit limit usage">
+                      <span
+                        class="relative max-w-[229px] inline-block bg-secondary dark:bg-background-2 w-full h-1.5 rounded-full">
+                        <span class="bg-ns-green w-0 h-full rounded-full absolute top-0 left-0"
+                          data-progress-bar></span>
+                      </span>
+                      <span data-progress-text class="text-tagline-3 font-normal dark:text-accent">88%</span>
+                    </div>
+                  </figure>
+                </figure>
               </div>
             </div>
-            <div data-w-id="8f04e430-f071-508b-694c-634796611343" class="section-button-group">
-              <a data-wf--button-main--style="primary" href="#"
-                class="button-main w-variant-07429406-23c9-2ffa-03eb-adb796a03808 w-inline-block">
-                <div class="button-text-wrap">
-                  <div class="button-text-initial">Start for free</div>
-                  <div class="button-text-reveal">Start Now</div>
-                </div>
-              </a><a data-wf--button-main--style="base" href="#" class="button-main w-inline-block">
-                <div class="button-text-wrap">
-                  <div class="button-text-initial">Book a demo</div>
-                  <div class="button-text-reveal">Book Now</div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="hero-visual-wrap">
-            <div class="image-wrap">
-              <img src="images/7eec214f68ec1f00b2a74fb16c33db26_herodashboard.webp" loading="lazy" width="Auto" alt=""
-                sizes="100vw" srcset="
-                    images/7eec214f68ec1f00b2a74fb16c33db26_herodashboard-p-500.webp   500w,
-                    images/7eec214f68ec1f00b2a74fb16c33db26_herodashboard-p-800.webp   800w,
-                    images/7eec214f68ec1f00b2a74fb16c33db26_herodashboard-p-1080.webp 1080w,
-                    images/7eec214f68ec1f00b2a74fb16c33db26_herodashboard-p-1600.webp 1600w,
-                    images/7eec214f68ec1f00b2a74fb16c33db26_herodashboard-p-2000.webp 2000w,
-                    images/7eec214f68ec1f00b2a74fb16c33db26_herodashboard.webp        2400w
-                  " class="image" />
-            </div>
-            <div class="hero-visual-shadow"></div>
           </div>
         </div>
       </div>
     </section>
+
     <section class="mission-section">
-      <div class="container padding-top-main padding-bottom-small">
+      <div class="container padding-top-small padding-bottom-small">
         <div class="section-layout section-split-text">
           <h1 class="text-style-eyebrow is-big">Why Atelier?</h1>
           <div class="split-text heading-style-h3">
-           Atelier delivers powerful, custom-fit business solutions at subscription prices no competitor can match. Get enterprise-level capability without the complexity, cost, or compromise.
+            Atelier delivers powerful, custom-fit business solutions at
+            subscription prices no competitor can match. Get enterprise-level
+            capability without the complexity, cost, or compromise.
           </div>
         </div>
       </div>
     </section>
-    <section class="services-section">
-    <div class="section-label text-style-eyebrow">Products</div>
-    <h2 class="section-title">Our Services Includes</h2>
-    <p class="section-subtitle">
-        Developing awesome website, process oriented automation (including software and hardware)
-        that is better than your competitors. Provide guidance on taking web presence.
-    </p>
+    <!-- =========================
+Solution section
+===========================-->
 
-    <div class="services-grid">
-
-        <div class="service-card">
-            <h3>Business Administration Services</h3>
-            <p>
-                Turning vision into action—with clarity, structure, and support to help your business 
-                grow and adapt in any market.
+    <section class="py-[50px] md:py-[80px] lg:py-[100px] bg-background-5">
+      <div class="main-container">
+        <div class="space-y-[35px] md:space-y-[70px]">
+          <!-- heading  -->
+          <div class="space-y-2 text-center">
+            <h2 id="wealth-management-heading" data-ns-animate data-delay="0.2" class="text-accent"
+              style="margin-bottom: 15px !important">
+              Our Product & Services
+            </h2>
+            <p data-ns-animate data-delay="0.3" class="text-accent/80">
+              Manage your money with guidance that evolves with your goals.
             </p>
-            <img src="https://enovasolutions.com/sites/enovasolutions.com/files/images/icons/business.jpeg" alt="Business Admin">
-        </div>
-
-        <div class="service-card">
-            <h3>Cloud Computing</h3>
-            <p>
-                Transform your operations with cloud software—flexible, scalable, and cost-efficient. 
-                Pay only for what you use.
-            </p>
-            <img src="https://enovasolutions.com/sites/enovasolutions.com/files/images/icons/cloud.jpeg" alt="Cloud Computing">
-        </div>
-
-        <div class="service-card">
-            <h3>E-Commerce</h3>
-            <p>
-                We create secure, scalable e-commerce solutions that drive growth and enhance your 
-                digital storefront.
-            </p>
-            <img src="https://enovasolutions.com/sites/enovasolutions.com/files/images/icons/ecommerce.jpeg" alt="Ecommerce">
-        </div>
-      </div>
-      <div class="service-card-column">
-          <div class="service-card">
-            <div class="text">
-              <h3>Technology Solutions</h3>
-            <p>
-                Align your tech investment with growth and security. We guide your digital transformation 
-                with clarity and precision.
-            </p>
-            </div>
-            <img src="https://enovasolutions.com/sites/enovasolutions.com/files/images/icons/technology%20solution.jpeg" alt="Technology">
-        </div>
-
-        <div class="service-card">
-           <div class="text">
-             <h3>Web Application</h3>
-            <p>
-                Streamline operations and scale faster with powerful, flexible browser-based applications.
-            </p>
-           </div>
-            <img src="https://enovasolutions.com/sites/enovasolutions.com/files/images/icons/webapplication.jpeg" alt="Web App">
-        </div>
-        </div>
-</section>
-
-
-    <section id="features" class="features-section">
-      <div class="container">
-        <div class="section-header">
-            <div class="section-header-content">
-              <div data-w-id="1ccf3138-f4a8-f438-d24b-08c4b45a6c5f" class="eyebrow-wrap">
-                <div class="eyebrow-layout">
-                  <div class="text-style-eyebrow">Risks in others</div>
-                </div>
-              </div>
-              <div class="section-header-text-wrap text-align-center">
-                <h2 class="section-header-title text-color-gradient">
-                  Four major problems customers commonly face with other<br />
-                </h2>
-              </div>
-            </div>
           </div>
-        <div class="features-layout padding-top-small">
-          <div class="features-grid grid-2-cols">
-            <div class="features-grid-content">
-              <div class="features-grid-text-wrap">
-                <div class="text-style-eyebrow">Implementation Cost</div>
-                <h2 class="features-grid-heading text-color-gradient">
-                  Mounting implementation costs
-                </h2>
-                <div class="features-grid-text w-richtext">
-                  <p>
-                    It's astounding, but three-fourths of ERP implementations
-                    have historically failed, despite forming the core of
-                    companies' business operations! Here are just a few
-                    reasons why?
+
+          <div class="space-y-14">
+            <!-- cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9">
+              <!-- card one -->
+              <div data-ns-animate data-delay="0.4"
+                class="max-w-[405px] w-full p-8 bg-background-8 rounded-[20px] space-y-6">
+                <span class="ns-shape-3 text-[52px] text-accent inline-block"></span>
+
+                <div class="space-y-2">
+                  <h3 id="portfolio-management-heading" class="text-heading-5 text-accent">
+                    Task management
+                  </h3>
+                  <p class="max-w-[275px] w-full text-accent/80">
+                    Custom, diversified portfolios that adapt to market
+                    changes.
                   </p>
                 </div>
-              </div>
-            </div>
-            <div id="w-node-_7965a752-8912-8219-6d9c-915355668e48-ec1ac126" class="feature-grid-visual">
-              <div class="image-wrap">
-                <img src="images/0dd2a67b07c1754d4b1222b14473570c_featurescardtop.png" loading="lazy" width="Auto"
-                  alt="" sizes="100vw" class="image" />
-                <div class="image-gradient"></div>
-              </div>
-            </div>
-          </div>
-          <div class="features-cards-grid grid-2-cols">
-            <div class="features-card">
-              <div class="feature-card-visual">
-                <div class="image-wrap">
-                  <img src="images/aea5fe5f843f2efd9ac2eeebae36df78_featurescardright.webp" loading="lazy" width="Auto"
-                    alt="" sizes="100vw" srcset="
-                        images/aea5fe5f843f2efd9ac2eeebae36df78_featurescardright-p-500.webp   500w,
-                        images/aea5fe5f843f2efd9ac2eeebae36df78_featurescardright-p-800.webp   800w,
-                        images/aea5fe5f843f2efd9ac2eeebae36df78_featurescardright-p-1080.webp 1080w,
-                        images/aea5fe5f843f2efd9ac2eeebae36df78_featurescardright.webp        1112w
-                      " class="image" />
-                  <div class="image-gradient"></div>
+
+                <div class="flex gap-2">
+                  <div>
+                    <a href="#smart-solutions-service-details.html" rel="noopener noreferrer"
+                      class="btn btn-transparent hover:btn-accent btn-md">
+                      <span>Explore</span>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="#smart-solutions-service-details.html" rel="noopener noreferrer"
+                      class="btn btn-transparent hover:btn-accent btn-md">
+                      <span>View Demo</span>
+                    </a>
+                  </div>
                 </div>
               </div>
-              <div class="features-card-text-wrap">
-                <div class="text-style-eyebrow is-small">Internal Bias</div>
-                <h3 class="features-card-heading">
-                  ERP Implementation failures
-                </h3>
-                <div class="features-card-text w-richtext">
-                  <p>
-                    An understated, but high-impact, contributor to most ERP
-                    software implementation failures is the internal bias ERP
-                    vendors and system integrators have towards particular ERP
-                    solutions. Customers, as a result, end up with ERP
-                    software that isn't cut out to address their unique
-                    challenges, without expensive customizations and long
-                    implementation cycles.
+
+              <!-- card two -->
+              <div data-ns-animate data-delay="0.5"
+                class="max-w-[405px] w-full p-8 bg-background-8 rounded-[20px] space-y-6">
+                <span class="ns-shape-35 text-[52px] text-accent inline-block"></span>
+
+                <div class="space-y-2">
+                  <h3 id="financial-planning-heading" class="text-heading-5 text-accent">
+                    Hospital Management
+                  </h3>
+                  <p class="max-w-[275px] w-full text-accent/80">
+                    Get a plan that grows with you — automated and
+                    advisor-reviewed.
                   </p>
                 </div>
-              </div>
-            </div>
-            <div class="features-card">
-              <div class="feature-card-visual">
-                <div class="image-wrap">
-                  <img src="images/987e15a810ff241f2d374e548fc031dc_featurescardleft.png" loading="lazy" width="Auto"
-                    alt="" sizes="100vw" class="image" />
-                  <div class="image-gradient"></div>
+
+                <div class="flex gap-2">
+                  <div>
+                    <a href="#smart-solutions-service-details.html" rel="noopener noreferrer"
+                      class="btn btn-transparent hover:btn-accent btn-md">
+                      <span>Explore</span>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="#smart-solutions-service-details.html" rel="noopener noreferrer"
+                      class="btn btn-transparent hover:btn-accent btn-md">
+                      <span>View Demo</span>
+                    </a>
+                  </div>
                 </div>
               </div>
-              <div class="features-card-text-wrap">
-                <div class="text-style-eyebrow is-small">Customizations</div>
-                <h3 class="features-card-heading">
-                  Complex customizations Problem
-                </h3>
-                <div class="features-card-text w-richtext">
-                  <p>
-                    According to FinancesOnline, the average time taken to get
-                    an ERP customized to suit your business and operations
-                    landscape has increased from 16.9 to 17.4 months. This
-                    stems from customizations needed for traditional ERP
-                    systems, which often requires technical expertise and
-                    niche skillsets.
+
+              <!-- card three -->
+              <div data-ns-animate data-delay="0.7"
+                class="max-w-[405px] w-full p-8 bg-background-8 rounded-[20px] space-y-6">
+                <span class="ns-shape-1 text-[52px] text-accent inline-block"></span>
+
+                <div class="space-y-2">
+                  <h3 id="growth-assist-heading" class="text-heading-5 text-accent">
+                    Educational ERP
+                  </h3>
+                  <p class="max-w-[275px] w-full text-accent/80">
+                    Smart tools that help optimize savings, interest, and tax
+                    efficiency.
                   </p>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="features-grid grid-2-cols">
-            <div id="w-node-_7965a752-8912-8219-6d9c-915355668e48-ec1ac126" class="feature-grid-visual">
-              <div class="image-wrap">
-                <img src="images/pie.png" loading="lazy" width="Auto" alt="" sizes="100vw" class="image" />
-                <div class="image-gradient"></div>
-              </div>
-            </div>
-            <div class="features-grid-content">
-              <div class="features-grid-text-wrap">
-                <div class="text-style-eyebrow">Quality</div>
-                <h2 class="features-grid-heading text-color-gradient">
-                  Poor data quality.
-                </h2>
-                <div class="features-grid-text w-richtext">
-                  <p>
-                    Businesses usually underestimate the criticality and
-                    quality of the data migrated to their ERP software from
-                    old systems. Their assumption that ERP systems will
-                    improve the quality of information is often misplaced. Any
-                    ERP software is only as good as the data that gets pushed
-                    to it.
-                  </p>
+
+                <div class="flex gap-2">
+                  <div>
+                    <a href="#smart-solutions-service-details.html" rel="noopener noreferrer"
+                      class="btn btn-transparent hover:btn-accent btn-md">
+                      <span>Explore</span>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="#smart-solutions-service-details.html" rel="noopener noreferrer"
+                      class="btn btn-transparent hover:btn-accent btn-md">
+                      <span>View Demo</span>
+                    </a>
+                  </div>
                 </div>
               </div>
+              <!-- card four -->
+              <div data-ns-animate data-delay="0.7"
+                class="max-w-[405px] w-full p-8 bg-background-8 rounded-[20px] space-y-6">
+                <span class="ns-shape-4 text-[52px] text-accent inline-block"></span>
+
+                <div class="space-y-2">
+                  <h3 id="growth-assist-heading" class="text-heading-5 text-accent">
+                    Hospital Management System
+                  </h3>
+                  <p class="max-w-[275px] w-full text-accent/80">
+                    Smart tools that help optimize savings, interest, and tax
+                    efficiency.
+                  </p>
+                </div>
+
+                <div class="flex gap-2">
+                  <div>
+                    <a href="#smart-solutions-service-details.html" rel="noopener noreferrer"
+                      class="btn btn-transparent hover:btn-accent btn-md">
+                      <span>Explore</span>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="#smart-solutions-service-details.html" rel="noopener noreferrer"
+                      class="btn btn-transparent hover:btn-accent btn-md">
+                      <span>View Demo</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- card five -->
+              <div data-ns-animate data-delay="0.7"
+                class="max-w-[405px] w-full p-8 bg-background-8 rounded-[20px] space-y-6">
+                <span class="ns-shape-5 text-[52px] text-accent inline-block"></span>
+
+                <div class="space-y-2">
+                  <h3 id="growth-assist-heading" class="text-heading-5 text-accent">
+                    Gym Management System
+                  </h3>
+                  <p class="max-w-[275px] w-full text-accent/80">
+                    Smart tools that help optimize savings, interest, and tax
+                    efficiency.
+                  </p>
+                </div>
+
+                <div class="flex gap-2">
+                  <div>
+                    <a href="#smart-solutions-service-details.html" rel="noopener noreferrer"
+                      class="btn btn-transparent hover:btn-accent btn-md">
+                      <span>Explore</span>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="#smart-solutions-service-details.html" rel="noopener noreferrer"
+                      class="btn btn-transparent hover:btn-accent btn-md">
+                      <span>View Demo</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- card Six -->
+              <div data-ns-animate data-delay="0.7"
+                class="max-w-[405px] w-full p-8 bg-background-8 rounded-[20px] space-y-6">
+                <span class="ns-shape-15 text-[52px] text-accent inline-block"></span>
+
+                <div class="space-y-2">
+                  <h3 id="growth-assist-heading" class="text-heading-5 text-accent">
+                    Testing Project Service
+                  </h3>
+                  <p class="max-w-[275px] w-full text-accent/80">
+                    Smart tools that help optimize savings, interest, and tax
+                    efficiency.
+                  </p>
+                </div>
+
+                <div class="flex gap-2">
+                  <div>
+                    <a href="#smart-solutions-service-details.html" rel="noopener noreferrer"
+                      class="btn btn-transparent hover:btn-accent btn-md">
+                      <span>Explore</span>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="#smart-solutions-service-details.html" rel="noopener noreferrer"
+                      class="btn btn-transparent hover:btn-accent btn-md">
+                      <span>View Demo</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- btn -->
+            <div data-ns-animate data-delay="0.8" class="text-center w-full">
+              <a href="#smart-solutions-services.html"
+                class="btn btn-primary btn-md w-[85%] md:w-auto hover:btn-accent">
+                <span>View all Services</span>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <section id="benefits" class="benefits-section">
-      <div class="container padding-top-main padding-bottom-main">
+      <div class="container padding-top-small padding-bottom-main">
         <div class="section-layout">
           <div class="benefits-grid grid-2-cols">
             <div class="benefits-content">
@@ -462,108 +584,7 @@
         </div>
       </div>
     </section>
-    <!-- <section id="products" class="products-section">
-      <div class="container padding-bottom-small">
-        <div class="section-layout">
-          <div class="section-header">
-            <div class="section-header-content">
-              <div data-w-id="1ccf3138-f4a8-f438-d24b-08c4b45a6c5f" class="eyebrow-wrap">
-                <div class="eyebrow-layout">
-                  <div class="text-style-eyebrow">Products</div>
-                </div>
-              </div>
-              <div class="section-header-text-wrap text-align-center">
-                <h2 class="section-header-title text-color-gradient">
-                  Enterprise-grade Solutions for Every Use Case
-                </h2>
-                <div class="section-header-text text-style-large w-richtext">
-                  <p>Choose from our core products — designed to scale with your business: a flexible ERP, a
-                    Healthcare-grade HMS, and a robust Inventory Management system.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="w-layout-grid pricing-plans grid-3-cols padding-bottom-small">
-        <div class="pricing-plan product-card">
-          <div class="pricing-content">
-            <div class="pricing-title">
-              <div class="text-style-eyebrow text-weight-semibold">Atelier ERP</div>
-            </div>
-            <div class="product-image" >
-              <img src="https://placehold.co/600x300" alt="Inventory placeholder image"
-                style="width:100%;height:auto;display:block;" />
-            </div>
-
-            <div class="pricing-price">
-              <div class="heading-style-h3 text-color-gradient">Integrated Enterprise Resource Planning</div>
-
-              <div>Core modules for Finance, Sales, Purchasing, HR and Operations — fully customizable.</div>
-            </div>
-          </div>
-          <a data-wf--button-main--style="primary" href="#"
-            class="button-main w-variant-07429406-23c9-2ffa-03eb-adb796a03808 w-inline-block">
-            <div class="button-text-wrap">
-              <div class="button-text-initial">Learn More</div>
-              <div class="button-text-reveal">Learn More</div>
-            </div>
-          </a>
-        </div>
-        <div class="pricing-plan product-card">
-          <div class="pricing-content">
-            <div class="pricing-title">
-              <div class="text-style-eyebrow text-weight-semibold">Hospital Management System (HMS)</div>
-            </div>
-            <div class="product-image" >
-              <img src="https://placehold.co/600x300" alt="Inventory placeholder image"
-                style="width:100%;height:auto;display:block;" />
-            </div>
-
-            <div class="pricing-price">
-              <div class="heading-style-h3 text-color-gradient">Comprehensive Healthcare Platform</div>
-
-              <div>Patient care, EMR, clinical workflows and hospital operations in one system.</div>
-            </div>
-          </div>
-
-          <a data-wf--button-main--style="primary" href="/hms.html"
-            class="button-main w-variant-07429406-23c9-2ffa-03eb-adb796a03808 w-inline-block">
-            <div class="button-text-wrap">
-              <div class="button-text-initial">Learn More</div>
-              <div class="button-text-reveal">Learn More</div>
-            </div>
-          </a>
-        </div>
-        <div class="pricing-plan product-card">
-          <div class="pricing-content">
-            <div class="pricing-title">
-              <div class="text-style-eyebrow text-weight-semibold">Atelier Inventory Management</div>
-            </div>
-            <div class="product-image" >
-              <img src="https://placehold.co/600x300" alt="Inventory placeholder image"
-                style="width:100%;height:auto;display:block;" />
-            </div>
-
-            <div class="pricing-price">
-              <div class="heading-style-h3 text-color-gradient">Real-time Stock & Warehouse Control</div>
-              <div>Accurate inventory, faster fulfillment, multi-location visibility.</div>
-            </div>
-          </div>
-
-          <a data-wf--button-main--style="primary" href="#"
-            class="button-main w-variant-07429406-23c9-2ffa-03eb-adb796a03808 w-inline-block">
-            <div class="button-text-wrap">
-              <div class="button-text-initial">Learn More</div>
-              <div class="button-text-reveal">Learn More</div>
-            </div>
-          </a>
-        </div>
-      </div>
-      </div>
-      </div>
-    </section> -->
     <section class="integration-section">
       <div class="container padding-bottom-main">
         <div class="section-layout integration-layout">
@@ -746,6 +767,7 @@
         </div>
       </div>
     </section>
+
     <section id="testimonial" class="testimonial-section">
       <div class="testimonial-shadow-left"></div>
       <div class="testimonial-shadow-right"></div>
@@ -1278,6 +1300,126 @@
         </div>
       </div>
     </section>
+    <!-- =========================
+Get started section
+===========================-->
+
+    <section class="relative py-[50px] md:py-[80px] lg:py-[100px]" aria-label="Hero section">
+      <div class="main-container">
+        <div class="grid grid-cols-12 xl:gap-[60px] gap-y-12 items-start">
+
+          <!-- Left Content -->
+          <div class="col-span-12 xl:col-span-6 lg:sticky lg:top-28">
+            <div class="space-y-7 xl:text-left text-center">
+              <div class="space-y-3">
+                <h2 data-ns-animate data-delay="0.2" class="xl:max-w-[629px] w-full xl:mx-0 mx-auto">
+                  What makes us stand out
+                </h2>
+                <p data-ns-animate data-delay="0.3" class="xl:max-w-[544px] " style="margin-top: 10px; color: #d1d1d1;">
+                  What distinguishes us is our commitment to empowering bold founders, dynamic teams,
+                  and innovative entrepreneurs.
+                </p>
+              </div>
+              <div data-ns-animate data-delay="0.4" class="w-full">
+                <a href="smart-solutions-pricing.html"
+                  class="btn btn-primary btn-md hover:btn-secondary w-[85%] md:w-auto">
+                  <span>Get started now</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Cards -->
+          <div class="col-span-12 xl:col-span-6">
+            <div class="stack-cards js-stack-cards xl:max-w-full max-w-[820px] xl:mx-0 mx-auto">
+
+              <!-- card one -->
+              <div
+                class="stack-cards__item js-stack-cards__item p-2 relative rounded-[20px] z-20 flex items-center justify-center sm:max-w-[483px] max-w-full sm:mx-0 mx-auto w-full overflow-hidden">
+                <figure
+                  class="absolute pointer-events-none top-[-62%] md:-top-[85%] left-[-48%] md:-left-[68%] -z-10 rotate-[312deg] opacity-50 md:size-[800px] size-[500px] select-none">
+                  <img src="images/ns-img-520.png" alt="step" />
+                </figure>
+
+                <div class="relative z-10 p-8 rounded-[14px] sm:max-w-[467px] max-w-full w-full space-y-6 bg-black">
+                  <div class="space-y-1">
+                    <p class="text-heading-5 text-accent">Innovative ideas</p>
+                    <p class="text-accent opacity-50">Built with modern business challenges in mind</p>
+                  </div>
+
+                  <figure class="max-w-[385px] w-full rounded-2xl overflow-hidden">
+                    <img src="images/ns-img-192.png" alt="step" class="md:max-h-[315px] md:min-h-[315px]" />
+                  </figure>
+                </div>
+              </div>
+
+              <!-- card two -->
+              <div
+                class="stack-cards__item js-stack-cards__item p-2 relative rounded-[20px] z-20 flex items-center justify-center sm:max-w-[483px] max-w-full w-full overflow-hidden">
+                <figure
+                  class="absolute pointer-events-none top-[-127%] md:-top-[130%] left-[-103%] md:-left-[79%] size-[800px] md:size-[1000px] -z-10 rotate-[255deg] opacity-50 select-none">
+                  <img src="images/ns-img-521.png" alt="step" />
+                </figure>
+
+                <div class="relative z-10 p-8 rounded-[14px] sm:max-w-[467px] max-w-full w-full space-y-6 bg-black">
+                  <div class="space-y-1">
+                    <p class="text-heading-5 text-accent">Top-rated features</p>
+                    <p class="text-accent opacity-50" >Only what you need, nothing you don’t</p>
+                  </div>
+
+                  <figure class="max-w-[403px] w-full rounded-2xl overflow-hidden">
+                    <img src="images/ns-img-dark-131.png" alt="step" class="md:max-h-[315px] md:min-h-[315px]" />
+                  </figure>
+                </div>
+              </div>
+
+              <!-- card three -->
+              <div
+                class="stack-cards__item js-stack-cards__item p-2 relative rounded-[20px] z-20 flex items-center justify-center sm:max-w-[483px] max-w-full w-full overflow-hidden">
+                <figure
+                  class="absolute pointer-events-none top-[-127%] md:-top-[130%] left-[-107%] md:-left-[88%] size-[800px] md:size-[1000px] -z-10 rotate-[240deg] opacity-50 select-none">
+                  <img src="images/ns-img-522.png" alt="step" />
+                </figure>
+
+                <div class="relative z-10 p-8 rounded-[14px] sm:max-w-[467px] max-w-full w-full space-y-6 bg-black">
+                  <div class="space-y-1">
+                    <p class="text-heading-5 text-accent">Beautiful interface</p>
+                    <p class="text-accent opacity-50">Designed to impress, built to perform</p>
+                  </div>
+
+                  <figure class="max-w-[403px] w-full rounded-2xl overflow-hidden">
+                    <img src="images/ns-img-dark-132.png" alt="step" class="md:max-h-[315px] md:min-h-[315px]" />
+                  </figure>
+                </div>
+              </div>
+
+              <!-- card four -->
+              <div
+                class="stack-cards__item js-stack-cards__item p-2 relative rounded-[20px] z-20 flex items-center justify-center sm:max-w-[483px] max-w-full w-full overflow-hidden">
+                <figure
+                  class="absolute pointer-events-none top-[-143%] md:-top-[117%] left-[-72%] md:-left-[37%] size-[1000px] -z-10 rotate-[245deg] opacity-50 select-none">
+                  <img src="images/ns-img-501.png" alt="step" />
+                </figure>
+
+                <div class="relative z-10 p-8 rounded-[14px] sm:max-w-[467px] max-w-full w-full space-y-6 bg-black">
+                  <div class="space-y-1">
+                    <p class="text-heading-5 text-accent">Simple solutions</p>
+                    <p class="text-accent opacity-50">No fluff, just functionality</p>
+                  </div>
+
+                  <figure class="max-w-[403px] w-full rounded-2xl overflow-hidden">
+                    <img src="images/ns-img-dark-133.png" alt="step" class="md:max-h-[315px] md:min-h-[315px]" />
+                  </figure>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
     <section id="our-values" class="our-values-section">
       <div class="container padding-bottom-small">
         <div class="section-layout">
@@ -1458,6 +1600,238 @@
         </div>
       </div>
     </section>
+    <section id="features" class="features-section">
+      <div class="container padding-top-small padding-bottom-small">
+        <div class="section-header">
+          <div class="section-header-content">
+            <div data-w-id="1ccf3138-f4a8-f438-d24b-08c4b45a6c5f" class="eyebrow-wrap">
+              <div class="eyebrow-layout">
+                <div class="text-style-eyebrow">Risks in others</div>
+              </div>
+            </div>
+            <div class="section-header-text-wrap text-align-center">
+              <h2 class="section-header-title text-color-gradient">
+                Four major problems customers commonly face with other<br />
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="features-layout padding-top-small">
+          <div class="features-grid grid-2-cols">
+            <div class="features-grid-content">
+              <div class="features-grid-text-wrap">
+                <div class="text-style-eyebrow">Implementation Cost</div>
+                <h2 class="features-grid-heading text-color-gradient">
+                  Mounting implementation costs
+                </h2>
+                <div class="features-grid-text w-richtext">
+                  <p>
+                    It's astounding, but three-fourths of ERP implementations
+                    have historically failed, despite forming the core of
+                    companies' business operations! Here are just a few
+                    reasons why?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div id="w-node-_7965a752-8912-8219-6d9c-915355668e48-ec1ac126" class="feature-grid-visual">
+              <div class="image-wrap">
+                <img src="images/0dd2a67b07c1754d4b1222b14473570c_featurescardtop.png" loading="lazy" width="Auto"
+                  alt="" sizes="100vw" class="image" />
+                <div class="image-gradient"></div>
+              </div>
+            </div>
+          </div>
+          <div class="features-cards-grid grid-2-cols">
+            <div class="features-card">
+              <div class="feature-card-visual">
+                <div class="image-wrap">
+                  <img src="images/aea5fe5f843f2efd9ac2eeebae36df78_featurescardright.webp" loading="lazy" width="Auto"
+                    alt="" sizes="100vw" srcset="
+                        images/aea5fe5f843f2efd9ac2eeebae36df78_featurescardright-p-500.webp   500w,
+                        images/aea5fe5f843f2efd9ac2eeebae36df78_featurescardright-p-800.webp   800w,
+                        images/aea5fe5f843f2efd9ac2eeebae36df78_featurescardright-p-1080.webp 1080w,
+                        images/aea5fe5f843f2efd9ac2eeebae36df78_featurescardright.webp        1112w
+                      " class="image" />
+                  <div class="image-gradient"></div>
+                </div>
+              </div>
+              <div class="features-card-text-wrap">
+                <div class="text-style-eyebrow is-small">Internal Bias</div>
+                <h3 class="features-card-heading">
+                  ERP Implementation failures
+                </h3>
+                <div class="features-card-text w-richtext">
+                  <p>
+                    An understated, but high-impact, contributor to most ERP
+                    software implementation failures is the internal bias ERP
+                    vendors and system integrators have towards particular ERP
+                    solutions. Customers, as a result, end up with ERP
+                    software that isn't cut out to address their unique
+                    challenges, without expensive customizations and long
+                    implementation cycles.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="features-card">
+              <div class="feature-card-visual">
+                <div class="image-wrap">
+                  <img src="images/987e15a810ff241f2d374e548fc031dc_featurescardleft.png" loading="lazy" width="Auto"
+                    alt="" sizes="100vw" class="image" />
+                  <div class="image-gradient"></div>
+                </div>
+              </div>
+              <div class="features-card-text-wrap">
+                <div class="text-style-eyebrow is-small">Customizations</div>
+                <h3 class="features-card-heading">
+                  Complex customizations Problem
+                </h3>
+                <div class="features-card-text w-richtext">
+                  <p>
+                    According to FinancesOnline, the average time taken to get
+                    an ERP customized to suit your business and operations
+                    landscape has increased from 16.9 to 17.4 months. This
+                    stems from customizations needed for traditional ERP
+                    systems, which often requires technical expertise and
+                    niche skillsets.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="features-grid grid-2-cols">
+            <div id="w-node-_7965a752-8912-8219-6d9c-915355668e48-ec1ac126" class="feature-grid-visual">
+              <div class="image-wrap">
+                <img src="images/pie.png" loading="lazy" width="Auto" alt="" sizes="100vw" class="image" />
+                <div class="image-gradient"></div>
+              </div>
+            </div>
+            <div class="features-grid-content">
+              <div class="features-grid-text-wrap">
+                <div class="text-style-eyebrow">Quality</div>
+                <h2 class="features-grid-heading text-color-gradient">
+                  Poor data quality.
+                </h2>
+                <div class="features-grid-text w-richtext">
+                  <p>
+                    Businesses usually underestimate the criticality and
+                    quality of the data migrated to their ERP software from
+                    old systems. Their assumption that ERP systems will
+                    improve the quality of information is often misplaced. Any
+                    ERP software is only as good as the data that gets pushed
+                    to it.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section id="products" class="products-section">
+      <div class="container padding-top-small">
+        <div class="section-layout">
+          <div class="section-header">
+            <div class="section-header-content">
+              <div data-w-id="1ccf3138-f4a8-f438-d24b-08c4b45a6c5f" class="eyebrow-wrap">
+                <div class="eyebrow-layout">
+                  <div class="text-style-eyebrow">Products</div>
+                </div>
+              </div>
+              <div class="section-header-text-wrap text-align-center">
+                <h2 class="section-header-title text-color-gradient">
+                  Enterprise-grade Solutions for Every Use Case
+                </h2>
+                <div class="section-header-text text-style-large w-richtext">
+                  <p>Choose from our core products — designed to scale with your business: a flexible ERP, a
+                    Healthcare-grade HMS, and a robust Inventory Management system.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-layout-grid pricing-plans grid-3-cols padding-bottom-small">
+        <div class="pricing-plan product-card">
+          <div class="pricing-content">
+            <div class="pricing-title">
+              <div class="text-style-eyebrow text-weight-semibold">Atelier ERP</div>
+            </div>
+            <div class="product-image" >
+              <img src="https://placehold.co/600x300" alt="Inventory placeholder image"
+                style="width:100%;height:auto;display:block;" />
+            </div>
+
+            <div class="pricing-price">
+              <div class="heading-style-h3 text-color-gradient">Integrated Enterprise Resource Planning</div>
+
+              <div>Core modules for Finance, Sales, Purchasing, HR and Operations — fully customizable.</div>
+            </div>
+          </div>
+          <a data-wf--button-main--style="primary" href="#"
+            class="button-main w-variant-07429406-23c9-2ffa-03eb-adb796a03808 w-inline-block">
+            <div class="button-text-wrap">
+              <div class="button-text-initial">Learn More</div>
+              <div class="button-text-reveal">Learn More</div>
+            </div>
+          </a>
+        </div>
+        <div class="pricing-plan product-card">
+          <div class="pricing-content">
+            <div class="pricing-title">
+              <div class="text-style-eyebrow text-weight-semibold">Hospital Management System (HMS)</div>
+            </div>
+            <div class="product-image" >
+              <img src="https://placehold.co/600x300" alt="Inventory placeholder image"
+                style="width:100%;height:auto;display:block;" />
+            </div>
+
+            <div class="pricing-price">
+              <div class="heading-style-h3 text-color-gradient">Comprehensive Healthcare Platform</div>
+
+              <div>Patient care, EMR, clinical workflows and hospital operations in one system.</div>
+            </div>
+          </div>
+
+          <a data-wf--button-main--style="primary" href="/hms.html"
+            class="button-main w-variant-07429406-23c9-2ffa-03eb-adb796a03808 w-inline-block">
+            <div class="button-text-wrap">
+              <div class="button-text-initial">Learn More</div>
+              <div class="button-text-reveal">Learn More</div>
+            </div>
+          </a>
+        </div>
+        <div class="pricing-plan product-card">
+          <div class="pricing-content">
+            <div class="pricing-title">
+              <div class="text-style-eyebrow text-weight-semibold">Atelier Inventory Management</div>
+            </div>
+            <div class="product-image" >
+              <img src="https://placehold.co/600x300" alt="Inventory placeholder image"
+                style="width:100%;height:auto;display:block;" />
+            </div>
+
+            <div class="pricing-price">
+              <div class="heading-style-h3 text-color-gradient">Real-time Stock & Warehouse Control</div>
+              <div>Accurate inventory, faster fulfillment, multi-location visibility.</div>
+            </div>
+          </div>
+
+          <a data-wf--button-main--style="primary" href="#"
+            class="button-main w-variant-07429406-23c9-2ffa-03eb-adb796a03808 w-inline-block">
+            <div class="button-text-wrap">
+              <div class="button-text-initial">Learn More</div>
+              <div class="button-text-reveal">Learn More</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+      </div>
+    </section> -->
 
     <section class="cta-section">
       <div class="cta-marquee">
@@ -1589,6 +1963,20 @@
   <script src="js/gsap.min.js" type="text/javascript"></script>
   <script src="js/splittext.min.js" type="text/javascript"></script>
   <script src="js/scrolltrigger.min.js" type="text/javascript"></script>
+  <script src="vendor/swiper.min.js"></script>
+  <script src="vendor/leaflet.min.js"></script>
+  <script src="vendor/vanilla-infinite-marquee.min.js"></script>
+  <script src="vendor/split-text.min.js"></script>
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/scroll-trigger.min.js"></script>
+  <script src="vendor/draw-svg.min.js"></script>
+  <script src="vendor/scroll-trigger.min.js"></script>
+  <script src="vendor/motionpathplugin.min.js"></script>
+  <script src="vendor/lenis.min.js"></script>
+  <script src="vendor/springer.min.js"></script>
+  <script src="vendor/number-counter.js"></script>
+  <script src="vendor/stack-card.min.js"></script>
+  <script src="assets/main.js"></script>
 </body>
 
 </html>

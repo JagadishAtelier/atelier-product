@@ -401,9 +401,9 @@ blockquote {
   font-size: 18px;
   line-height: 22px;
 }
-figure {
+/* figure {
   margin: 0 0 10px;
-}
+} */
 figcaption {
   text-align: center;
   margin-top: 5px;
@@ -2183,14 +2183,14 @@ blockquote {
   line-height: var(--_typography---text-large--line-height);
   font-style: italic;
 }
-figure {
+/* figure {
   margin-top: var(
     --_spacing---space--10\<deleted\|variable-aaf9dba9-32fe-9d21-6b8f-7f9037da2312\>
   );
   margin-bottom: var(
     --_spacing---space--10\<deleted\|variable-aaf9dba9-32fe-9d21-6b8f-7f9037da2312\>
   );
-}
+} */
 .rich-text h1,
 .rich-text h2 {
   margin-top: var(--_spacing---space--spacing-2xl);
@@ -2219,7 +2219,7 @@ figure {
   text-decoration-thickness: 2px;
 }
 .page-main {
-  overflow: clip;
+  overflow-x:clip;
 }
 .container {
   max-width: var(--_responsive---site--width-main);
@@ -4666,4 +4666,8 @@ figure {
   .service-card-column .service-card img {
     height: 150px;
   }
+}
+
+.main-img{
+  margin: 0 0 !important ;
 }
