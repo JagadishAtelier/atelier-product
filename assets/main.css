@@ -10298,6 +10298,9 @@ body {
   .bg-background-5 {
     background-color: var(--color-background-5);
   }
+  .bg-dark{
+  background-color: #08090c;
+  }
 
   .bg-background-7 {
     background-color: var(--color-background-7);
