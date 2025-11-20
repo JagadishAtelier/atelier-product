@@ -9,8 +9,6 @@ body {
 article,
 aside,
 details,
-figcaption,
-figure,
 footer,
 header,
 hgroup,
@@ -35,9 +33,6 @@ audio:not([controls]) {
 [hidden],
 template {
   display: none;
-}
-a {
-  background-color: #0000;
 }
 a:active,
 a:hover {
@@ -442,11 +437,7 @@ ol {
   top: 0;
   left: 0;
 }
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
+
 button,
 [type="button"],
 [type="reset"] {
@@ -469,11 +460,7 @@ button,
   padding: 10px;
   display: none;
 }
-label {
-  margin-bottom: 5px;
-  font-weight: 700;
-  display: block;
-}
+
 .w-input,
 .w-select {
   color: #333;
@@ -2806,7 +2793,7 @@ blockquote {
   text-transform: uppercase;
 }
 .text-style-eyebrow.is-big {
-  font-size: 1.875rem;
+  font-size: 1.375rem;
   font-weight: 800 !important;
 }
 .text-style-eyebrow.is-small {
@@ -3139,7 +3126,7 @@ blockquote {
 }
 .footer-menu-list-header {
   margin-bottom: var(--_spacing---space--spacing-md);
-  color: var(--_colors---text--sub-500);
+  color: #548aff;
 }
 .footer {
   border-top: 1px solid var(--_colors---border--strong-700);
