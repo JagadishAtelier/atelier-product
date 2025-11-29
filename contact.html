@@ -360,7 +360,7 @@ Contact
       <!-- =========================
 CTA v1 section
 ===========================-->
-<section class="pb-[50px] md:pb-15 lg:pb-18 dark:bg-background-5 bg-white" aria-label="Use Case Overview">
+<section class="pb-[50px] md:pb-15 lg:pb-18 bg-background-5" aria-label="Use Case Overview">
   <div class="main-container">
     <div class="flex items-center flex-col lg:flex-row justify-between">
       <div
@@ -393,17 +393,20 @@ CTA v1 section
           class="flex items-center flex-col gap-5 sm:flex-row justify-start lg:gap-3"
         >
           <input
-            type="email"
-            name="email"
-            id="userEmail-cta-v1"
-            placeholder="Enter your email"
-            required
-            class="px-[18px] shadow-1 h-12 py-3 placeholder:text-secondary/50 rounded-full border border-stroke-1 lg:max-w-[340px] md:w-[71%] w-full max-[376px]:w-full dark:border-stroke-7 dark:placeholder:text-accent/60 focus:outline-none focus:border-primary-600 dark:focus:border-primary-400 dark:text-accent placeholder:font-normal font-normal"
-          />
+  type="email"
+  name="email"
+  id="userEmail-cta-v1"
+  placeholder="Enter your email"
+  required
+  class="px-[18px] h-12 py-3 w-full lg:max-w-[340px] md:w-[71%] rounded-full shadow-1 border dark:border-stroke-7 
+         dark:bg-stroke-9 dark:text-accent dark:placeholder:text-accent/60 
+         focus:outline-none dark:focus:border-primary-400 placeholder:font-normal font-normal"
+/>
+
 
           <button
             type="submit"
-            class="btn btn-md btn-primary h-12 w-full sm:w-[28%] lg:w-auto hover:btn-secondary dark:hover:btn-accent"
+            class="btn btn-md btn-primary h-12 w-full sm:w-[28%] lg:w-auto hover:btn-accent"
           >
             <span>Get started</span>
           </button>

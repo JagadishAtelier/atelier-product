@@ -1089,14 +1089,14 @@ textarea.w-select {
   color: #fff;
 }
 .w-slider-nav-invert > div {
-  background-color: #2226;
+  background-color: rgba(240, 240, 240, 0.4);
 }
 .w-slider-nav-invert > div.w-active {
-  background-color: #222;
+  background-color: #ffffff;
 }
 .w-slider-dot {
   cursor: pointer;
-  background-color: #fff6;
+  background-color: rgba(255, 255, 255, 0.4);
   width: 1em;
   height: 1em;
   margin: 0 3px 0.5em;
@@ -2156,6 +2156,7 @@ img {
   object-fit: cover;
   width: 100%;
   max-width: 100%;
+  mix-blend-mode: lighten;
   display: inline-block;
 }
 strong {
@@ -3609,7 +3610,7 @@ blockquote {
   flex-flow: column;
   justify-content: space-between;
   align-items: flex-start;
-  height: 31.25rem;
+  height: 25.25rem;
   display: flex;
 }
 .testimonial-client-image {
