@@ -1126,8 +1126,8 @@ textarea.w-select {
   margin: auto;
   font-size: 40px;
   position: absolute;
-  inset: 0;
   overflow: hidden;
+  bottom: -17% !important;
 }
 .w-slider-arrow-left [class^="w-icon-"],
 .w-slider-arrow-right [class^="w-icon-"],
@@ -3549,10 +3549,10 @@ blockquote {
 .testimonial-section {
   position: relative;
 }
-.testimonial-mask {
+/* .testimonial-mask {
   width: 34%;
   overflow: visible;
-}
+} */
 .testimonial-slide {
   padding-right: var(--_spacing---space--spacing-xl);
 }
@@ -3574,6 +3574,11 @@ blockquote {
 .slider-arrow.is-bottom-next {
   inset: auto 0% 0% auto;
 }
+.swiper{
+  width: 100%;
+  max-width: 1500px;
+  overflow: visible !important;
+}
 .slider-arrow.is-bottom-previous {
   inset: auto 4rem 0% auto;
 }
@@ -3583,6 +3588,9 @@ blockquote {
   padding-bottom: 5rem;
   position: relative;
   overflow: visible;
+}
+.swiper-slide{
+  width: 400px !important;
 }
 .testimonial-rating-icon {
   color: #e5a50f;
