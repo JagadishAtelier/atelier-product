@@ -66164,3 +66164,74 @@ body:not(.editor_enable)
   bottom: -240px !important;
   top: auto !important;
 }
+
+
+.hero-background-wrap{
+  pointer-events: none;
+    position: absolute;
+    inset: 0%;
+    overflow: hidden;
+    height: 120vh;
+
+}
+.hero-blob-center{
+    background-image: linear-gradient(90deg, #3b82f64d, #2563eb 50%, #3b82f64d);
+    filter: blur(100px);
+    mix-blend-mode: plus-lighter;
+    width: 100%;
+    min-height: 50%;
+    position: absolute;
+    inset: auto auto 10%;
+}
+.hero-blob-left{
+    aspect-ratio: 1;
+    background-image: radial-gradient(circle farthest-corner at 0% 100%, #1d4ed8, transparent 34%);
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0%;
+}
+.hero-blob-right{
+    aspect-ratio: 1;
+    background-image: radial-gradient(circle farthest-corner at 0% 100%, #1d4ed8, transparent 34%);
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0%;
+}
+
+.hero-background-wrap::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;  /* control the fade size */
+    background: linear-gradient(
+        to bottom,
+        transparent 0%,   /* transparent */
+        transparent 30%,/* light blue */
+        #232323 100%          /* solid black */
+    );
+    pointer-events: none;
+    z-index: 10;
+}
+
+
+.hero-bakground-pattern {
+    max-width: 90rem;
+    mix-blend-mode: plus-lighter;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    inset: auto 0% 0%;
+}
+.fc-bg-image{
+  background-image: url(https://atelier-product.vercel.app/images/hero-background-shape.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
