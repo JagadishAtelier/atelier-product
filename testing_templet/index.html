@@ -48,6 +48,7 @@
         rel="shortcut icon" type="image/x-icon" />
     <link href="assets/cdn.prod.website-files.com/65cc742940cb3798ef9ade41/65ce10e4c7866a6592467e32_Webclip.png"
         rel="apple-touch-icon" />
+        <link rel="stylesheet" href="../Footer/footer.css">
     <style>
         body {
             -webkit-font-smoothing: antialiased;
@@ -568,7 +569,7 @@
             </div>
         </div>
         <div class="black-linear"></div>
-    <!-- </section>
+        </section>
     <section id="Statistics" class="section section-padding">
         <div class="w-layout-blockcontainer container-small w-container">
             <div class="section-heading margin-bottom-16-mobile-12 black">
@@ -657,6 +658,7 @@
             </div>
         </div>
     </section>
+
     <section id="FAQ" class="section section-padding">
         <div class="w-layout-blockcontainer container-small w-container">
             <div class="section-heading margin-bottom-16-mobile-12 black">
@@ -867,8 +869,16 @@
                 <div id="w-node-f5e84e0f-b12f-36f2-2f52-ac4e499e9216-ef9ade48" class="form-image"></div>
             </div>
         </div>
-    </section> -->
-    <!-- <footer id="Footer" class="footer">
+    </section>
+    <!-- <div id="footer-container"></div>
+
+<script>
+fetch("../footer/footer.html")
+  .then(res => res.text())
+  .then(html => document.getElementById("footer-container").innerHTML = html);
+</script> -->
+
+     <!-- <footer id="Footer" class="footer">
         <div class="w-layout-blockcontainer container-small w-container">
             <div class="footer-content-wrapper">
                 <div class="footer-content">
