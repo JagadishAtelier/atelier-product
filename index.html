@@ -55,7 +55,7 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
-
+        <link rel="stylesheet" href="../Footer/footer.css">
 
 
     <style>
@@ -66,7 +66,13 @@
       
     </style>
   </head>
-
+                    <!-- data-ns-animate
+                    data-delay="0.7"
+                    data-direction="right"
+                    data-offset="120"
+                    data-progress-item
+                    data-progress-value="88"
+                    data-progress-duration="2.5" -->
   <body>
     <div
       data-w-id="ed1a30f1-6737-bc57-209a-0418d51ae109"
@@ -3213,10 +3219,7 @@ Get started section
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <!-- =========================
-CTA v1 section
-===========================-->
+    <!-- <footer class="footer">
       <section
         class="py-[50px] md:py-10 lg:py-5 bg-background-5"
         aria-label="Use Case Overview"
@@ -3456,7 +3459,14 @@ CTA v1 section
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
+        <div id="footer-container"></div>
+
+<script>
+fetch("../footer/footer.html")
+  .then(res => res.text())
+  .then(html => document.getElementById("footer-container").innerHTML = html);
+</script>
     <script
       src="js/jquery.js?site=688727629d9df45fec1ac128"
       type="text/javascript"
