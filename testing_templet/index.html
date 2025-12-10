@@ -56,6 +56,236 @@
             -o-font-smoothing: antialiased;
         }
     </style>
+      <style>
+    .navigation {
+    background-color: #0000;
+    position: fixed;
+    inset: 0% 0% auto;
+}
+.w-nav {
+    z-index: 1000;
+    background: #ddd;
+    position: relative;
+}
+.w-nav:before, .w-nav:after {
+    content: " ";
+    grid-area: 1 / 1 / 2 / 2;
+    display: table;
+}
+.container-small {
+    max-width: 64rem;
+    padding-right: 2rem;
+    padding-left:2rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav-wrap {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #99a0ae1a;
+    border-radius: 1rem;
+    background-color: #99a0ae1a;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    position: relative;
+}
+.nav-blur-layer {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0%;
+}
+.nav-layout.grid-3-cols {
+    grid-template-columns: 1fr 2.5fr 1fr;
+}
+.nav-layout {
+    justify-content: center;
+    align-items: center;
+}
+.grid-3-cols {
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+}
+#w-node-ed1a30f1-6737-bc57-209a-0418d51ae10e-d51ae109 {
+    justify-self: start;
+    display: flex;
+    align-items: center;
+}
+.logo-link {
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+}
+.w-inline-block {
+    max-width: 100%;
+    display: inline-block;
+}
+.logo {
+    object-fit: contain;
+    height: 1.75rem;
+}
+.logo-text {
+    color: #fff;
+    font-size: 1.7rem;
+    line-height: 1;
+    font-weight: 500;
+}
+.nav-menu {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.w-nav-menu {
+    float: right;
+    position: relative;
+}
+.nav-links-list {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.nav-link {
+    padding: 0.5rem 1rem;
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+    color: #fff;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    font-weight: 400;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    transition: opacity 0.2s;
+    display: flex;
+}
+.w-inline-block {
+    max-width: 100%;
+    display: inline-block;
+}
+#w-node-ed1a30f1-6737-bc57-209a-0418d51ae124-d51ae109 {
+    justify-self: end;
+}
+.nav-right {
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+}
+.button-main.small:where(.w-variant-4f1ced44-5afc-4753-1771-3275f473f97b) {
+    --_button-style---button--background: #f5f7fa !important;
+    --_button-style---button--text: #0e121b !important;
+}
+
+.button-main.small {
+    padding: 0.5rem 1rem ;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    letter-spacing: 0rem;
+    height: 2.5rem;
+}
+.button-main {
+    padding: var(--_spacing---space--spacing-md) var(--_spacing---space--spacing-xl);
+    border-radius: 0.5rem;
+    background-color: #f5f7fa;
+    color: #0e121b;
+    font-weight: 500;
+    --_button-style---button--background: #f5f7fa;
+    --_button-style---button--text: #0e121b;
+    justify-content: center;
+    align-items: center;
+    height: 3.25rem;
+    display: flex;
+    overflow: hidden;
+}
+.w-inline-block {
+    max-width: 100%;
+    display: inline-block;
+}
+.button-text-wrap {
+    text-align: center;
+    flex-flow: column;
+    height: 1.5rem;
+    display: flex;
+}
+.button-text-reveal {
+    transform: translateY(80%);
+}
+.nav-menu-button {
+    padding: 0.75rem;
+}
+.w-nav-button {
+    float: right;
+    cursor: pointer;
+    -webkit-tap-highlight-color: #0000;
+    tap-highlight-color: #0000;
+    -webkit-user-select: none;
+    user-select: none;
+    padding: 18px;
+    font-size: 24px;
+    display: none;
+    position: relative;
+}
+.w-nav-overlay {
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+.w-nav-button {
+    float: right;
+    cursor: pointer;
+    -webkit-tap-highlight-color: #0000;
+    tap-highlight-color: #0000;
+    -webkit-user-select: none;
+    user-select: none;
+    padding: 18px;
+    font-size: 24px;
+    display: none;
+    position: relative;
+}
+.main-sec{
+  padding-top: 5%;
+}
+@media screen and (max-width: 991px) {
+    .w-nav[data-collapse="medium"] .w-nav-button {
+        display: block;
+    }
+            .menu-button-icon-line {
+            background-color: #fff;
+            width: 1.25rem;
+            height: 1px;
+            padding: 0;
+        }
+            .menu-button-icon-line {
+        background-color: #fff;
+        width: 1.25rem;
+        height: 1px;
+        padding: 0;
+    }
+    .nav-links-list{
+      display: none;
+    }
+    .menu-button-icon {
+        grid-column-gap: 6px;
+        grid-row-gap: 6px;
+        flex-flow: column;
+        display: flex;
+    }
+}
+  </style>
 </head>
 
 <body>
@@ -65,60 +295,72 @@
     <div style="opacity: 0" class="bg-color-mixed-black"></div>
     <main id="Hero" class="section hero">
         <div class="w-layout-blockcontainer container hero w-container">
-            <nav class="nav">
-                <div class="nav-logo-menu-wrapper">
-                    <a href="index.html" aria-current="page" class="nav-logo-wrapper w-inline-block w--current"><img
-                            src="https://theateliercreation.com/assets/header-logo-BU8oRStR.png"
-                            loading="lazy" alt="Tactix" class="nav-logo" style="filter: invert(1);" /></a>
-                    <div class="nav-menu-wrapper">
-                        <a href="#Hero" class="nav-menu-item">Home</a><a href="#About" class="nav-menu-item">About</a><a
-                            href="#Services" class="nav-menu-item">Services</a><a href="#Approach"
-                            class="nav-menu-item">Approach</a><a href="#FAQ" class="nav-menu-item">FAQ</a>
-                    </div>
-                </div>
-                <div class="button-menu-wrapper">
-                    <a href="#Contact" class="button small secondary mobile-portrait-hidden w-button">Contact Us</a>
-                    <div class="menu-button open">
-                        <img src="assets/cdn.prod.website-files.com/65cc742940cb3798ef9ade41/65cdd7edbd7c0c39ea6efc15_Hamburger%2520Menu.svg"
-                            loading="lazy" alt="Menu" class="icon-size-20" />
-                    </div>
-                </div>
-                <div style="display: none; opacity: 0" class="hamburger-menu">
-                    <div class="hamburger-menu-nav">
-                        <a href="index.html" aria-current="page" class="nav-logo-wrapper w-inline-block w--current"><img
-                                src="https://cdn.prod.website-files.com/65cc742940cb3798ef9ade41/65cc7a0e0a1464c239f1f367_Logo.svg"
-                                loading="lazy" alt="Tactix" class="nav-logo" /></a>
-                        <div class="menu-button close">
-                            <img src="assets/cdn.prod.website-files.com/65cc742940cb3798ef9ade41/65cdd7eee04692bce283a998_Dismiss.svg"
-                                loading="lazy" alt="Close" class="icon-size-20" />
-                        </div>
-                    </div>
-                    <div class="hamburger-menu-content">
-                        <div class="hamburger-menu-items-wrapper">
-                            <a href="#Hero" class="hamburger-menu-item">Home</a><a href="#About"
-                                class="hamburger-menu-item">About</a><a href="#Services"
-                                class="hamburger-menu-item">Services</a><a href="#Approach"
-                                class="hamburger-menu-item">Approach</a><a href="#FAQ"
-                                class="hamburger-menu-item">FAQ</a><a href="#Contact"
-                                class="hamburger-menu-item">Contact Us</a>
-                        </div>
-                        <div class="hamburger-menu-socials-wrapper">
-                            <a href="https://www.linkedin.com" target="_blank"
-                                class="hamburger-menu-social w-inline-block"><img
-                                    src="assets/cdn.prod.website-files.com/65cc742940cb3798ef9ade41/65cdcc1ef4b4586f8407b3a6_LinkedIn.svg"
-                                    loading="lazy" alt="LinkedIn" class="icon-size-28-mobile-20" /></a><a
-                                href="https://www.facebook.com/" target="_blank"
-                                class="hamburger-menu-social w-inline-block"><img
-                                    src="assets/cdn.prod.website-files.com/65cc742940cb3798ef9ade41/65cdcc1df390161c414eb676_Facebook.svg"
-                                    loading="lazy" alt="Facebook" class="icon-size-28-mobile-20" /></a><a
-                                href="https://twitter.com" target="_blank"
-                                class="hamburger-menu-social w-inline-block"><img
-                                    src="assets/cdn.prod.website-files.com/65cc742940cb3798ef9ade41/65cdcc1e9fdad42eb3bcd3bf_Twitter%2520(X).svg"
-                                    loading="lazy" alt="Twitter (X)" class="icon-size-28-mobile-20" /></a>
-                        </div>
-                    </div>
-                </div>
+          <div class="container-small navigation">
+        <div class="nav-wrap">
+          <div class="nav-blur-layer"></div>
+          <div class="nav-layout grid-3-cols">
+            <a
+              href="/"
+              id="w-node-ed1a30f1-6737-bc57-209a-0418d51ae10e-d51ae109"
+              aria-current="page"
+              class="logo-link w-inline-block w--current"
+              ><img
+                src="https://atelier-product.vercel.app/images/orizon-logomark1.svg"
+                loading="lazy"
+                alt="Atelier"
+                class="logo"
+              />
+              <div class="logo-text">Atelier</div>
+            </a>
+            <nav role="navigation" class="nav-menu w-nav-menu">
+              <div class="nav-links-list">
+                <a href="#features" class="nav-link w-inline-block">
+                  <div class="nav-link-text">Features</div> </a
+                ><a href="#products" class="nav-link w-inline-block">
+                  <div class="nav-link-text">Products</div>
+                </a>
+                <a href="#benefits" class="nav-link w-inline-block">
+                  <div class="nav-link-text">Benefits</div> </a
+                ><a href="#testimonial" class="nav-link w-inline-block">
+                  <div class="nav-link-text">Testimonial</div> </a
+                ><a href="#our-values" class="nav-link w-inline-block">
+                  <div class="nav-link-text">Our Value</div>
+                </a>
+              </div>
             </nav>
+            <div
+              id="w-node-ed1a30f1-6737-bc57-209a-0418d51ae124-d51ae109"
+              class="nav-right"
+            >
+              <div class="landscape-hide">
+                <a
+                  data-wf--button-small--style="secondary"
+                  href="/contact.html"
+                  class="button-main small w-variant-4f1ced44-5afc-4753-1771-3275f473f97b w-inline-block"
+                >
+                  <div class="button-text-wrap">
+                    <div class="button-text-initial">Start for free</div>
+                    <div class="button-text-reveal">Start for free</div>
+                  </div>
+                </a>
+              </div>
+              <div class="nav-menu-button w-nav-button">
+                <div class="menu-button-icon">
+                  <div
+                    class="menu-button-icon-line"
+                  ></div>
+                  <div
+                    class="menu-button-icon-line"
+                  ></div>
+                  <div
+                    class="menu-button-icon-line"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
             <div class="hero-content-wrapper">
                 <div data-w-id="7c39f3ff-c097-70d0-5a9e-b8e925a08f6e" style="
               -webkit-transform: translate3d(0, 0, 0) scale3d(0.85, 0.85, 1)
@@ -184,6 +426,7 @@
                 </div>
             </div>
         </div>
+
     </main>
     <section id="About" data-w-id="701438c8-26b9-0447-6b82-1bfac4ecaa74" class="section section-padding">
         <div class="w-layout-blockcontainer container-small w-container">

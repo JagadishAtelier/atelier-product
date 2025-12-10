@@ -140,6 +140,7 @@
     href="https://ezovion.com/comments/feed/" />
   <link rel="alternate" type="application/rss+xml" title="Atelier &raquo; Stories Feed"
     href="https://ezovion.com/web-stories/feed/" />
+            <link rel="stylesheet" href="../Footer/footer.css">
   <style id="wp-job-openings-blocks-style-inline-css">
     .wp-block-create-block-wjo-block {
       background-color: #21759b;
@@ -18414,7 +18415,13 @@ article, aside, details, footer, header, hgroup, main, menu, nav, section, summa
         </div>
       </div>
     </footer> -->
+    <div id="footer-container"></div>
 
+<script>
+fetch("../footer/footer.html")
+  .then(res => res.text())
+  .then(html => document.getElementById("footer-container").innerHTML = html);
+</script>
     
   <script
     src="data:text/javascript;base64,KGZ1bmN0aW9uKCQsdyl7J3VzZSBzdHJpY3QnO2xldCAkd2luZG93PSQodyk7JChkb2N1bWVudCkucmVhZHkoZnVuY3Rpb24oKXtsZXQgaXNFbmFibGU9IiI7bGV0IGlzRW5hYmxlTGF6eU1vdmU9IiI7bGV0IHNwZWVkPWlzRW5hYmxlTGF6eU1vdmU/JzAuNyc6JzAuMic7aWYoIWlzRW5hYmxlKXtyZXR1cm59CmlmKHR5cGVvZiBoYUN1cnNvcj09J3VuZGVmaW5lZCd8fGhhQ3Vyc29yPT1udWxsKXtpbml0aWF0ZUhhQ3Vyc29yT2JqZWN0KHNwZWVkKX0Kc2V0VGltZW91dChmdW5jdGlvbigpe2xldCB0YXJnZXRDdXJzb3I9JCgnLmhhLWN1cnNvcicpO2lmKHRhcmdldEN1cnNvcil7aWYoIWlzRW5hYmxlKXskKCdib2R5JykucmVtb3ZlQ2xhc3MoJ2htLWluaXQtZGVmYXVsdC1jdXJzb3Itbm9uZScpOyQoJy5oYS1jdXJzb3InKS5hZGRDbGFzcygnaGEtaW5pdC1oaWRlJyl9ZWxzZXskKCdib2R5JykuYWRkQ2xhc3MoJ2htLWluaXQtZGVmYXVsdC1jdXJzb3Itbm9uZScpOyQoJy5oYS1jdXJzb3InKS5yZW1vdmVDbGFzcygnaGEtaW5pdC1oaWRlJyl9fX0sNTAwKX0pfShqUXVlcnksd2luZG93KSk="
