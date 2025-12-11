@@ -60,6 +60,7 @@
   <link rel="preload" href="https://odoocdn.com/web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0"
     as="font" crossorigin="" />
   <link type="text/css" rel="stylesheet" href="css/web.assets_frontend.min.css" />
+  <link rel="stylesheet" href="../Footer/footer.css">
   <script id="web.layout.odooscript" type="text/javascript">
     var odoo = {
       csrf_token: "4ed610f1ec2b7fe9776eb794170858a5654c5e5fo1794738210",
@@ -363,6 +364,7 @@
     .navigation {
     background-color: #0000;
     position: fixed;
+    z-index: 999;
     inset: 0% 0% auto;
 }
 .w-nav {
@@ -606,12 +608,32 @@ body,h1,h2,h3,h4,h5,h6{
     font-family: "Inter Tight", sans-serif !important;
     font-size: 3rem !important;
 }
-.x_wd_shape_circle::before, .x_wd_shape_circle_xs::before, .x_wd_shape_circle_sm::before{
-  background-color: #181b25;
+.x_wd_shape_circle::before, .x_wd_shape_circle_xs::before, .x_wd_shape_circle_sm::before ,.features-bg-color-set-data{
+  background-color: #181b25 !important;
 }
-.x_wd_shape::after{
-  background-color: #181b25;
+.features-bg-color-set{
+    background-color: #0e121b !important;
+    color: white;
 }
+.x_wd_shape::before, .x_wd_shape_bottom::before, .x_wd_shape_short::before, .x_wd_shape_middle::before, .x_wd_shape_top::before, .x_wd_shape::after, .x_wd_shape_bottom::after, .x_wd_shape_short::after, .x_wd_shape_middle::after, .x_wd_shape_top::after{
+  background-color: #181b25 !important;
+}
+.x_wd_blue_highlight_scribble_04{
+   background-image: none !important;
+}
+.x_wd_yellow_highlight_bold_05,.x_wd_red_highlight_05,.x_wd_display_circle,.x_wd_display_underline{
+  background-image: none !important;
+}
+img.ms-auto, img.mx-auto,.text-o-color-8{
+  display: none !important;
+}
+.x_wd_app_card, .x_wd_app_horizontal{
+  background-color: #0e121b;
+}
+.x_wd_app_card, .x_wd_app_horizontal:hover{
+  background-color: #0e121b;
+}
+/* .x_wd_shape_circle_xs::before */
   </style>
 </head>
 
@@ -693,6 +715,9 @@ body,h1,h2,h3,h4,h5,h6{
         <section class="s_wd_hero_text_image text-center text-lg-start py-6 fc-bg-image" data-name="Text - Image"
           data-snippet="s_wd_hero_text_image"
           style="background-image: url(https://atelier-product.vercel.app/images/ns-img-dark-126.svg); background-position: center; background-repeat: no-repeat; height: 100%;">
+          <div>
+            
+          </div>
           <div style="pointer-events: none; position: absolute; inset: 0; overflow: hidden; height: 90vh;">
             <!-- Center Blob -->
             <!-- <div style="
@@ -926,21 +951,21 @@ body,h1,h2,h3,h4,h5,h6{
             <div class="row justify-content-center">
               <div class="col-lg-8 position-relative">
                 <div class="s_wd_screenshot_arrow s_wd_screenshot_arrow_left" style="bottom: 45%">
-                  <h3 class="display-6 text-white mb-0">
+                  <h3 class="f2-2 text-white mb-0">
                     Loyalty programs
                   </h3>
                   <img src="https://odoocdn.com/openerp_website/static/src/img/arrows/grey_arrow_sm_02.svg" width="20px"
                     class="rotate-320" alt="" loading="lazy" />
                 </div>
                 <div class="s_wd_screenshot_arrow s_wd_screenshot_arrow_left" style="bottom: 7%">
-                  <h3 class="display-6 text-white mb-0">
+                  <h3 class="f2-2 text-white mb-0">
                     Multiple payment methods
                   </h3>
                   <img src="https://odoocdn.com/openerp_website/static/src/img/arrows/grey_arrow_sm_03.svg" width="20px"
                     class="rotate-300" alt="" loading="lazy" />
                 </div>
                 <div class="s_wd_screenshot_arrow s_wd_screenshot_arrow_right" style="bottom: 94%">
-                  <h3 class="display-6 text-white mb-0">
+                  <h3 class="fs-3 text-white mb-0">
                     Reliable online and offline
                   </h3>
                   <img src="https://odoocdn.com/openerp_website/static/src/img/arrows/grey_arrow_sm_03.svg" width="20px"
@@ -949,14 +974,14 @@ body,h1,h2,h3,h4,h5,h6{
                 <div class="s_wd_screenshot_arrow s_wd_screenshot_arrow_right" style="top: 15%">
                   <img src="https://odoocdn.com/openerp_website/static/src/img/arrows/grey_arrow_sm_02.svg" width="20px"
                     class="rotate-140" alt="" loading="lazy" />
-                  <h3 class="display-6 text-white mb-0">
+                  <h3 class="f2-2 text-white mb-0">
                     Filter by product categories
                   </h3>
                 </div>
                 <div class="s_wd_screenshot_arrow s_wd_screenshot_arrow_right" style="top: 68%">
                   <img src="https://odoocdn.com/openerp_website/static/src/img/arrows/grey_arrow_sm_03.svg" width="20px"
                     class="rotate-120" alt="" loading="lazy" />
-                  <h3 class="display-6 text-white mb-0">
+                  <h3 class="f2-2 text-white mb-0">
                     Intuitive display
                   </h3>
                 </div>
@@ -1005,7 +1030,7 @@ body,h1,h2,h3,h4,h5,h6{
           </div>
         </div>
 
-        <section class="s_wd_features bg-200 py-7" data-snippet="s_wd_features" data-name="Features">
+        <section class="s_wd_features bg-200 py-7 features-bg-color-set" data-snippet="s_wd_features" data-name="Features">
           <div class="container">
             <h2 class="display-2 mb-6">
               All the <span class="x_wd_display_circle">features</span><br />
@@ -1013,36 +1038,36 @@ body,h1,h2,h3,h4,h5,h6{
             </h2>
             <div class="row">
               <div class="col-lg-6 ">
-                <div class="s_wd_features_item">
+                <div class="s_wd_features_item features-bg-color-set-data text-white">
                   <h4>Appointments</h4>
                   <p>
                     Create appointment types to match your business needs.
                   </p>
                 </div>
-                <div class="s_wd_features_item">
+                <div class="s_wd_features_item features-bg-color-set-data text-white">
                   <h4>Project tasks</h4>
                   <p>
                     Follow-up on client's training plans with projects and
                     tasks.
                   </p>
                 </div>
-                <div class="s_wd_features_item">
+                <div class="s_wd_features_item features-bg-color-set-data text-white">
                   <h4>Website builder</h4>
                   <p>Generate a stunning website in a couple of clicks.</p>
                 </div>
               </div>
               <div class="col-lg-6 ">
-                <div class="s_wd_features_item">
+                <div class="s_wd_features_item features-bg-color-set-data text-white">
                   <h4>CRM pipeline</h4>
                   <p>Gather and follow up on leads.</p>
                 </div>
-                <div class="s_wd_features_item">
+                <div class="s_wd_features_item features-bg-color-set-data text-white">
                   <h4>Planning</h4>
                   <p>
                     Create schedules for employees and material resources.
                   </p>
                 </div>
-                <div class="s_wd_features_item">
+                <div class="s_wd_features_item features-bg-color-set-data text-white">
                   <h4>Automated replenishment</h4>
                   <p>
                     Ensure you always have stock of your most popular
@@ -1062,17 +1087,17 @@ body,h1,h2,h3,h4,h5,h6{
             </h3>
             <p class="lead mb-5 text-white">Expand as you grow.</p>
             <div class="row g-4">
-              <div class="col-lg-6 col-xl-4 o_app_icon_entry">
+              <div class="col-lg-6 col-xl-4 o_app_icon_entry ">
                 <div class="x_wd_app_horizontal position-relative h-100">
-                  <div class="d-flex">
-                    <a class="stretched-link" href="https://atelier-tech.vercel.app/">
-                      <img width="68" height="68" class="bg-white shadow-sm rounded-1 p-2 m-3"
+                  <div class="d-flex features-bg-color-set-data text-white rounded">
+                    <a class="stretched-link " href="https://atelier-tech.vercel.app/">
+                      <img width="68" height="68" class=" features-bg-color-set-data text-white shadow-sm rounded-1 p-2 m-3"
                         src="http://download.odoocdn.com/icons/stock/static/description/icon.svg"
                         alt="Atelier Inventory icon" loading="lazy" />
                     </a>
                     <div class="align-self-center my-3 me-4">
-                      <h5 class="mb-1">Inventory</h5>
-                      <small class="d-block text-muted">Track stock in real-time</small>
+                      <h5 class="mb-1 text-white">Inventory</h5>
+                      <small class="d-block text-white">Track stock in real-time</small>
                     </div>
                   </div>
                 </div>
@@ -1080,15 +1105,15 @@ body,h1,h2,h3,h4,h5,h6{
 
               <div class="col-lg-6 col-xl-4 o_app_icon_entry">
                 <div class="x_wd_app_horizontal position-relative h-100">
-                  <div class="d-flex">
+                  <div class="d-flex features-bg-color-set-data text-white rounded">
                     <a class="stretched-link" href="https://www.odoo.com/app/project">
-                      <img width="68" height="68" class="bg-white shadow-sm rounded-1 p-2 m-3"
+                      <img width="68" height="68" class="shadow-sm rounded-1 p-2 m-3 "
                         src="http://download.odoocdn.com/icons/project/static/description/icon.svg"
                         alt="Atelier Project icon" loading="lazy" />
                     </a>
                     <div class="align-self-center my-3 me-4">
-                      <h5 class="mb-1">Project</h5>
-                      <small class="d-block text-muted">Create tasks and projects</small>
+                      <h5 class="mb-1 text-white">Project</h5>
+                      <small class="d-block text-white">Create tasks and projects</small>
                     </div>
                   </div>
                 </div>
@@ -1096,15 +1121,15 @@ body,h1,h2,h3,h4,h5,h6{
 
               <div class="col-lg-6 col-xl-4 o_app_icon_entry">
                 <div class="x_wd_app_horizontal position-relative h-100">
-                  <div class="d-flex">
+                  <div class="d-flex features-bg-color-set-data text-white rounded">
                     <a class="stretched-link" href="#">
-                      <img width="68" height="68" class="bg-white shadow-sm rounded-1 p-2 m-3"
+                      <img width="68" height="68" class="shadow-sm rounded-1 p-2 m-3"
                         src="http://download.odoocdn.com/icons/maintenance/static/description/icon.svg"
                         alt="Atelier Maintenance icon" loading="lazy" />
                     </a>
                     <div class="align-self-center my-3 me-4">
-                      <h5 class="mb-1">Maintenance</h5>
-                      <small class="d-block text-muted">Keep track of equipment maintenance</small>
+                      <h5 class="mb-1 text-white">Maintenance</h5>
+                      <small class="d-block text-white">Keep track of equipment maintenance</small>
                     </div>
                   </div>
                 </div>
@@ -1112,15 +1137,15 @@ body,h1,h2,h3,h4,h5,h6{
 
               <div class="col-lg-6 col-xl-4 o_app_icon_entry">
                 <div class="x_wd_app_horizontal position-relative h-100">
-                  <div class="d-flex">
+                  <div class="d-flex features-bg-color-set-data text-white rounded">
                     <a class="stretched-link" href="https://www.odoo.com/app/crm">
-                      <img width="68" height="68" class="bg-white shadow-sm rounded-1 p-2 m-3"
+                      <img width="68" height="68" class="shadow-sm rounded-1 p-2 m-3"
                         src="http://download.odoocdn.com/icons/crm/static/description/icon.svg" alt="Atelier CRM icon"
                         loading="lazy" />
                     </a>
                     <div class="align-self-center my-3 me-4">
-                      <h5 class="mb-1">CRM</h5>
-                      <small class="d-block text-muted">Build strong customer relationships</small>
+                      <h5 class="mb-1 text-white">CRM</h5>
+                      <small class="d-block text-white">Build strong customer relationships</small>
                     </div>
                   </div>
                 </div>
@@ -1128,15 +1153,15 @@ body,h1,h2,h3,h4,h5,h6{
 
               <div class="col-lg-6 col-xl-4 o_app_icon_entry">
                 <div class="x_wd_app_horizontal position-relative h-100">
-                  <div class="d-flex">
+                  <div class="d-flex features-bg-color-set-data text-white rounded">
                     <a class="stretched-link" href="https://www.odoo.com/app/point-of-sale-shop">
-                      <img width="68" height="68" class="bg-white shadow-sm rounded-1 p-2 m-3"
+                      <img width="68" height="68" class=" shadow-sm rounded-1 p-2 m-3"
                         src="http://download.odoocdn.com/icons/point_of_sale/static/description/icon.svg"
                         alt="Atelier Point of Sale icon" loading="lazy" />
                     </a>
                     <div class="align-self-center my-3 me-4">
-                      <h5 class="mb-1">Point of Sale</h5>
-                      <small class="d-block text-muted">Sell products on the spot</small>
+                      <h5 class="mb-1 text-white">Point of Sale</h5>
+                      <small class="d-block text-white">Sell products on the spot</small>
                     </div>
                   </div>
                 </div>
@@ -1144,23 +1169,23 @@ body,h1,h2,h3,h4,h5,h6{
 
               <div class="col-lg-6 col-xl-4 o_app_icon_entry">
                 <div class="x_wd_app_horizontal position-relative h-100">
-                  <div class="d-flex">
+                  <div class="d-flex features-bg-color-set-data text-white rounded">
                     <a class="stretched-link" href="https://www.odoo.com/app/ecommerce">
-                      <img width="68" height="68" class="bg-white shadow-sm rounded-1 p-2 m-3"
+                      <img width="68" height="68" class=" shadow-sm rounded-1 p-2 m-3"
                         src="http://download.odoocdn.com/icons/website_sale/static/description/icon.svg"
                         alt="Atelier eCommerce icon" loading="lazy" />
                     </a>
                     <div class="align-self-center my-3 me-4">
-                      <h5 class="mb-1">eCommerce</h5>
-                      <small class="d-block text-muted">Sell products online</small>
+                      <h5 class="mb-1 text-white">eCommerce</h5>
+                      <small class="d-block text-white">Sell products online</small>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <a href="https://www.odoo.com/page/all-apps" class="display-5 d-block mt-5">See all Apps<img
+            <!-- <a href="https://www.odoo.com/page/all-apps" class="display-5 d-block mt-5">See all Apps<img
                 src="https://odoocdn.com/openerp_website/static/src/img/arrows/secondary_arrow_sm_03.svg" width="40px"
-                class="align-baseline o_rtl_flip ms-3" alt="" loading="lazy" /></a>
+                class="align-baseline o_rtl_flip ms-3" alt="" loading="lazy" /></a> -->
           </div>
         </section>
 
@@ -1168,16 +1193,16 @@ body,h1,h2,h3,h4,h5,h6{
           <div class="container position-relative" style="min-height: 20rem">
             <div class="position-absolute top-0 bottom-0 end-0 start-0 d-flex align-items-center justify-content-center"
               style="z-index: 1">
-              <div class="bg-white rounded-pill-md px-lg-8 p-6 text-center">
-                <h6 class="display-2 position-relative mb-2">
+              <div class="features-bg-color-set-data text-white rounded-pill-md px-lg-8 p-6 text-center">
+                <h6 class="display-2 position-relative mb-2 text-white">
                   Join 15 million
-                  <span class="x_wd_display_sup d-none d-md-inline text-o-color-7">
+                  <span class="x_wd_display_sup d-none d-md-inline text-white">
                     <img src="https://odoocdn.com/openerp_website/static/src/img/graphics/arrow_circular_down_left.svg"
                       height="40px" class="mt-4 ms-n2 me-2" alt="" loading="lazy" />happy
                   </span>
                   users
                 </h6>
-                <span class="fs-4">who grow their business with Atelier</span>
+                <span class="fs-4 text-white">who grow their business with Atelier</span>
               </div>
             </div>
             <div id="s_wd_users_mosaic" class="d-flex flex-wrap justify-content-between"></div>
@@ -1202,7 +1227,7 @@ body,h1,h2,h3,h4,h5,h6{
       <div id="o_shared_blocks" class="oe_unremovable"></div>
     </main>
 
-    <footer id="bottom" data-anchor="true" data-name="Footer" class="o_footer o_colored_level o_cc o_footer_slideout">
+    <!-- <footer id="bottom" data-anchor="true" data-name="Footer" class="o_footer o_colored_level o_cc o_footer_slideout">
       <div id="footer" class="container o_not_editable">
         <span class="o_logo o_logo_inverse d-block mx-auto o_footer_logo my-5"></span>
         <div class="row">
@@ -1472,9 +1497,9 @@ body,h1,h2,h3,h4,h5,h6{
             <span class="o_logo_inverse o_logo_15 text-white">Atelier</span></a>
         </div>
       </div>
-    </footer>
+    </footer> -->
   </div>
-
+      <div id="separatefooter-container"></div>
   <div id="o_live_modal" class="modal fade" tabindex="-1" role="dialog" contenteditable="false">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -1500,6 +1525,11 @@ body,h1,h2,h3,h4,h5,h6{
       </div>
     </div>
   </div>
+  <script>
+fetch("../Footer/hmsFooter.html")
+  .then(res => res.text())
+  .then(html => document.getElementById("separatefooter-container").innerHTML = html);
+</script>
 </body>
 
 </html>
