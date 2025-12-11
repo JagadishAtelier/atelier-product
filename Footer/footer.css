@@ -260,6 +260,10 @@
 .main-foot
 {
   padding-top: 3rem !important;
+  max-width: 79rem !important;
+}
+.footerAboveContact-point-item p{
+  margin:0 !important;
 }
 
 /* Flex wrapper */
@@ -353,6 +357,12 @@
     background-color: transparent !important;
     outline: none !important;
     box-shadow: var(--shadow-1) !important;
+}
+.acx-tet{
+  color: white !important;
+}
+.footer-cell-text-style{
+  color: rgba(255, 255, 255, .6) !important;
 }
 
 .footerAboveContact-input:focus {
