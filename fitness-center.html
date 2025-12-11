@@ -606,7 +606,6 @@ body,h1,h2,h3,h4,h5,h6{
 }
 .x_wd *[class*="display-"], .x_wd_ff_script[class*="display-"]{
     font-family: "Inter Tight", sans-serif !important;
-    font-size: 3rem !important;
 }
 .x_wd_shape_circle::before, .x_wd_shape_circle_xs::before, .x_wd_shape_circle_sm::before ,.features-bg-color-set-data{
   background-color: #181b25 !important;
@@ -654,6 +653,39 @@ img.ms-auto, img.mx-auto,.text-o-color-8{
       position: absolute;
       top: 3%;
     }
+    .logo-new-div{
+      height: 80px;
+      width: 100%;
+      display: flex;
+      justify-content: start;
+    }
+    .logo-new{
+      height: 100%;
+    }
+    .fch-start-now{
+      border-radius: 50px;
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 10px 30px;
+    }
+    .fch-start-now:hover{
+      border-radius: 50px;
+      background-color: black;
+      color: red;
+      border: none;
+
+    }
+    h1, h2, h3, h4, h5, h6 {
+    font-family: Inter Tight, sans-serif;
+    background-image: linear-gradient(180deg, #fff, #99a0ae);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.text-h1-tag{
+  font-size: 5rem !important;
+}
   </style>
 </head>
 
@@ -669,14 +701,13 @@ img.ms-auto, img.mx-auto,.text-o-color-8{
               href="/"
               id="w-node-ed1a30f1-6737-bc57-209a-0418d51ae10e-d51ae109"
               aria-current="page"
-              class="logo-link w-inline-block w--current"
+              class="logo-link w-inline-block w--current logo-new-div"
               ><img
-                src="images/orizon-logomark1.svg"
+                src="http://127.0.0.1:5501/assets/ATS%20White%20lOGO%20PNG.png"
                 loading="lazy"
                 alt="Atelier"
-                class="logo"
+                class="logo-new"
               />
-              <div class="logo-text">Atelier</div>
             </a>
             <nav role="navigation" class="nav-menu w-nav-menu">
               <div class="nav-links-list">
@@ -790,40 +821,22 @@ img.ms-auto, img.mx-auto,.text-o-color-8{
 
           <div class="container FC-Con-hero">
             <div class="row align-items-center justify-content-center text-center">
-              <div class="col-lg-8 col-xl-7 pb-5">
-                <h1 class="display-4 mb-4 text-white text-center">
-                  The ultimate software for your <br />
-                  <img src="https://odoocdn.com/openerp_website/static/src/img/icons/red_bell-gym.svg" height="60px"
-                    class="d-none d-xl-inline-block rotate-10" alt="" loading="lazy" />
-                  <span class="align-middle display-1 lh-1 text-center">Fitness Center</span>
+              <div class="col-lg-10 py-5">
+                <h1 class="display-4 mb-4 text-white text-center text-h1-tag">
+                  The ultimate software for your Fitness Center 
                 </h1>
                 <p class="lead mb-md-5 text-white">
                   <strong>Atelier allows you to create</strong> custom
                   subscriptions, plan classes, and bill members — all in one
                   intuitive platform designed to support fitness centers.
                 </p>
-                <a class="btn btn-primary mb-2 me-3"
+                <a class="btn btn-primary mb-2 me-3 fch-start-now"
                   href="https://www.odoo.com/trial?industry&amp;selected_app=fitness">Start now</a>
-                <div class="o_schedule_demo">
-                  <div class="dropdown">
-                    <a href="#" data-bs-toggle="dropdown" class="dropdown-toggle btn btn-light mb-2">Meet an advisor</a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item btn" target="_blank" href="https://www.odoo.com/appointment/197">Demo
-                          with an Expert (1-250 employees)</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item btn" target="_blank"
-                          href="https://www.odoo.com/appointment/3812">Project Assessment (250+ employees)</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
           <div class="fch-dashboard-img">
-            <img src="./images/GYM Dashboard.png"/>
+            <img src="./images/GYM Dashboard_1.png"/>
           </div>
         </section>
 
