@@ -1693,6 +1693,7 @@ h1.entry-title {
   .elementor-element.elementor-element-74e86274
   > .elementor-element-populated {
   padding: 0 0 0 0;
+  z-index: 0 !important;
 }
 .elementor-15066
   .elementor-element.elementor-element-1b98878c:not(
