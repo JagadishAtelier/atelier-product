@@ -9,7 +9,7 @@
   --e-global-color-257bd39: #000000;
   --e-global-color-d219f72: #0a0a0a;
   --e-global-color-b133616: #111111;
-  --e-global-color-bd59b2d: #0c0c0cfa;
+  --e-global-color-bd59b2d: #181b25;
   --e-global-color-c619742: #efedff;
   --e-global-color-a9687d6: #37368e;
   --e-global-typography-primary-font-family: "Roboto";
@@ -1431,7 +1431,7 @@ h1.entry-title {
   background-color: var(--e-global-color-bd59b2d);
 }
 .elementor-15066 .elementor-element.elementor-element-1c882de7:hover {
-  background-color: #000000;
+  background-color: #000;
 }
 .elementor-15066
   .elementor-element.elementor-element-55bf92b1
@@ -1702,7 +1702,7 @@ h1.entry-title {
   .elementor-element.elementor-element-1b98878c
   > .elementor-motion-effects-container
   > .elementor-motion-effects-layer {
-  background-color: #fff;
+  background-color: #181b25;
 }
 .elementor-15066 .elementor-element.elementor-element-1b98878c,
 .elementor-15066
@@ -1793,8 +1793,9 @@ h1.entry-title {
   .elementor-element.elementor-element-1c28e5eb
   .elementor-nav-menu--main
   .elementor-item {
-  color: var(--e-global-color-b133616);
-  fill: var(--e-global-color-b133616);
+  color: #fff;
+  fill: #fff;
+  text-align: left !important;
 }
 .elementor-15066
   .elementor-element.elementor-element-1c28e5eb
@@ -5685,7 +5686,7 @@ h1.entry-title {
 .elementor-15066
   .elementor-element.elementor-element-670cb1d:hover
   .elementor-widget-container {
-  background-color: #fff;
+  background-color: #000;
 }
 .elementor-15066
   .elementor-element.elementor-element-670cb1d.ha-has-bg-overlay:hover
@@ -5750,7 +5751,7 @@ h1.entry-title {
 .elementor-15066
   .elementor-element.elementor-element-4a29e4d:hover
   .elementor-widget-container {
-  background-color: #fff;
+  background-color: #000;
 }
 .elementor-15066
   .elementor-element.elementor-element-4a29e4d.ha-has-bg-overlay:hover
@@ -5815,7 +5816,7 @@ h1.entry-title {
 .elementor-15066
   .elementor-element.elementor-element-032e845:hover
   .elementor-widget-container {
-  background-color: #fff;
+  background-color: #000;
 }
 .elementor-15066
   .elementor-element.elementor-element-032e845.ha-has-bg-overlay:hover
@@ -5897,7 +5898,7 @@ h1.entry-title {
 .elementor-15066
   .elementor-element.elementor-element-6bed0d1:hover
   .elementor-widget-container {
-  background-color: #fff;
+  background-color: #000;
 }
 .elementor-15066
   .elementor-element.elementor-element-6bed0d1.ha-has-bg-overlay:hover
@@ -5962,7 +5963,7 @@ h1.entry-title {
 .elementor-15066
   .elementor-element.elementor-element-ffd212e:hover
   .elementor-widget-container {
-  background-color: #fff;
+  background-color: #000;
 }
 .elementor-15066
   .elementor-element.elementor-element-ffd212e.ha-has-bg-overlay:hover
@@ -6027,7 +6028,7 @@ h1.entry-title {
 .elementor-15066
   .elementor-element.elementor-element-1e77031:hover
   .elementor-widget-container {
-  background-color: #fff;
+  background-color: #000;
 }
 .elementor-15066
   .elementor-element.elementor-element-1e77031.ha-has-bg-overlay:hover
@@ -6393,7 +6394,7 @@ h1.entry-title {
   > .jet-accordion__inner
   > .jet-toggle
   > .jet-toggle__control {
-  background-color: #fff;
+  background-color: #181b25;
   justify-content: flex-start;
   border-style: solid;
   border-width: 0 0 0 0;
