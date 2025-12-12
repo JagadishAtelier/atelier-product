@@ -60,6 +60,7 @@
   <link rel="preload" href="https://odoocdn.com/web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0"
     as="font" crossorigin="" />
   <link type="text/css" rel="stylesheet" href="css/web.assets_frontend.min.css" />
+  <link rel="stylesheet" href="../Footer/footer.css">
   <script id="web.layout.odooscript" type="text/javascript">
     var odoo = {
       csrf_token: "4ed610f1ec2b7fe9776eb794170858a5654c5e5fo1794738210",
@@ -346,6 +347,8 @@
       dataLayer.push(arguments);
     }
   </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
   <noscript>
     <style>
       /* Prevent animated elements hiding */
@@ -357,43 +360,381 @@
       }
     </style>
   </noscript>
+        <style>
+    .navigation {
+    background-color: #0000;
+    position: fixed;
+    z-index: 999;
+    inset: 0% 0% auto;
+}
+.w-nav {
+    z-index: 1000;
+    background: #ddd;
+    position: relative;
+}
+.w-nav:before, .w-nav:after {
+    content: " ";
+    grid-area: 1 / 1 / 2 / 2;
+    display: table;
+}
+.container-small {
+    max-width: 64rem;
+    padding-right: 2rem;
+    padding-left:2rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav-wrap {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #99a0ae1a;
+    border-radius: 1rem;
+    background-color: #99a0ae1a;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    position: relative;
+}
+.nav-blur-layer {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0%;
+}
+.nav-layout.grid-3-cols {
+    grid-template-columns: 1fr 2.5fr 1fr;
+}
+.nav-layout {
+    justify-content: center;
+    align-items: center;
+}
+.grid-3-cols {
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+}
+#w-node-ed1a30f1-6737-bc57-209a-0418d51ae10e-d51ae109 {
+    justify-self: start;
+    display: flex;
+    align-items: center;
+}
+.logo-link {
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+}
+.w-inline-block {
+    max-width: 100%;
+    display: inline-block;
+}
+.logo {
+    object-fit: contain;
+    height: 1.75rem;
+}
+.logo-text {
+    color: #fff;
+    font-size: 1.7rem;
+    line-height: 1;
+    font-weight: 500;
+}
+.nav-menu {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.w-nav-menu {
+    float: right;
+    position: relative;
+}
+.nav-links-list {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.nav-link {
+    padding: 0.5rem 1rem;
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+    color: #fff;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    font-weight: 400;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    transition: opacity 0.2s;
+    display: flex;
+}
+.w-inline-block {
+    max-width: 100%;
+    display: inline-block;
+}
+#w-node-ed1a30f1-6737-bc57-209a-0418d51ae124-d51ae109 {
+    justify-self: end;
+}
+.nav-rights {
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+}
+.button-main.small:where(.w-variant-4f1ced44-5afc-4753-1771-3275f473f97b) {
+    --_button-style---button--background: #f5f7fa !important;
+    --_button-style---button--text: #0e121b !important;
+}
+
+.button-main.small {
+    padding: 0.5rem 1rem ;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    letter-spacing: 0rem;
+    height: 2.5rem;
+}
+.button-main {
+    padding: var(--_spacing---space--spacing-md) var(--_spacing---space--spacing-xl);
+    border-radius: 0.5rem;
+    background-color: #f5f7fa;
+    color: #0e121b;
+    font-weight: 500;
+    --_button-style---button--background: #f5f7fa;
+    --_button-style---button--text: #0e121b;
+    justify-content: center;
+    align-items: center;
+    height: 3.25rem;
+    display: flex;
+    overflow: hidden;
+}
+.w-inline-block {
+    max-width: 100%;
+    display: inline-block;
+}
+.button-text-wrap {
+    text-align: center;
+    flex-flow: column;
+    height: 1.5rem;
+    display: flex;
+}
+.button-text-reveal {
+    transform: translateY(80%);
+}
+.nav-menu-button {
+    padding: 0.75rem;
+}
+.w-nav-button {
+    float: right;
+    cursor: pointer;
+    -webkit-tap-highlight-color: #0000;
+    tap-highlight-color: #0000;
+    -webkit-user-select: none;
+    user-select: none;
+    padding: 18px;
+    font-size: 24px;
+    display: none;
+    position: relative;
+}
+.w-nav-overlay {
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+.w-nav-button {
+    float: right;
+    cursor: pointer;
+    -webkit-tap-highlight-color: #0000;
+    tap-highlight-color: #0000;
+    -webkit-user-select: none;
+    user-select: none;
+    padding: 18px;
+    font-size: 24px;
+    display: none;
+    position: relative;
+}
+.main-sec{
+  padding-top: 5%;
+}
+@media screen and (max-width: 991px) {
+    .w-nav[data-collapse="medium"] .w-nav-button {
+        display: block;
+    }
+            .menu-button-icon-line {
+            background-color: #fff;
+            width: 1.25rem;
+            height: 1px;
+            padding: 0;
+        }
+            .menu-button-icon-line {
+        background-color: #fff;
+        width: 1.25rem;
+        height: 1px;
+        padding: 0;
+    }
+    .nav-links-list{
+      display: none;
+    }
+    .menu-button-icon {
+        grid-column-gap: 6px;
+        grid-row-gap: 6px;
+        flex-flow: column;
+        display: flex;
+    }
+}
+.x_wd_shape_petal,
+.x_wd_video_play_icon,
+.s_wd_testimonial{
+  display: none !important;
+}
+.landscape-hide{
+  display: block !important;
+}
+.FC-Con-hero{
+  padding-top: 5%;
+}
+body,h1,h2,h3,h4,h5,h6{
+  font-family: "Inter Tight", sans-serif !important;
+}
+.x_wd *[class*="display-"], .x_wd_ff_script[class*="display-"]{
+    font-family: "Inter Tight", sans-serif !important;
+}
+.x_wd_shape_circle::before, .x_wd_shape_circle_xs::before, .x_wd_shape_circle_sm::before ,.features-bg-color-set-data{
+  background-color: #181b25 !important;
+}
+.features-bg-color-set{
+    background-color: #0e121b !important;
+    color: white;
+}
+.x_wd_shape::before, .x_wd_shape_bottom::before, .x_wd_shape_short::before, .x_wd_shape_middle::before, .x_wd_shape_top::before, .x_wd_shape::after, .x_wd_shape_bottom::after, .x_wd_shape_short::after, .x_wd_shape_middle::after, .x_wd_shape_top::after{
+  background-color: #181b25 !important;
+}
+.x_wd_blue_highlight_scribble_04{
+   background-image: none !important;
+}
+.x_wd_yellow_highlight_bold_05,.x_wd_red_highlight_05,.x_wd_display_circle,.x_wd_display_underline{
+  background-image: none !important;
+}
+img.ms-auto, img.mx-auto,.text-o-color-8{
+  display: none !important;
+}
+.x_wd_app_card, .x_wd_app_horizontal{
+  background-color: #0e121b;
+}
+.x_wd_app_card, .x_wd_app_horizontal:hover{
+  background-color: #0e121b;
+}
+/* .x_wd_shape_circle_xs::before */
+  </style>
+  <style>
+    .fch-dashboard-img{
+      width: 70rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+    .fch-dashboard-img img{
+      height: 100%;
+      width: 100%;
+      border-radius: 10px;
+    }
+    .fch-bg-dots-img{
+      width: 100%;
+      height: 130vh;
+      position: absolute;
+      top: 3%;
+    }
+    .logo-new-div{
+      height: 80px;
+      width: 100%;
+      display: flex;
+      justify-content: start;
+    }
+    .logo-new{
+      height: 100%;
+    }
+    .fch-start-now{
+      border-radius: 50px;
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 10px 30px;
+    }
+    .fch-start-now:hover{
+      border-radius: 50px;
+      background-color: black;
+      color: red;
+      border: none;
+
+    }
+    h1, h2, h3, h4, h5, h6 {
+    font-family: Inter Tight, sans-serif;
+    background-image: linear-gradient(180deg, #fff, #99a0ae);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.text-h1-tag{
+  font-size: 5rem !important;
+}
+  </style>
 </head>
 
-<body style="background-color: #232323;">
+<body style="background-color: #0e121b;">
   <div id="wrapwrap" class="o_fitness_center o_footer_effect_enable">
     <a class="o_skip_to_content btn btn-primary rounded-0 visually-hidden-focusable position-absolute start-0"
       href="#wrap">Skip to Content</a>
-    <div data-w-id="ed1a30f1-6737-bc57-209a-0418d51ae109" data-animation="default" data-collapse="medium"
-      data-duration="0" data-easing="ease-in-out" data-easing2="ease-in-out" role="banner" class="navigation w-nav">
       <div class="container-small navigation">
         <div class="nav-wrap">
           <div class="nav-blur-layer"></div>
           <div class="nav-layout grid-3-cols">
-            <a href="/" id="w-node-ed1a30f1-6737-bc57-209a-0418d51ae10e-d51ae109" aria-current="page"
-              class="logo-link w-inline-block w--current"><img src="images/orizon-logomark1.svg" loading="lazy"
-                alt="Atelier" class="logo" />
-              <div class="logo-text">Atelier</div>
+            <a
+              href="/"
+              id="w-node-ed1a30f1-6737-bc57-209a-0418d51ae10e-d51ae109"
+              aria-current="page"
+              class="logo-link w-inline-block w--current logo-new-div"
+              ><img
+                src="http://127.0.0.1:5501/assets/ATS%20White%20lOGO%20PNG.png"
+                loading="lazy"
+                alt="Atelier"
+                class="logo-new"
+              />
             </a>
             <nav role="navigation" class="nav-menu w-nav-menu">
               <div class="nav-links-list">
                 <a href="#features" class="nav-link w-inline-block">
-                  <div class="nav-link-text">Features</div>
-                </a><a href="#products" class="nav-link w-inline-block">
+                  <div class="nav-link-text">Features</div> </a
+                ><a href="#products" class="nav-link w-inline-block">
                   <div class="nav-link-text">Products</div>
                 </a>
                 <a href="#benefits" class="nav-link w-inline-block">
-                  <div class="nav-link-text">Benefits</div>
-                </a><a href="#testimonial" class="nav-link w-inline-block">
-                  <div class="nav-link-text">Testimonial</div>
-                </a><a href="#our-values" class="nav-link w-inline-block">
+                  <div class="nav-link-text">Benefits</div> </a
+                ><a href="#testimonial" class="nav-link w-inline-block">
+                  <div class="nav-link-text">Testimonial</div> </a
+                ><a href="#our-values" class="nav-link w-inline-block">
                   <div class="nav-link-text">Our Value</div>
                 </a>
               </div>
             </nav>
-            <div id="w-node-ed1a30f1-6737-bc57-209a-0418d51ae124-d51ae109" class="nav-right">
+            <div
+              id="w-node-ed1a30f1-6737-bc57-209a-0418d51ae124-d51ae109"
+              class="nav-rights"
+            >
               <div class="landscape-hide">
-                <a data-wf--button-small--style="secondary" href="/contact.html"
-                  class="button-main small w-variant-4f1ced44-5afc-4753-1771-3275f473f97b w-inline-block">
+                <a
+                  data-wf--button-small--style="secondary"
+                  href="/contact.html"
+                  class="button-main small w-variant-4f1ced44-5afc-4753-1771-3275f473f97b w-inline-block"
+                >
                   <div class="button-text-wrap">
                     <div class="button-text-initial">Start for free</div>
                     <div class="button-text-reveal">Start for free</div>
@@ -402,24 +743,35 @@
               </div>
               <div class="nav-menu-button w-nav-button">
                 <div class="menu-button-icon">
-                  <div data-w-id="ed1a30f1-6737-bc57-209a-0418d51ae128" class="menu-button-icon-line"></div>
-                  <div data-w-id="ed1a30f1-6737-bc57-209a-0418d51ae129" class="menu-button-icon-line"></div>
-                  <div data-w-id="ed1a30f1-6737-bc57-209a-0418d51ae12a" class="menu-button-icon-line"></div>
+                  <div
+                    data-w-id="ed1a30f1-6737-bc57-209a-0418d51ae128"
+                    class="menu-button-icon-line"
+                  ></div>
+                  <div
+                    data-w-id="ed1a30f1-6737-bc57-209a-0418d51ae129"
+                    class="menu-button-icon-line"
+                  ></div>
+                  <div
+                    data-w-id="ed1a30f1-6737-bc57-209a-0418d51ae12a"
+                    class="menu-button-icon-line"
+                  ></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
     <main>
       <div id="wrap" class="oe_structure x_wd">
-        <section class="s_wd_hero_text_image text-center text-lg-start py-6 fc-bg-image" data-name="Text - Image"
-          data-snippet="s_wd_hero_text_image"
-          style="background-image: url(https://atelier-product.vercel.app/images/hero-background-shape.png); background-position: center; background-repeat: no-repeat; height: 100%;">
-          <div style="pointer-events: none; position: absolute; inset: 0; overflow: hidden; height: 120vh;">
+        <section class="s_wd_hero_text_image text-center text-lg-start py-6 fc-bg-image position-relative" data-name="Text - Image"
+          data-snippet="s_wd_hero_text_image">
+          <div class="fch-bg-dots-img" style="background-image: url(https://atelier-product.vercel.app/images/ns-img-dark-126.svg); background-position: top; background-repeat: no-repeat;"></div>
+          <div>
+            
+          </div>
+          <div style="pointer-events: none; position: absolute; inset: 0; overflow: hidden; height: 90vh;">
             <!-- Center Blob -->
-            <div style="
+            <!-- <div style="
     background-image: linear-gradient(90deg, #3b82f64d, #2563eb 50%, #3b82f64d);
     filter: blur(100px);
     mix-blend-mode: plus-lighter;
@@ -429,10 +781,10 @@
     bottom: 10%;
     left: 0;
     right: 0;
-  "></div>
+  "></div> -->
 
             <!-- Left Blob -->
-            <div style="
+            <!-- <div style="
     aspect-ratio: 1;
     background-image: radial-gradient(circle farthest-corner at 0% 100%, #1d4ed8, transparent 34%);
     opacity: 0.8;
@@ -440,10 +792,10 @@
     height: 100%;
     position: absolute;
     inset: 0;
-  "></div>
+  "></div> -->
 
             <!-- Right Blob -->
-            <div style="
+            <!-- <div style="
     aspect-ratio: 1;
     background-image: radial-gradient(circle farthest-corner at 0% 100%, #1d4ed8, transparent 34%);
     opacity: 0.8;
@@ -451,10 +803,10 @@
     height: 100%;
     position: absolute;
     inset: 0;
-  "></div>
+  "></div> -->
 
             <!-- Bottom Fade -->
-            <div style="
+            <!-- <div style="
     content: '';
     position: absolute;
     bottom: 0;
@@ -464,58 +816,27 @@
     background: linear-gradient(to bottom, transparent 0%, transparent 30%, #232323 100%);
     pointer-events: none;
     z-index: 10;
-  "></div>
+  "></div> -->
           </div>
 
-          <div class="container">
-            <div class="row align-items-center justify-content-center">
-              <div class="col-lg-8 col-xl-7 pb-5">
-                <h1 class="display-4 mb-4 text-white">
-                  The ultimate software for your <br />
-                  <img src="https://odoocdn.com/openerp_website/static/src/img/icons/red_bell-gym.svg" height="60px"
-                    class="d-none d-xl-inline-block rotate-10" alt="" loading="lazy" />
-                  <span class="align-middle display-1 lh-1">Fitness Center</span>
+          <div class="container FC-Con-hero">
+            <div class="row align-items-center justify-content-center text-center">
+              <div class="col-lg-10 py-5">
+                <h1 class="display-4 mb-4 text-white text-center text-h1-tag">
+                  The ultimate software for your Fitness Center 
                 </h1>
                 <p class="lead mb-md-5 text-white">
                   <strong>Atelier allows you to create</strong> custom
                   subscriptions, plan classes, and bill members — all in one
                   intuitive platform designed to support fitness centers.
                 </p>
-                <a class="btn btn-primary mb-2 me-3"
+                <a class="btn btn-primary mb-2 me-3 fch-start-now"
                   href="https://www.odoo.com/trial?industry&amp;selected_app=fitness">Start now</a>
-                <div class="o_schedule_demo">
-                  <div class="dropdown">
-                    <a href="#" data-bs-toggle="dropdown" class="dropdown-toggle btn btn-light mb-2">Meet an advisor</a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item btn" target="_blank" href="https://www.odoo.com/appointment/197">Demo
-                          with an Expert (1-250 employees)</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item btn" target="_blank"
-                          href="https://www.odoo.com/appointment/3812">Project Assessment (250+ employees)</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-10 col-sm-8 col-md-6 col-lg-4 offset-xl-1 pb-5">
-                <div class="s_panel_video position-relative" data-video-id="zfWggWzVCDI">
-                  <a href="#" class="btn_video_play d-block">
-                    <div class="x_wd_shape_petal overflow-hidden ratio ratio-1x1">
-                      <iframe
-                        src="https://www.youtube.com/embed/zfWggWzVCDI?start=16&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;modestbranding=1&amp;iv_load_policy=3&amp;controls=0&amp;disablekb=1&amp;fs=0&amp;playlist=zfWggWzVCDI"
-                        class="position-absolute translate-middle top-50 start-50 pe-none" style="width: 300%"
-                        frameborder="0">
-                      </iframe>
-                      <div class="o_we_bg_filter bg-black-25"></div>
-                    </div>
-                    <img src="https://odoocdn.com/openerp_website/static/src/img/icons/play.svg"
-                      class="x_wd_video_play_icon top-50 start-50" alt="" loading="lazy" />
-                  </a>
-                </div>
               </div>
             </div>
+          </div>
+          <div class="fch-dashboard-img">
+            <img src="./images/GYM Dashboard_1.png"/>
           </div>
         </section>
 
@@ -650,21 +971,21 @@
             <div class="row justify-content-center">
               <div class="col-lg-8 position-relative">
                 <div class="s_wd_screenshot_arrow s_wd_screenshot_arrow_left" style="bottom: 45%">
-                  <h3 class="display-6 text-white mb-0">
+                  <h3 class="f2-2 text-white mb-0">
                     Loyalty programs
                   </h3>
                   <img src="https://odoocdn.com/openerp_website/static/src/img/arrows/grey_arrow_sm_02.svg" width="20px"
                     class="rotate-320" alt="" loading="lazy" />
                 </div>
                 <div class="s_wd_screenshot_arrow s_wd_screenshot_arrow_left" style="bottom: 7%">
-                  <h3 class="display-6 text-white mb-0">
+                  <h3 class="f2-2 text-white mb-0">
                     Multiple payment methods
                   </h3>
                   <img src="https://odoocdn.com/openerp_website/static/src/img/arrows/grey_arrow_sm_03.svg" width="20px"
                     class="rotate-300" alt="" loading="lazy" />
                 </div>
                 <div class="s_wd_screenshot_arrow s_wd_screenshot_arrow_right" style="bottom: 94%">
-                  <h3 class="display-6 text-white mb-0">
+                  <h3 class="fs-3 text-white mb-0">
                     Reliable online and offline
                   </h3>
                   <img src="https://odoocdn.com/openerp_website/static/src/img/arrows/grey_arrow_sm_03.svg" width="20px"
@@ -673,14 +994,14 @@
                 <div class="s_wd_screenshot_arrow s_wd_screenshot_arrow_right" style="top: 15%">
                   <img src="https://odoocdn.com/openerp_website/static/src/img/arrows/grey_arrow_sm_02.svg" width="20px"
                     class="rotate-140" alt="" loading="lazy" />
-                  <h3 class="display-6 text-white mb-0">
+                  <h3 class="f2-2 text-white mb-0">
                     Filter by product categories
                   </h3>
                 </div>
                 <div class="s_wd_screenshot_arrow s_wd_screenshot_arrow_right" style="top: 68%">
                   <img src="https://odoocdn.com/openerp_website/static/src/img/arrows/grey_arrow_sm_03.svg" width="20px"
                     class="rotate-120" alt="" loading="lazy" />
-                  <h3 class="display-6 text-white mb-0">
+                  <h3 class="f2-2 text-white mb-0">
                     Intuitive display
                   </h3>
                 </div>
@@ -729,7 +1050,7 @@
           </div>
         </div>
 
-        <section class="s_wd_features bg-200 py-7" data-snippet="s_wd_features" data-name="Features">
+        <section class="s_wd_features bg-200 py-7 features-bg-color-set" data-snippet="s_wd_features" data-name="Features">
           <div class="container">
             <h2 class="display-2 mb-6">
               All the <span class="x_wd_display_circle">features</span><br />
@@ -737,36 +1058,36 @@
             </h2>
             <div class="row">
               <div class="col-lg-6 ">
-                <div class="s_wd_features_item">
+                <div class="s_wd_features_item features-bg-color-set-data text-white">
                   <h4>Appointments</h4>
                   <p>
                     Create appointment types to match your business needs.
                   </p>
                 </div>
-                <div class="s_wd_features_item">
+                <div class="s_wd_features_item features-bg-color-set-data text-white">
                   <h4>Project tasks</h4>
                   <p>
                     Follow-up on client's training plans with projects and
                     tasks.
                   </p>
                 </div>
-                <div class="s_wd_features_item">
+                <div class="s_wd_features_item features-bg-color-set-data text-white">
                   <h4>Website builder</h4>
                   <p>Generate a stunning website in a couple of clicks.</p>
                 </div>
               </div>
               <div class="col-lg-6 ">
-                <div class="s_wd_features_item">
+                <div class="s_wd_features_item features-bg-color-set-data text-white">
                   <h4>CRM pipeline</h4>
                   <p>Gather and follow up on leads.</p>
                 </div>
-                <div class="s_wd_features_item">
+                <div class="s_wd_features_item features-bg-color-set-data text-white">
                   <h4>Planning</h4>
                   <p>
                     Create schedules for employees and material resources.
                   </p>
                 </div>
-                <div class="s_wd_features_item">
+                <div class="s_wd_features_item features-bg-color-set-data text-white">
                   <h4>Automated replenishment</h4>
                   <p>
                     Ensure you always have stock of your most popular
@@ -786,17 +1107,17 @@
             </h3>
             <p class="lead mb-5 text-white">Expand as you grow.</p>
             <div class="row g-4">
-              <div class="col-lg-6 col-xl-4 o_app_icon_entry">
+              <div class="col-lg-6 col-xl-4 o_app_icon_entry ">
                 <div class="x_wd_app_horizontal position-relative h-100">
-                  <div class="d-flex">
-                    <a class="stretched-link" href="https://atelier-tech.vercel.app/">
-                      <img width="68" height="68" class="bg-white shadow-sm rounded-1 p-2 m-3"
+                  <div class="d-flex features-bg-color-set-data text-white rounded">
+                    <a class="stretched-link " href="https://atelier-tech.vercel.app/">
+                      <img width="68" height="68" class=" features-bg-color-set-data text-white shadow-sm rounded-1 p-2 m-3"
                         src="http://download.odoocdn.com/icons/stock/static/description/icon.svg"
                         alt="Atelier Inventory icon" loading="lazy" />
                     </a>
                     <div class="align-self-center my-3 me-4">
-                      <h5 class="mb-1">Inventory</h5>
-                      <small class="d-block text-muted">Track stock in real-time</small>
+                      <h5 class="mb-1 text-white">Inventory</h5>
+                      <small class="d-block text-white">Track stock in real-time</small>
                     </div>
                   </div>
                 </div>
@@ -804,15 +1125,15 @@
 
               <div class="col-lg-6 col-xl-4 o_app_icon_entry">
                 <div class="x_wd_app_horizontal position-relative h-100">
-                  <div class="d-flex">
+                  <div class="d-flex features-bg-color-set-data text-white rounded">
                     <a class="stretched-link" href="https://www.odoo.com/app/project">
-                      <img width="68" height="68" class="bg-white shadow-sm rounded-1 p-2 m-3"
+                      <img width="68" height="68" class="shadow-sm rounded-1 p-2 m-3 "
                         src="http://download.odoocdn.com/icons/project/static/description/icon.svg"
                         alt="Atelier Project icon" loading="lazy" />
                     </a>
                     <div class="align-self-center my-3 me-4">
-                      <h5 class="mb-1">Project</h5>
-                      <small class="d-block text-muted">Create tasks and projects</small>
+                      <h5 class="mb-1 text-white">Project</h5>
+                      <small class="d-block text-white">Create tasks and projects</small>
                     </div>
                   </div>
                 </div>
@@ -820,15 +1141,15 @@
 
               <div class="col-lg-6 col-xl-4 o_app_icon_entry">
                 <div class="x_wd_app_horizontal position-relative h-100">
-                  <div class="d-flex">
+                  <div class="d-flex features-bg-color-set-data text-white rounded">
                     <a class="stretched-link" href="#">
-                      <img width="68" height="68" class="bg-white shadow-sm rounded-1 p-2 m-3"
+                      <img width="68" height="68" class="shadow-sm rounded-1 p-2 m-3"
                         src="http://download.odoocdn.com/icons/maintenance/static/description/icon.svg"
                         alt="Atelier Maintenance icon" loading="lazy" />
                     </a>
                     <div class="align-self-center my-3 me-4">
-                      <h5 class="mb-1">Maintenance</h5>
-                      <small class="d-block text-muted">Keep track of equipment maintenance</small>
+                      <h5 class="mb-1 text-white">Maintenance</h5>
+                      <small class="d-block text-white">Keep track of equipment maintenance</small>
                     </div>
                   </div>
                 </div>
@@ -836,15 +1157,15 @@
 
               <div class="col-lg-6 col-xl-4 o_app_icon_entry">
                 <div class="x_wd_app_horizontal position-relative h-100">
-                  <div class="d-flex">
+                  <div class="d-flex features-bg-color-set-data text-white rounded">
                     <a class="stretched-link" href="https://www.odoo.com/app/crm">
-                      <img width="68" height="68" class="bg-white shadow-sm rounded-1 p-2 m-3"
+                      <img width="68" height="68" class="shadow-sm rounded-1 p-2 m-3"
                         src="http://download.odoocdn.com/icons/crm/static/description/icon.svg" alt="Atelier CRM icon"
                         loading="lazy" />
                     </a>
                     <div class="align-self-center my-3 me-4">
-                      <h5 class="mb-1">CRM</h5>
-                      <small class="d-block text-muted">Build strong customer relationships</small>
+                      <h5 class="mb-1 text-white">CRM</h5>
+                      <small class="d-block text-white">Build strong customer relationships</small>
                     </div>
                   </div>
                 </div>
@@ -852,15 +1173,15 @@
 
               <div class="col-lg-6 col-xl-4 o_app_icon_entry">
                 <div class="x_wd_app_horizontal position-relative h-100">
-                  <div class="d-flex">
+                  <div class="d-flex features-bg-color-set-data text-white rounded">
                     <a class="stretched-link" href="https://www.odoo.com/app/point-of-sale-shop">
-                      <img width="68" height="68" class="bg-white shadow-sm rounded-1 p-2 m-3"
+                      <img width="68" height="68" class=" shadow-sm rounded-1 p-2 m-3"
                         src="http://download.odoocdn.com/icons/point_of_sale/static/description/icon.svg"
                         alt="Atelier Point of Sale icon" loading="lazy" />
                     </a>
                     <div class="align-self-center my-3 me-4">
-                      <h5 class="mb-1">Point of Sale</h5>
-                      <small class="d-block text-muted">Sell products on the spot</small>
+                      <h5 class="mb-1 text-white">Point of Sale</h5>
+                      <small class="d-block text-white">Sell products on the spot</small>
                     </div>
                   </div>
                 </div>
@@ -868,23 +1189,23 @@
 
               <div class="col-lg-6 col-xl-4 o_app_icon_entry">
                 <div class="x_wd_app_horizontal position-relative h-100">
-                  <div class="d-flex">
+                  <div class="d-flex features-bg-color-set-data text-white rounded">
                     <a class="stretched-link" href="https://www.odoo.com/app/ecommerce">
-                      <img width="68" height="68" class="bg-white shadow-sm rounded-1 p-2 m-3"
+                      <img width="68" height="68" class=" shadow-sm rounded-1 p-2 m-3"
                         src="http://download.odoocdn.com/icons/website_sale/static/description/icon.svg"
                         alt="Atelier eCommerce icon" loading="lazy" />
                     </a>
                     <div class="align-self-center my-3 me-4">
-                      <h5 class="mb-1">eCommerce</h5>
-                      <small class="d-block text-muted">Sell products online</small>
+                      <h5 class="mb-1 text-white">eCommerce</h5>
+                      <small class="d-block text-white">Sell products online</small>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <a href="https://www.odoo.com/page/all-apps" class="display-5 d-block mt-5">See all Apps<img
+            <!-- <a href="https://www.odoo.com/page/all-apps" class="display-5 d-block mt-5">See all Apps<img
                 src="https://odoocdn.com/openerp_website/static/src/img/arrows/secondary_arrow_sm_03.svg" width="40px"
-                class="align-baseline o_rtl_flip ms-3" alt="" loading="lazy" /></a>
+                class="align-baseline o_rtl_flip ms-3" alt="" loading="lazy" /></a> -->
           </div>
         </section>
 
@@ -892,16 +1213,16 @@
           <div class="container position-relative" style="min-height: 20rem">
             <div class="position-absolute top-0 bottom-0 end-0 start-0 d-flex align-items-center justify-content-center"
               style="z-index: 1">
-              <div class="bg-white rounded-pill-md px-lg-8 p-6 text-center">
-                <h6 class="display-2 position-relative mb-2">
+              <div class="features-bg-color-set-data text-white rounded-pill-md px-lg-8 p-6 text-center">
+                <h6 class="display-2 position-relative mb-2 text-white">
                   Join 15 million
-                  <span class="x_wd_display_sup d-none d-md-inline text-o-color-7">
+                  <span class="x_wd_display_sup d-none d-md-inline text-white">
                     <img src="https://odoocdn.com/openerp_website/static/src/img/graphics/arrow_circular_down_left.svg"
                       height="40px" class="mt-4 ms-n2 me-2" alt="" loading="lazy" />happy
                   </span>
                   users
                 </h6>
-                <span class="fs-4">who grow their business with Atelier</span>
+                <span class="fs-4 text-white">who grow their business with Atelier</span>
               </div>
             </div>
             <div id="s_wd_users_mosaic" class="d-flex flex-wrap justify-content-between"></div>
@@ -914,11 +1235,11 @@
               <span class="x_wd_display_fireworks_01">Unleash</span><br />
               your <span class="text-o-color-2">growth potential</span>
             </h3>
-            <a class="btn btn-lg btn-primary mb-3"
+            <!-- <a class="btn btn-lg btn-primary mb-3"
               href="https://www.odoo.com/trial?industry&amp;selected_app=fitness">Start now</a>
             <img src="https://odoocdn.com/openerp_website/static/src/img/arrows/secondary_arrow_sm_01.svg"
               class="d-block mx-auto mb-2" alt="" loading="lazy" />
-            <small class="text-white">15 days trial</small>
+            <small class="text-white">15 days trial</small> -->
           </div>
         </section>
       </div>
@@ -926,7 +1247,7 @@
       <div id="o_shared_blocks" class="oe_unremovable"></div>
     </main>
 
-    <footer id="bottom" data-anchor="true" data-name="Footer" class="o_footer o_colored_level o_cc o_footer_slideout">
+    <!-- <footer id="bottom" data-anchor="true" data-name="Footer" class="o_footer o_colored_level o_cc o_footer_slideout">
       <div id="footer" class="container o_not_editable">
         <span class="o_logo o_logo_inverse d-block mx-auto o_footer_logo my-5"></span>
         <div class="row">
@@ -1196,9 +1517,9 @@
             <span class="o_logo_inverse o_logo_15 text-white">Atelier</span></a>
         </div>
       </div>
-    </footer>
+    </footer> -->
   </div>
-
+      <div id="separatefooter-container"></div>
   <div id="o_live_modal" class="modal fade" tabindex="-1" role="dialog" contenteditable="false">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -1224,6 +1545,11 @@
       </div>
     </div>
   </div>
+  <script>
+fetch("../Footer/fitnessFooter.html")
+  .then(res => res.text())
+  .then(html => document.getElementById("separatefooter-container").innerHTML = html);
+</script>
 </body>
 
 </html>

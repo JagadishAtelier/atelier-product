@@ -13056,7 +13056,7 @@ Webflow.require("ix2").init({
                 duration: 500,
                 target: {
                   useEventTarget: "CHILDREN",
-                  selector: ".contact-block",
+                  selector: "bg-color-mixed-black",
                   selectorGuids: ["20012c2b-0855-fc30-e7fa-2547228cf40f"],
                 },
                 yValue: 80,
