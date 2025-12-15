@@ -32,6 +32,7 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+            <link rel="stylesheet" href="../Footer/footer.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&amp;display=swap"
       rel="stylesheet"
@@ -56,6 +57,18 @@
         -moz-osx-font-smoothing: grayscale;
       }
     </style>
+        <style>
+          .logo-new-div{
+      height: 80px;
+      width: 100%;
+      display: flex;
+      justify-content: start;
+    }
+    .logo-new{
+      height: 100%;
+      width: auto;
+    }
+    </style>
   </head>
   <body class="bg-background-3 dark:bg-background-7">
     <!-- =========================
@@ -76,19 +89,18 @@ Header v1
           <div class="nav-wrap">
             <div class="nav-blur-layer"></div>
             <div class="nav-layout grid-3-cols">
-              <a
-                href="/"
-                id="w-node-ed1a30f1-6737-bc57-209a-0418d51ae10e-d51ae109"
-                aria-current="page"
-                class="logo-link w-inline-block w--current"
-                ><img
-                  src="images/orizon-logomark1.svg"
-                  loading="lazy"
-                  alt="Atelier"
-                  class="logo"
-                />
-                <div class="logo-text">Atelier</div>
-              </a>
+            <a
+              href="/"
+              id="w-node-ed1a30f1-6737-bc57-209a-0418d51ae10e-d51ae109"
+              aria-current="page"
+              class="logo-link w-inline-block w--current logo-new-div"
+              ><img
+                src="https://atelier-product.vercel.app/assets/ATS%20White%20lOGO%20PNG.png"
+                loading="lazy"
+                alt="Atelier"
+                class="logo-new"
+              />
+            </a>
               <nav role="navigation" class="nav-menu w-nav-menu">
                 <div class="nav-links-list">
                   <a href="#features" class="nav-link w-inline-block">
@@ -420,7 +432,7 @@ Contact
       <!-- =========================
 CTA v1 section
 ===========================-->
-      <section
+      <!-- <section
         class="pb-[50px] md:pb-15 lg:pb-18 bg-background-5"
         aria-label="Use Case Overview"
       >
@@ -536,137 +548,15 @@ CTA v1 section
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-    <!-- =========================
-Footer v3
-===========================-->
-    <footer
-      class="footer footer-three bg-white dark:bg-background-8 {=$class} relative overflow-hidden"
-    >
-      <div
-        class="w-layout-blockcontainer container padding-top-small padding-bottom-tiny w-container"
-      >
-        <div class="footer-layout grid-2-cols">
-          <div class="footer-cell">
-            <div class="footer-about-layout">
-              <a
-                href="/"
-                aria-current="page"
-                class="logo-link w-inline-block w--current"
-                ><img src="images/Atelier-logomark.svg" loading="lazy" alt="" />
-                <div class="logo-text">Atelier</div>
-              </a>
-              <div>
-                At Atelier, we are dedicated to simplifying your professional
-                journey by enhancing team collaboration and driving business
-                success, regardless of your company&#x27;s scale.
-              </div>
-            </div>
-          </div>
-          <div class="footer-cell">
-            <div class="footer-menu-wrap">
-              <div class="footer-menu-list">
-                <div class="footer-menu-list-header text-style-small">
-                  Product
-                </div>
-                <a href="/#features" class="footer-link w-inline-block">
-                  <div class="footer-link-text">Features</div> </a
-                ><a href="/#benefits" class="footer-link w-inline-block">
-                  <div class="footer-link-text">Benefits</div> </a
-                ><a href="/#pricing" class="footer-link w-inline-block">
-                  <div class="footer-link-text">Pricing</div> </a
-                ><a href="/#our-value" class="footer-link w-inline-block">
-                  <div class="footer-link-text">Our Value</div> </a
-                ><a
-                  href="https://www.gitbook.com/"
-                  target="_blank"
-                  class="footer-link w-inline-block"
-                >
-                  <div class="footer-link-text">Docs</div>
-                  <img
-                    loading="lazy"
-                    src="images/placeholder-icon-arrow-up-right.svg"
-                    alt=""
-                    class="footer-link-icon icon-small"
-                  />
-                </a>
-              </div>
-              <div class="footer-menu-list">
-                <div class="footer-menu-list-header text-style-small">
-                  Socials
-                </div>
-                <a
-                  href="https://linkedin.com"
-                  target="_blank"
-                  class="footer-link w-inline-block"
-                >
-                  <div class="footer-link-text">LinkedIn</div> </a
-                ><a
-                  href="https://www.instagram.com"
-                  target="_blank"
-                  class="footer-link w-inline-block"
-                >
-                  <div class="footer-link-text">Instagram</div> </a
-                ><a
-                  href="https://dribbble.com"
-                  target="_blank"
-                  class="footer-link w-inline-block"
-                >
-                  <div class="footer-link-text">Dribbble</div> </a
-                ><a
-                  href="https://x.com"
-                  target="_blank"
-                  class="footer-link w-inline-block"
-                >
-                  <div class="footer-link-text">X (Twitter)</div>
-                </a>
-              </div>
-              <div class="footer-menu-list">
-                <div class="footer-menu-list-header text-style-small">
-                  Template
-                </div>
-                <a
-                  href="/template-info/style-guide"
-                  class="footer-link w-inline-block"
-                >
-                  <div class="footer-link-text">Style Guide</div> </a
-                ><a
-                  href="/template-info/changelog"
-                  class="footer-link w-inline-block"
-                >
-                  <div class="footer-link-text">Changelog</div> </a
-                ><a
-                  href="/template-info/licenses"
-                  class="footer-link w-inline-block"
-                >
-                  <div class="footer-link-text">Licenses</div> </a
-                ><a href="/404" class="footer-link w-inline-block">
-                  <div class="footer-link-text">404</div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="footer-cell">
-            <p class="footer-legal-text text-style-small">
-              © 2025 Atelier Product, Inc. All rights reserved. <br />
-              <a href="https://theateliercreation.com/" target="_blank"
-                >Atelier Creations</a
-              >
-            </p>
-          </div>
-          <div class="footer-cell">
-            <div class="footer-links-list text-style-small">
-              <a href="/terms-and-conditions" class="footer-legal-link"
-                >Terms &amp; Conditions</a
-              ><a href="/privacy-policy" class="footer-legal-link"
-                >Privacy Policy</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
+            <div id="footer-container"></div>
 
+<script>
+fetch("../Footer/footer.html")
+  .then(res => res.text())
+  .then(html => document.getElementById("footer-container").innerHTML = html);
+</script>
       <script src="vendor/swiper.min.js"></script>
       <script src="vendor/leaflet.min.js"></script>
       <script src="vendor/vanilla-infinite-marquee.min.js"></script>
@@ -682,7 +572,7 @@ Footer v3
       <script src="vendor/stack-card.min.js"></script>
 
       <script src="assets/main.js"></script>
-    </footer>
+
   </body>
 
   <!-- Mirrored from next-sass-html.vercel.app/smart-solutions-contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Nov 2025 04:08:12 GMT -->
