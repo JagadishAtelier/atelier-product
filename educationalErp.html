@@ -31,7 +31,6 @@
         "sameAs": ["https://www.linkedin.com/in/prasanth-s-fulldev/"]
       }
     </script>
-  <link href="css/style.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript">
     !(function (o, c) {
       var n = c.documentElement,
@@ -48,6 +47,7 @@
   <!-- Please keep this css code to improve the font quality -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="../Footer/footer.css">
+  <link rel="stylesheet" href="./css/erp.css">
 
 
   <style>
@@ -97,7 +97,16 @@
       border-radius: 10px;
       width: 100%;
     }
+    .heroTextSwiper{
+      width: 70%;
+    }
   </style>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+
 </head>
 <!-- data-ns-animate
                     data-delay="0.7"
@@ -173,17 +182,42 @@
               class="flex items-center gap-12 xl:gap-0 flex-col lg:flex-row justify-center pt-4 lg:pt-[200px] pb-[110px]">
               <!-- Text -->
               <div class="w-full space-y-7 lg:space-y-14 text-center md:text-center">
-                <div class="space-y-4">
-                  <h1 data-ns-animate data-delay="0.2" class="text-color-gradient text-center">
-                    AN OPEN SOURCE SCHOOL ADMINISTRATION SOFTWARE
-                  </h1>
-                  <!-- <span data-ns-animate data-delay="0.3" class="text-gray-50 text-center">
-                      Atelier Tech brings you a powerful, all-in-one smart
-                      application designed to streamline your operations,
-                      empower your team, and accelerate growth—no matter your
-                      industry.
-                    </span> -->
-                </div>
+<div class="swiper heroTextSwiper space-y-6">
+  <div class="swiper-wrapper">
+
+    <!-- Slide 1 -->
+    <div class="swiper-slide">
+      <h1 class="text-color-gradient text-center">
+        Smart Educational ERP for Future-Ready Institutions
+      </h1>
+      <p class="text-gray-50 mt-4">
+        One powerful platform to manage academics, administration, and analytics seamlessly.
+      </p>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="swiper-slide">
+      <h1 class="text-color-gradient text-center">
+        Simplify School Operations with Intelligent Automation
+      </h1>
+      <p class="text-gray-50 mt-4">
+        Automate admissions, attendance, exams, and fees with real-time visibility.
+      </p>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="swiper-slide">
+      <h1 class="text-color-gradient text-center">
+        Connect Parents, Teachers & Admins on One Platform
+      </h1>
+      <p class="text-gray-50 mt-4">
+        Unified mobile app access for transparent communication and faster decisions.
+      </p>
+    </div>
+
+  </div>
+</div>
+
 
                 <!-- Button -->
                 <div data-ns-animate data-delay="0.4" class="w-full md:w-auto">
@@ -498,39 +532,6 @@ One app for parents, teachers, admins
 
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-
-  <script>
-    var testimonialSwiper = new Swiper(".testimonial-swiper-container", {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-      speed: 600,
-
-      pagination: {
-        el: ".testimonial-swiper-pagination",
-        clickable: true,
-      },
-
-      navigation: {
-        nextEl: ".slider-arrow.is-bottom-next",
-        prevEl: ".slider-arrow.is-bottom-previous",
-      },
-
-      breakpoints: {
-        768: {
-          slidesPerView: 2,
-        },
-        1024: {
-          slidesPerView: 4,
-        },
-      },
-    });
-  </script>
   <script src="https://unpkg.com/@studio-freight/lenis"></script>
   <script>
     const lenis = new Lenis({
@@ -548,8 +549,19 @@ One app for parents, teachers, admins
     requestAnimationFrame(raf)
   </script>
 
+<script>
+  new Swiper(".heroTextSwiper", {
+    loop: true,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+    speed: 800,
+    allowTouchMove: false, // keeps it clean & premium
+  });
+</script>
 
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 </body>
 
