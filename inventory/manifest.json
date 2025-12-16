@@ -1,0 +1,21 @@
+{
+  "name": "UCU University",
+  "short_name": "UCU",
+  "description": "Official University Website powered by Atelier Creations",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#e9f2f7",
+  "theme_color": "#800000",
+  "icons": [
+    {
+      "src": "/logoCropImg.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/logoCropImg.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
