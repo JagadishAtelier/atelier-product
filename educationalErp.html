@@ -48,6 +48,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="../Footer/footer.css">
   <link rel="stylesheet" href="./css/erp.css">
+  <link rel="stylesheet" href="./css/navbar.css">
 
 
   <style>
@@ -87,24 +88,41 @@
       width: 100%;
       border-radius: 10px;
     }
-    .fch-dashboard-img{
+
+    .fch-dashboard-img {
       position: relative;
       z-index: 99;
       width: 80%;
       margin: auto;
     }
-    .fch-dashboard-img img{
+
+    .fch-dashboard-img img {
       border-radius: 10px;
       width: 100%;
     }
-    .heroTextSwiper{
+
+    .heroTextSwiper {
       width: 70%;
+      margin-bottom: 0;
+    }
+    @media (max-width:768px) {
+      .ERP-hero-con{
+          padding-top: 100px;
+      }
+      .heroTextSwiper{
+        width: 100%;
+      }
+    }
+    @media (max-width:480px) {
+      .ERP-hero-con{
+          padding-top: 100px;
+      }
+      .heroTextSwiper{
+        width: 100%;
+      }
     }
   </style>
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 
 </head>
@@ -165,6 +183,49 @@
         </div>
       </div>
     </div>
+    <header class="mobile-new-navbar">
+  <div class="mobile-new-navbar__container">
+
+    <!-- Logo -->
+    <a href="https://atelier-product.vercel.app/" class="mobile-new-navbar__logo">
+      <img
+        src="https://atelier-product.vercel.app/assets/ATS%20White%20lOGO%20PNG.png"
+        alt="Atelier"
+      />
+    </a>
+
+    <!-- Hamburger -->
+    <button
+      id="mobileNewNavbarToggle"
+      class="mobile-new-navbar__hamburger"
+      aria-label="Toggle Menu"
+    >
+      <span class="mobile-new-navbar__line"></span>
+      <span class="mobile-new-navbar__line"></span>
+      <span class="mobile-new-navbar__line"></span>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <nav
+    id="mobileNewNavbarMenu"
+    class="mobile-new-navbar__menu"
+  >
+    <a class="mobile-new-navbar__link" href="#features">Features</a>
+    <a class="mobile-new-navbar__link" href="#products">Products</a>
+    <a class="mobile-new-navbar__link" href="#benefits">Benefits</a>
+    <a class="mobile-new-navbar__link" href="#testimonial">Testimonial</a>
+    <a class="mobile-new-navbar__link" href="#our-values">Our Value</a>
+
+    <a
+      href="/contact.html"
+      class="mobile-new-navbar__cta"
+    >
+      Start for free
+    </a>
+  </nav>
+</header>
+
   </div>
   <main class="page-main">
     <section class="overflow-x-hidden">
@@ -181,42 +242,42 @@
             <div
               class="flex items-center gap-12 xl:gap-0 flex-col lg:flex-row justify-center pt-4 lg:pt-[200px] pb-[110px]">
               <!-- Text -->
-              <div class="w-full space-y-7 lg:space-y-14 text-center md:text-center">
-<div class="swiper heroTextSwiper space-y-6">
-  <div class="swiper-wrapper">
+              <div class="w-full space-y-7 lg:space-y-14 text-center md:text-center ERP-hero-con">
+                <div class="swiper heroTextSwiper space-y-6">
+                  <div class="swiper-wrapper">
 
-    <!-- Slide 1 -->
-    <div class="swiper-slide">
-      <h1 class="text-color-gradient text-center">
-        Smart Educational ERP for Future-Ready Institutions
-      </h1>
-      <p class="text-gray-50 mt-4">
-        One powerful platform to manage academics, administration, and analytics seamlessly.
-      </p>
-    </div>
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                      <h1 class="text-color-gradient text-center">
+                        Smart Educational ERP for Future-Ready Institutions
+                      </h1>
+                      <p class="text-gray-50 mt-4" style="margin-top: 15px;">
+                        One powerful platform to manage academics, administration, and analytics seamlessly.
+                      </p>
+                    </div>
 
-    <!-- Slide 2 -->
-    <div class="swiper-slide">
-      <h1 class="text-color-gradient text-center">
-        Simplify School Operations with Intelligent Automation
-      </h1>
-      <p class="text-gray-50 mt-4">
-        Automate admissions, attendance, exams, and fees with real-time visibility.
-      </p>
-    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                      <h1 class="text-color-gradient text-center">
+                        Simplify School Operations with Intelligent Automation
+                      </h1>
+                      <p class="text-gray-50 mt-4"style="margin-top: 15px;">
+                        Automate admissions, attendance, exams, and fees with real-time visibility.
+                      </p>
+                    </div>
 
-    <!-- Slide 3 -->
-    <div class="swiper-slide">
-      <h1 class="text-color-gradient text-center">
-        Connect Parents, Teachers & Admins on One Platform
-      </h1>
-      <p class="text-gray-50 mt-4">
-        Unified mobile app access for transparent communication and faster decisions.
-      </p>
-    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                      <h1 class="text-color-gradient text-center">
+                        Connect Parents, Teachers & Admins on One Platform
+                      </h1>
+                      <p class="text-gray-50 mt-4" style="margin-top: 15px;">
+                        Unified mobile app access for transparent communication and faster decisions.
+                      </p>
+                    </div>
 
-  </div>
-</div>
+                  </div>
+                </div>
 
 
                 <!-- Button -->
@@ -263,8 +324,7 @@ Get started section
                 </p>
               </div>
               <div data-ns-animate data-delay="0.4" class="w-full">
-                <a href="/contact.html"
-                  class="btn btn-primary btn-md hover:btn-secondary w-[85%] md:w-auto">
+                <a href="/contact.html" class="btn btn-primary btn-md hover:btn-secondary w-[85%] md:w-auto">
                   <span>Get started now</span>
                 </a>
               </div>
@@ -285,9 +345,9 @@ Get started section
                 <div class="relative z-10 p-8 rounded-[14px] sm:max-w-[467px] max-w-full w-full space-y-6 bg-black">
                   <div class="space-y-1">
                     <p class="text-heading-5 text-accent">Mobile App Access (Parents, Teachers & Admin)
-</p>
+                    </p>
                     <p class="text-accent opacity-50">
-One app for parents, teachers, admins
+                      One app for parents, teachers, admins
                     </p>
                   </div>
 
@@ -499,8 +559,8 @@ One app for parents, teachers, admins
         </div>
       </div>
     </section>
+      <div id="footer-container"></div>
   </main>
-  <div id="footer-container"></div>
 
   <script>
     fetch("../Footer/footer.html")
@@ -549,19 +609,19 @@ One app for parents, teachers, admins
     requestAnimationFrame(raf)
   </script>
 
-<script>
-  new Swiper(".heroTextSwiper", {
-    loop: true,
-    autoplay: {
-      delay: 3500,
-      disableOnInteraction: false,
-    },
-    speed: 800,
-    allowTouchMove: false, // keeps it clean & premium
-  });
-</script>
+  <script>
+    new Swiper(".heroTextSwiper", {
+      loop: true,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+      speed: 800,
+      allowTouchMove: false, // keeps it clean & premium
+    });
+  </script>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 </body>
 

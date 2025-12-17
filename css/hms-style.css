@@ -71,3 +71,13 @@ a:hover {
   background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
   color: #fff;
 }
+
+@media (max-width:480px) {
+  .fch-dashboard-img{
+    width: 100%;
+    max-width: none;
+  }
+  .text-h1-tag{
+    font-size: 2rem !important;
+  }
+}

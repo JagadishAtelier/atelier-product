@@ -1,0 +1,88 @@
+/* Root */
+.mobile-new-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  padding: 14px 16px;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(12px);
+  display: none;
+}
+/* Layout */
+.mobile-new-navbar__container {
+  max-width: 910px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.mobile-new-navbar__logo img {
+  height: 56px;
+}
+
+@media (min-width: 640px) {
+  .mobile-new-navbar__logo img {
+    height: 64px;
+  }
+}
+@media (max-width:768px) {
+  .mobile-new-navbar{
+    display: block;
+  }
+  .container-small{
+    display: none;
+  }
+}
+
+/* Hamburger */
+.mobile-new-navbar__hamburger {
+  width: 24px;
+  height: 18px;
+  background: none;
+  border: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.mobile-new-navbar__line {
+  width: 100%;
+  height: 2px;
+  background: #ffffff;
+}
+
+/* Menu */
+.mobile-new-navbar__menu {
+  display: none;
+  margin-top: 12px;
+  padding: 16px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+}
+
+/* Links */
+.mobile-new-navbar__link {
+  display: block;
+  margin-bottom: 12px;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* CTA */
+.mobile-new-navbar__cta {
+  display: block;
+  margin-top: 10px;
+  padding: 10px 14px;
+  background: #ffffff;
+  color: #000000;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 700;
+  text-decoration: none;
+}

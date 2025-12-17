@@ -431,3 +431,8 @@
     border-radius: 3.40282e38px;
     display: inline-block;
 }
+@media (max-width:768px) {
+  .footerAboveContact-form,.footerAboveContact-points{
+    justify-content: center;
+  }
+}
