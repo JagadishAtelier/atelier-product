@@ -49,7 +49,7 @@
     </script>
     <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
     <link href="images/app-icon.png" rel="apple-touch-icon" />
-    <link rel="stylesheet" href="assets/main.css" />
+    <link rel="stylesheet" href="assets/main.css" />  <link rel="stylesheet" href="./css/navbar.css">
     <!-- Please keep this css code to improve the font quality -->
     <style>
       * {
@@ -153,6 +153,35 @@ Header v1
             </div>
           </div>
         </div>
+            <header class="mobile-new-navbar">
+      <div class="mobile-new-navbar__container">
+
+        <!-- Logo -->
+        <a href="https://atelier-product.vercel.app/" class="mobile-new-navbar__logo">
+          <img src="https://atelier-product.vercel.app/assets/ATS%20White%20lOGO%20PNG.png" alt="Atelier" />
+        </a>
+
+        <!-- Hamburger -->
+        <button id="mobileNewNavbarToggle" class="mobile-new-navbar__hamburger" aria-label="Toggle Menu">
+          <span class="mobile-new-navbar__line"></span>
+          <span class="mobile-new-navbar__line"></span>
+          <span class="mobile-new-navbar__line"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <nav id="mobileNewNavbarMenu" class="mobile-new-navbar__menu">
+        <a class="mobile-new-navbar__link" href="#features">Features</a>
+        <a class="mobile-new-navbar__link" href="#products">Products</a>
+        <a class="mobile-new-navbar__link" href="#benefits">Benefits</a>
+        <a class="mobile-new-navbar__link" href="#testimonial">Testimonial</a>
+        <a class="mobile-new-navbar__link" href="#our-values">Our Value</a>
+
+        <a href="/contact.html" class="mobile-new-navbar__cta">
+          Start for free
+        </a>
+      </nav>
+    </header>
       </div>
     </header>
 
@@ -213,7 +242,7 @@ Contact
                   <div class="space-y-2.5">
                     <p class="text-heading-6 text-accent">Our Address</p>
                     <p class="text-accent/60">
-                      2464 Royal Ln. Mesa, New Jersey 45463
+                      No 293/6 R G Complex 1st Floor, Perur Main Road, Telungapalayam, Near Canara Bank, Coimbatore - 641039
                     </p>
                   </div>
                 </div>
@@ -246,7 +275,7 @@ Contact
                       <p class="text-heading-6 text-accent">Email Us</p>
                       <p class="text-accent/60">
                         <a href="#mailto:hello@AtelierTech.com"
-                          >hello@AtelierTech.com</a
+                          >Atelierhub.assist@gmail.com</a
                         >
                       </p>
                     </div>
@@ -279,7 +308,7 @@ Contact
                     <div class="space-y-2.5">
                       <p class="text-heading-6 text-accent">Call Us</p>
                       <p class="text-accent/60">
-                        <a href="#tel:+391035256845933">+391 (0)35 2568 4593</a>
+                        <a href="#tel:+391035256845933">84282 05537</a>
                       </p>
                     </div>
                   </div>
@@ -572,6 +601,14 @@ fetch("../Footer/footer.html")
       <script src="vendor/stack-card.min.js"></script>
 
       <script src="assets/main.js"></script>
+<script>
+  const toggleBtn = document.getElementById("mobileNewNavbarToggle");
+  const menu = document.getElementById("mobileNewNavbarMenu");
+
+  toggleBtn.addEventListener("click", () => {
+    menu.style.display = menu.style.display === "block" ? "none" : "block";
+  });
+</script>
 
   </body>
 

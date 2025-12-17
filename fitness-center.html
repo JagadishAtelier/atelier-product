@@ -61,6 +61,7 @@
     as="font" crossorigin="" />
   <link type="text/css" rel="stylesheet" href="css/web.assets_frontend.min.css" />
   <link rel="stylesheet" href="../Footer/footer.css">
+  <link rel="stylesheet" href="./css/navbar.css">
   <script id="web.layout.odooscript" type="text/javascript">
     var odoo = {
       csrf_token: "4ed610f1ec2b7fe9776eb794170858a5654c5e5fo1794738210",
@@ -347,7 +348,9 @@
       dataLayer.push(arguments);
     }
   </script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
 
   <noscript>
     <style>
@@ -360,332 +363,458 @@
       }
     </style>
   </noscript>
-        <style>
+  <style>
     .navigation {
-    background-color: #0000;
-    position: fixed;
-    z-index: 999;
-    inset: 0% 0% auto;
-}
-.w-nav {
-    z-index: 1000;
-    background: #ddd;
-    position: relative;
-}
-.w-nav:before, .w-nav:after {
-    content: " ";
-    grid-area: 1 / 1 / 2 / 2;
-    display: table;
-}
-.container-small {
-    max-width: 64rem;
-    padding-right: 2rem;
-    padding-left:2rem;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.nav-wrap {
-    margin-top: 1rem;
-    padding: 0.5rem;
-    border: 1px solid #99a0ae1a;
-    border-radius: 1rem;
-    background-color: #99a0ae1a;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    position: relative;
-}
-.nav-blur-layer {
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    inset: 0%;
-}
-.nav-layout.grid-3-cols {
-    grid-template-columns: 1fr 2.5fr 1fr;
-}
-.nav-layout {
-    justify-content: center;
-    align-items: center;
-}
-.grid-3-cols {
-    grid-column-gap: 1.5rem;
-    grid-row-gap: 1.5rem;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-columns: 1fr;
-    display: grid;
-}
-#w-node-ed1a30f1-6737-bc57-209a-0418d51ae10e-d51ae109 {
-    justify-self: start;
-    display: flex;
-    align-items: center;
-}
-.logo-link {
-    grid-column-gap: 0.5rem;
-    grid-row-gap: 0.5rem;
-    justify-content: flex-start;
-    align-items: center;
-    display: flex;
-}
-.w-inline-block {
-    max-width: 100%;
-    display: inline-block;
-}
-.logo {
-    object-fit: contain;
-    height: 1.75rem;
-}
-.logo-text {
-    color: #fff;
-    font-size: 1.7rem;
-    line-height: 1;
-    font-weight: 500;
-}
-.nav-menu {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-.w-nav-menu {
-    float: right;
-    position: relative;
-}
-.nav-links-list {
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-}
-.nav-link {
-    padding: 0.5rem 1rem;
-    grid-column-gap: 0.5rem;
-    grid-row-gap: 0.5rem;
-    color: #fff;
-    font-size: 0.875rem;
-    line-height: 1.6;
-    font-weight: 400;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: 0;
-    margin-right: 0;
-    transition: opacity 0.2s;
-    display: flex;
-}
-.w-inline-block {
-    max-width: 100%;
-    display: inline-block;
-}
-#w-node-ed1a30f1-6737-bc57-209a-0418d51ae124-d51ae109 {
-    justify-self: end;
-}
-.nav-rights {
-    grid-column-gap: 0.5rem;
-    grid-row-gap: 0.5rem;
-    justify-content: flex-start;
-    align-items: center;
-    display: flex;
-}
-.button-main.small:where(.w-variant-4f1ced44-5afc-4753-1771-3275f473f97b) {
-    --_button-style---button--background: #f5f7fa !important;
-    --_button-style---button--text: #0e121b !important;
-}
-
-.button-main.small {
-    padding: 0.5rem 1rem ;
-    font-size: 0.875rem;
-    line-height: 1.6;
-    letter-spacing: 0rem;
-    height: 2.5rem;
-}
-.button-main {
-    padding: var(--_spacing---space--spacing-md) var(--_spacing---space--spacing-xl);
-    border-radius: 0.5rem;
-    background-color: #f5f7fa;
-    color: #0e121b;
-    font-weight: 500;
-    --_button-style---button--background: #f5f7fa;
-    --_button-style---button--text: #0e121b;
-    justify-content: center;
-    align-items: center;
-    height: 3.25rem;
-    display: flex;
-    overflow: hidden;
-}
-.w-inline-block {
-    max-width: 100%;
-    display: inline-block;
-}
-.button-text-wrap {
-    text-align: center;
-    flex-flow: column;
-    height: 1.5rem;
-    display: flex;
-}
-.button-text-reveal {
-    transform: translateY(80%);
-}
-.nav-menu-button {
-    padding: 0.75rem;
-}
-.w-nav-button {
-    float: right;
-    cursor: pointer;
-    -webkit-tap-highlight-color: #0000;
-    tap-highlight-color: #0000;
-    -webkit-user-select: none;
-    user-select: none;
-    padding: 18px;
-    font-size: 24px;
-    display: none;
-    position: relative;
-}
-.w-nav-overlay {
-    width: 100%;
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    overflow: hidden;
-}
-.w-nav-button {
-    float: right;
-    cursor: pointer;
-    -webkit-tap-highlight-color: #0000;
-    tap-highlight-color: #0000;
-    -webkit-user-select: none;
-    user-select: none;
-    padding: 18px;
-    font-size: 24px;
-    display: none;
-    position: relative;
-}
-.main-sec{
-  padding-top: 5%;
-}
-@media screen and (max-width: 991px) {
-    .w-nav[data-collapse="medium"] .w-nav-button {
-        display: block;
+      background-color: #0000;
+      position: fixed;
+      z-index: 999;
+      inset: 0% 0% auto;
     }
-            .menu-button-icon-line {
-            background-color: #fff;
-            width: 1.25rem;
-            height: 1px;
-            padding: 0;
-        }
-            .menu-button-icon-line {
+
+    .w-nav {
+      z-index: 1000;
+      background: #ddd;
+      position: relative;
+    }
+
+    .w-nav:before,
+    .w-nav:after {
+      content: " ";
+      grid-area: 1 / 1 / 2 / 2;
+      display: table;
+    }
+
+    .container-small {
+      max-width: 64rem;
+      padding-right: 2rem;
+      padding-left: 2rem;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .nav-wrap {
+      margin-top: 1rem;
+      padding: 0.5rem;
+      border: 1px solid #99a0ae1a;
+      border-radius: 1rem;
+      background-color: #99a0ae1a;
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      position: relative;
+    }
+
+    .nav-blur-layer {
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      inset: 0%;
+    }
+
+    .nav-layout.grid-3-cols {
+      grid-template-columns: 1fr 2.5fr 1fr;
+    }
+
+    .nav-layout {
+      justify-content: center;
+      align-items: center;
+    }
+
+    .grid-3-cols {
+      grid-column-gap: 1.5rem;
+      grid-row-gap: 1.5rem;
+      grid-template-rows: auto;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-auto-columns: 1fr;
+      display: grid;
+    }
+
+    #w-node-ed1a30f1-6737-bc57-209a-0418d51ae10e-d51ae109 {
+      justify-self: start;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-link {
+      grid-column-gap: 0.5rem;
+      grid-row-gap: 0.5rem;
+      justify-content: flex-start;
+      align-items: center;
+      display: flex;
+    }
+
+    .w-inline-block {
+      max-width: 100%;
+      display: inline-block;
+    }
+
+    .logo {
+      object-fit: contain;
+      height: 1.75rem;
+    }
+
+    .logo-text {
+      color: #fff;
+      font-size: 1.7rem;
+      line-height: 1;
+      font-weight: 500;
+    }
+
+    .nav-menu {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+
+    .w-nav-menu {
+      float: right;
+      position: relative;
+    }
+
+    .nav-links-list {
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+    }
+
+    .nav-link {
+      padding: 0.5rem 1rem;
+      grid-column-gap: 0.5rem;
+      grid-row-gap: 0.5rem;
+      color: #fff;
+      font-size: 0.875rem;
+      line-height: 1.6;
+      font-weight: 400;
+      justify-content: flex-start;
+      align-items: center;
+      margin-left: 0;
+      margin-right: 0;
+      transition: opacity 0.2s;
+      display: flex;
+    }
+
+    .w-inline-block {
+      max-width: 100%;
+      display: inline-block;
+    }
+
+    #w-node-ed1a30f1-6737-bc57-209a-0418d51ae124-d51ae109 {
+      justify-self: end;
+    }
+
+    .nav-rights {
+      grid-column-gap: 0.5rem;
+      grid-row-gap: 0.5rem;
+      justify-content: flex-start;
+      align-items: center;
+      display: flex;
+    }
+
+    .button-main.small:where(.w-variant-4f1ced44-5afc-4753-1771-3275f473f97b) {
+      --_button-style---button--background: #f5f7fa !important;
+      --_button-style---button--text: #0e121b !important;
+    }
+
+    .button-main.small {
+      padding: 0.5rem 1rem;
+      font-size: 0.875rem;
+      line-height: 1.6;
+      letter-spacing: 0rem;
+      height: 2.5rem;
+    }
+
+    .button-main {
+      padding: var(--_spacing---space--spacing-md) var(--_spacing---space--spacing-xl);
+      border-radius: 0.5rem;
+      background-color: #f5f7fa;
+      color: #0e121b;
+      font-weight: 500;
+      --_button-style---button--background: #f5f7fa;
+      --_button-style---button--text: #0e121b;
+      justify-content: center;
+      align-items: center;
+      height: 3.25rem;
+      display: flex;
+      overflow: hidden;
+    }
+
+    .w-inline-block {
+      max-width: 100%;
+      display: inline-block;
+    }
+
+    .button-text-wrap {
+      text-align: center;
+      flex-flow: column;
+      height: 1.5rem;
+      display: flex;
+    }
+
+    .button-text-reveal {
+      transform: translateY(80%);
+    }
+
+    .nav-menu-button {
+      padding: 0.75rem;
+    }
+
+    .w-nav-button {
+      float: right;
+      cursor: pointer;
+      -webkit-tap-highlight-color: #0000;
+      tap-highlight-color: #0000;
+      -webkit-user-select: none;
+      user-select: none;
+      padding: 18px;
+      font-size: 24px;
+      display: none;
+      position: relative;
+    }
+
+    .w-nav-overlay {
+      width: 100%;
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      overflow: hidden;
+    }
+
+    .w-nav-button {
+      float: right;
+      cursor: pointer;
+      -webkit-tap-highlight-color: #0000;
+      tap-highlight-color: #0000;
+      -webkit-user-select: none;
+      user-select: none;
+      padding: 18px;
+      font-size: 24px;
+      display: none;
+      position: relative;
+    }
+
+    .main-sec {
+      padding-top: 5%;
+    }
+
+    @media screen and (max-width: 991px) {
+      .w-nav[data-collapse="medium"] .w-nav-button {
+        display: block;
+      }
+
+      .menu-button-icon-line {
         background-color: #fff;
         width: 1.25rem;
         height: 1px;
         padding: 0;
-    }
-    .nav-links-list{
-      display: none;
-    }
-    .menu-button-icon {
+      }
+
+      .menu-button-icon-line {
+        background-color: #fff;
+        width: 1.25rem;
+        height: 1px;
+        padding: 0;
+      }
+
+      .nav-links-list {
+        display: none;
+      }
+
+      .menu-button-icon {
         grid-column-gap: 6px;
         grid-row-gap: 6px;
         flex-flow: column;
         display: flex;
+      }
     }
-}
-.x_wd_shape_petal,
-.x_wd_video_play_icon,
-.s_wd_testimonial{
-  display: none !important;
-}
-.landscape-hide{
-  display: block !important;
-}
-.FC-Con-hero{
-  padding-top: 5%;
-}
-body,h1,h2,h3,h4,h5,h6{
-  font-family: "Inter Tight", sans-serif !important;
-}
-.x_wd *[class*="display-"], .x_wd_ff_script[class*="display-"]{
-    font-family: "Inter Tight", sans-serif !important;
-}
-.x_wd_shape_circle::before, .x_wd_shape_circle_xs::before, .x_wd_shape_circle_sm::before ,.features-bg-color-set-data{
-  background-color: #181b25 !important;
-}
-.features-bg-color-set{
-    background-color: #0e121b !important;
-    color: white;
-}
-.x_wd_shape::before, .x_wd_shape_bottom::before, .x_wd_shape_short::before, .x_wd_shape_middle::before, .x_wd_shape_top::before, .x_wd_shape::after, .x_wd_shape_bottom::after, .x_wd_shape_short::after, .x_wd_shape_middle::after, .x_wd_shape_top::after{
-  background-color: #181b25 !important;
-}
-.x_wd_blue_highlight_scribble_04{
-   background-image: none !important;
-}
-.x_wd_yellow_highlight_bold_05,.x_wd_red_highlight_05,.x_wd_display_circle,.x_wd_display_underline{
-  background-image: none !important;
-}
-img.ms-auto, img.mx-auto,.text-o-color-8{
-  display: none !important;
-}
-.x_wd_app_card, .x_wd_app_horizontal{
-  background-color: #0e121b;
-}
-.x_wd_app_card, .x_wd_app_horizontal:hover{
-  background-color: #0e121b;
-}
-/* .x_wd_shape_circle_xs::before */
+
+    .x_wd_shape_petal,
+    .x_wd_video_play_icon,
+    .s_wd_testimonial {
+      display: none !important;
+    }
+
+    .landscape-hide {
+      display: block !important;
+    }
+
+    .FC-Con-hero {
+      padding-top: 5%;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Inter Tight", sans-serif !important;
+    }
+
+    .x_wd *[class*="display-"],
+    .x_wd_ff_script[class*="display-"] {
+      font-family: "Inter Tight", sans-serif !important;
+    }
+
+    .x_wd_shape_circle::before,
+    .x_wd_shape_circle_xs::before,
+    .x_wd_shape_circle_sm::before,
+    .features-bg-color-set-data {
+      background-color: #181b25 !important;
+    }
+
+    .features-bg-color-set {
+      background-color: #0e121b !important;
+      color: white;
+    }
+
+    .x_wd_shape::before,
+    .x_wd_shape_bottom::before,
+    .x_wd_shape_short::before,
+    .x_wd_shape_middle::before,
+    .x_wd_shape_top::before,
+    .x_wd_shape::after,
+    .x_wd_shape_bottom::after,
+    .x_wd_shape_short::after,
+    .x_wd_shape_middle::after,
+    .x_wd_shape_top::after {
+      background-color: #181b25 !important;
+    }
+
+    .x_wd_blue_highlight_scribble_04 {
+      background-image: none !important;
+    }
+
+    .x_wd_yellow_highlight_bold_05,
+    .x_wd_red_highlight_05,
+    .x_wd_display_circle,
+    .x_wd_display_underline {
+      background-image: none !important;
+    }
+
+    img.ms-auto,
+    img.mx-auto,
+    .text-o-color-8 {
+      display: none !important;
+    }
+
+    .x_wd_app_card,
+    .x_wd_app_horizontal {
+      background-color: #0e121b;
+    }
+
+    .x_wd_app_card,
+    .x_wd_app_horizontal:hover {
+      background-color: #0e121b;
+    }
+
+    /* .x_wd_shape_circle_xs::before */
   </style>
   <style>
-    .fch-dashboard-img{
+    .fch-dashboard-img {
       width: 70rem;
       display: flex;
       justify-content: center;
       align-items: center;
       margin: 0 auto;
     }
-    .fch-dashboard-img img{
+
+    .fch-dashboard-img img {
       height: 100%;
       width: 100%;
       border-radius: 10px;
     }
-    .fch-bg-dots-img{
+
+    .fch-bg-dots-img {
       width: 100%;
       height: 130vh;
       position: absolute;
       top: 3%;
     }
-    .logo-new-div{
+
+    .logo-new-div {
       height: 80px;
       width: 100%;
       display: flex;
       justify-content: start;
     }
-    .logo-new{
+
+    .logo-new {
       height: 100%;
     }
-    .fch-start-now{
+
+    .fch-start-now {
       border-radius: 50px;
       background-color: black;
       color: white;
       border: none;
       padding: 10px 30px;
     }
-    .fch-start-now:hover{
+
+    .fch-start-now:hover {
       border-radius: 50px;
       background-color: black;
       color: red;
       border: none;
 
     }
-    h1, h2, h3, h4, h5, h6 {
-    font-family: Inter Tight, sans-serif;
-    background-image: linear-gradient(180deg, #fff, #99a0ae);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.text-h1-tag{
-  font-size: 5rem !important;
-}
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: Inter Tight, sans-serif;
+      background-image: linear-gradient(180deg, #fff, #99a0ae);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .text-h1-tag {
+      font-size: 5rem ;
+    }
+    #wrapwrap > header + main > #wrap:not(.o_wblog_cover_post):not(.js_hr_recruitment) > :first-child{
+      border-top: 0 !important;
+    }
+    @media (max-width:768px) {
+          .text-h1-tag {
+      font-size: 3rem;
+    }
+    .fch-dashboard-img{
+      width: 90%;
+      height: 50vh;
+    }
+    .fch-bg-dots-img{
+      height: 120vh;
+    }
+        .img-thumbnail{
+      width: 100%;
+      height: 50vh;
+      object-fit: cover;
+    }
+    }
+    @media (max-width:480px) {
+          .text-h1-tag {
+      font-size: 2.5rem;
+    }
+    .fch-dashboard-img{
+      width: 90%;
+      height: 30vh;
+    }
+    .fch-bg-dots-img{
+      height: 90vh;
+    }
+    .img-thumbnail{
+      width: 100%;
+      height: 30vh;
+      object-fit: cover;
+    }
+    }
   </style>
 </head>
 
@@ -693,81 +822,90 @@ img.ms-auto, img.mx-auto,.text-o-color-8{
   <div id="wrapwrap" class="o_fitness_center o_footer_effect_enable">
     <a class="o_skip_to_content btn btn-primary rounded-0 visually-hidden-focusable position-absolute start-0"
       href="#wrap">Skip to Content</a>
-      <div class="container-small navigation">
-        <div class="nav-wrap">
-          <div class="nav-blur-layer"></div>
-          <div class="nav-layout grid-3-cols">
-            <a
-              href="/"
-              id="w-node-ed1a30f1-6737-bc57-209a-0418d51ae10e-d51ae109"
-              aria-current="page"
-              class="logo-link w-inline-block w--current logo-new-div"
-              ><img
-                src="https://atelier-product.vercel.app/assets/ATS%20White%20lOGO%20PNG.png"
-                loading="lazy"
-                alt="Atelier"
-                class="logo-new"
-              />
-            </a>
-            <nav role="navigation" class="nav-menu w-nav-menu">
-              <div class="nav-links-list">
-                <a href="/#features" class="nav-link w-inline-block">
-                  <div class="nav-link-text">Features</div> </a
-                ><a href="/#products" class="nav-link w-inline-block">
-                  <div class="nav-link-text">Products</div>
-                </a>
-                <a href="/#benefits" class="nav-link w-inline-block">
-                  <div class="nav-link-text">Benefits</div> </a
-                ><a href="/#testimonial" class="nav-link w-inline-block">
-                  <div class="nav-link-text">Testimonial</div> </a
-                ><a href="/#our-values" class="nav-link w-inline-block">
-                  <div class="nav-link-text">Our Value</div>
-                </a>
-              </div>
-            </nav>
-            <div
-              id="w-node-ed1a30f1-6737-bc57-209a-0418d51ae124-d51ae109"
-              class="nav-rights"
-            >
-              <div class="landscape-hide">
-                <a
-                  data-wf--button-small--style="secondary"
-                  href="/contact.html"
-                  class="button-main small w-variant-4f1ced44-5afc-4753-1771-3275f473f97b w-inline-block"
-                >
-                  <div class="button-text-wrap">
-                    <div class="button-text-initial">Start for free</div>
-                    <div class="button-text-reveal">Start for free</div>
-                  </div>
-                </a>
-              </div>
-              <div class="nav-menu-button w-nav-button">
-                <div class="menu-button-icon">
-                  <div
-                    data-w-id="ed1a30f1-6737-bc57-209a-0418d51ae128"
-                    class="menu-button-icon-line"
-                  ></div>
-                  <div
-                    data-w-id="ed1a30f1-6737-bc57-209a-0418d51ae129"
-                    class="menu-button-icon-line"
-                  ></div>
-                  <div
-                    data-w-id="ed1a30f1-6737-bc57-209a-0418d51ae12a"
-                    class="menu-button-icon-line"
-                  ></div>
+    <div class="container-small navigation">
+      <div class="nav-wrap">
+        <div class="nav-blur-layer"></div>
+        <div class="nav-layout grid-3-cols">
+          <a href="/" id="w-node-ed1a30f1-6737-bc57-209a-0418d51ae10e-d51ae109" aria-current="page"
+            class="logo-link w-inline-block w--current logo-new-div"><img
+              src="https://atelier-product.vercel.app/assets/ATS%20White%20lOGO%20PNG.png" loading="lazy" alt="Atelier"
+              class="logo-new" />
+          </a>
+          <nav role="navigation" class="nav-menu w-nav-menu">
+            <div class="nav-links-list">
+              <a href="/#features" class="nav-link w-inline-block">
+                <div class="nav-link-text">Features</div>
+              </a><a href="/#products" class="nav-link w-inline-block">
+                <div class="nav-link-text">Products</div>
+              </a>
+              <a href="/#benefits" class="nav-link w-inline-block">
+                <div class="nav-link-text">Benefits</div>
+              </a><a href="/#testimonial" class="nav-link w-inline-block">
+                <div class="nav-link-text">Testimonial</div>
+              </a><a href="/#our-values" class="nav-link w-inline-block">
+                <div class="nav-link-text">Our Value</div>
+              </a>
+            </div>
+          </nav>
+          <div id="w-node-ed1a30f1-6737-bc57-209a-0418d51ae124-d51ae109" class="nav-rights">
+            <div class="landscape-hide">
+              <a data-wf--button-small--style="secondary" href="/contact.html"
+                class="button-main small w-variant-4f1ced44-5afc-4753-1771-3275f473f97b w-inline-block">
+                <div class="button-text-wrap">
+                  <div class="button-text-initial">Start for free</div>
+                  <div class="button-text-reveal">Start for free</div>
                 </div>
+              </a>
+            </div>
+            <div class="nav-menu-button w-nav-button">
+              <div class="menu-button-icon">
+                <div data-w-id="ed1a30f1-6737-bc57-209a-0418d51ae128" class="menu-button-icon-line"></div>
+                <div data-w-id="ed1a30f1-6737-bc57-209a-0418d51ae129" class="menu-button-icon-line"></div>
+                <div data-w-id="ed1a30f1-6737-bc57-209a-0418d51ae12a" class="menu-button-icon-line"></div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+    <header class="mobile-new-navbar">
+      <div class="mobile-new-navbar__container">
+
+        <!-- Logo -->
+        <a href="https://atelier-product.vercel.app/" class="mobile-new-navbar__logo">
+          <img src="https://atelier-product.vercel.app/assets/ATS%20White%20lOGO%20PNG.png" alt="Atelier" />
+        </a>
+
+        <!-- Hamburger -->
+        <button id="mobileNewNavbarToggle" class="mobile-new-navbar__hamburger" aria-label="Toggle Menu">
+          <span class="mobile-new-navbar__line"></span>
+          <span class="mobile-new-navbar__line"></span>
+          <span class="mobile-new-navbar__line"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <nav id="mobileNewNavbarMenu" class="mobile-new-navbar__menu">
+        <a class="mobile-new-navbar__link" href="#features">Features</a>
+        <a class="mobile-new-navbar__link" href="#products">Products</a>
+        <a class="mobile-new-navbar__link" href="#benefits">Benefits</a>
+        <a class="mobile-new-navbar__link" href="#testimonial">Testimonial</a>
+        <a class="mobile-new-navbar__link" href="#our-values">Our Value</a>
+
+        <a href="/contact.html" class="mobile-new-navbar__cta">
+          Start for free
+        </a>
+      </nav>
+    </header>
     <main>
       <div id="wrap" class="oe_structure x_wd">
-        <section class="s_wd_hero_text_image text-center text-lg-start py-6 fc-bg-image position-relative" data-name="Text - Image"
-          data-snippet="s_wd_hero_text_image">
-          <div class="fch-bg-dots-img animate-pulse" style="background-image: url(https://atelier-product.vercel.app/images/ns-img-dark-126.svg); background-position: top; background-repeat: no-repeat;"></div>
+        <section  class="s_wd_hero_text_image text-center text-lg-start py-6 fc-bg-image position-relative"
+          data-name="Text - Image" data-snippet="s_wd_hero_text_image">
+          <div class="fch-bg-dots-img animate-pulse"
+            style="background-image: url(https://atelier-product.vercel.app/images/ns-img-dark-126.svg); background-position: top; background-repeat: no-repeat;">
+          </div>
           <div>
-            
+
           </div>
           <div style="pointer-events: none; position: absolute; inset: 0; overflow: hidden; height: 90vh;">
             <!-- Center Blob -->
@@ -820,29 +958,29 @@ img.ms-auto, img.mx-auto,.text-o-color-8{
           </div>
 
           <div class="container FC-Con-hero">
-            <div class="row align-items-center justify-content-center text-center">
-              <div class="col-lg-10 py-5">
-                <h1 class="display-4 mb-4 text-white text-center text-h1-tag">
-                  The ultimate software for your Fitness Center 
+            <div class="row align-items-lg-center align-items-start justify-content-start justify-content-lg-center text-center">
+              <div class="col-lg-10 py-lg-5">
+                <h1 class="mb-4 text-white text-center text-h1-tag">
+                  The ultimate software for your Fitness Center
                 </h1>
                 <p class="lead mb-md-5 text-white">
                   <strong>Atelier allows you to create</strong> custom
                   subscriptions, plan classes, and bill members — all in one
                   intuitive platform designed to support fitness centers.
                 </p>
-                <a class="btn btn-primary mb-2 me-3 fch-start-now"
-                  href="/contact.html">Start now</a>
+                <a class="btn btn-primary mb-2 me-3 fch-start-now" href="/contact.html">Start now</a>
               </div>
             </div>
           </div>
           <div class="fch-dashboard-img">
-            <img src="./images/GYM Dashboard_1.png"/>
+            <img src="./images/GYM Dashboard_1.png" />
           </div>
         </section>
 
         <section class="s_wd_testimonial">
           <div class="container">
-            <div class="row g-0 justify-content-between bg-200 rounded-2 p-4 p-md-6 position-relative" style="z-index: 99;">
+            <div class="row g-0 justify-content-between bg-200 rounded-2 p-4 p-md-6 position-relative"
+              style="z-index: 99;">
               <img src="https://odoocdn.com/openerp_website/static/src/img/snippets/s_wd_testimonials/quote.svg"
                 height="50px" class="position-absolute top-0 translate-middle d-none d-md-inline" alt=""
                 loading="lazy" />
@@ -865,7 +1003,7 @@ img.ms-auto, img.mx-auto,.text-o-color-8{
           </div>
         </section>
 
-        <section class="py-5 pt-lg-8 pb-lg-6">
+        <section class="py-lg-5 pt-lg-8 pb-lg-6">
           <div class="container">
             <div class="row gx-5 align-items-center justify-content-between">
               <div class="col-lg-6 x_wd_shape x_wd_shape_re x_wd_shape_or py-6 order-2 order-lg-1">
@@ -901,7 +1039,7 @@ img.ms-auto, img.mx-auto,.text-o-color-8{
           </div>
         </section>
 
-        <section class="pb-5">
+        <section class="pb-5 pt-lg-0 pt-5">
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-12 pb-5 text-lg-center">
@@ -933,7 +1071,7 @@ img.ms-auto, img.mx-auto,.text-o-color-8{
                   personal trainer or a gym time slot.
                 </p>
               </div>
-              <div class="row o_grid_mode x_wd_shape_circle_xs" data-row-count="18">
+              <div class="row o_grid_mode x_wd_shape_circle_xs mt-5 mt-lg-0" data-row-count="18">
                 <img src="https://odoocdn.com/openerp_website/static/src/img/arrows/arrow_xl_02.svg"
                   style="grid-area: 4 / 6; z-index: 1" class="flip d-none d-lg-block" alt="" width="100px"
                   loading="lazy" />
@@ -1012,7 +1150,7 @@ img.ms-auto, img.mx-auto,.text-o-color-8{
           </div>
         </section>
 
-        <section class="overflow-x-hidden">
+        <section class="overflow-x-hidden" >
           <div class="container">
             <img src="https://odoocdn.com/openerp_website/static/src/img/arrows/grey_arrow_md_03.svg" height="100px"
               class="d-none d-lg-block rotate-40 ms-10 flip" alt="" loading="lazy" />
@@ -1050,7 +1188,8 @@ img.ms-auto, img.mx-auto,.text-o-color-8{
           </div>
         </div>
 
-        <section class="s_wd_features bg-200 py-7 features-bg-color-set" data-snippet="s_wd_features" data-name="Features">
+        <section class="s_wd_features bg-200 py-lg-7 py-5 features-bg-color-set" data-snippet="s_wd_features"
+          data-name="Features">
           <div class="container">
             <h2 class="display-2 mb-6">
               All the <span class="x_wd_display_circle">features</span><br />
@@ -1099,7 +1238,7 @@ img.ms-auto, img.mx-auto,.text-o-color-8{
           </div>
         </section>
 
-        <section class="s_wd_related_apps py-5 py-lg-7">
+        <section class="s_wd_related_apps py-lg-7">
           <div class="container">
             <h3 class="display-2 mb-4 text-white">
               One <span class="x_wd_display_underline">need</span>, one
@@ -1111,7 +1250,8 @@ img.ms-auto, img.mx-auto,.text-o-color-8{
                 <div class="x_wd_app_horizontal position-relative h-100">
                   <div class="d-flex features-bg-color-set-data text-white rounded">
                     <a class="stretched-link " href="https://atelier-tech.vercel.app/">
-                      <img width="68" height="68" class=" features-bg-color-set-data text-white shadow-sm rounded-1 p-2 m-3"
+                      <img width="68" height="68"
+                        class=" features-bg-color-set-data text-white shadow-sm rounded-1 p-2 m-3"
                         src="http://download.odoocdn.com/icons/stock/static/description/icon.svg"
                         alt="Atelier Inventory icon" loading="lazy" />
                     </a>
@@ -1519,8 +1659,8 @@ img.ms-auto, img.mx-auto,.text-o-color-8{
       </div>
     </footer> -->
   </div>
-      <div id="separatefooter-container"></div>
-  <div id="o_live_modal" class="modal fade" tabindex="-1" role="dialog" contenteditable="false">
+  <div id="separatefooter-container"></div>
+  <!-- <div id="o_live_modal" class="modal fade" tabindex="-1" role="dialog" contenteditable="false">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -1544,12 +1684,22 @@ img.ms-auto, img.mx-auto,.text-o-color-8{
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <script>
-fetch("../Footer/fitnessFooter.html")
-  .then(res => res.text())
-  .then(html => document.getElementById("separatefooter-container").innerHTML = html);
+    fetch("../Footer/fitnessFooter.html")
+      .then(res => res.text())
+      .then(html => document.getElementById("separatefooter-container").innerHTML = html);
+  </script>
+
+  <script>
+  const toggleBtn = document.getElementById("mobileNewNavbarToggle");
+  const menu = document.getElementById("mobileNewNavbarMenu");
+
+  toggleBtn.addEventListener("click", () => {
+    menu.style.display = menu.style.display === "block" ? "none" : "block";
+  });
 </script>
+
 </body>
 
 </html>

@@ -50,6 +50,7 @@
     <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
     <link href="images/app-icon.png" rel="apple-touch-icon" />
     <link rel="stylesheet" href="assets/main.css" />
+      <link rel="stylesheet" href="./css/navbar.css">
     <!-- Please keep this css code to improve the font quality -->
 <link
   rel="stylesheet"
@@ -65,6 +66,11 @@
       }
       .animate-pulse {
     animation: pulse 2s cubic-bezier(.4, 0, .6, 1) infinite;
+}
+@media (max-width:480px) {
+  .tech-index-page-hero{
+    padding-top: 100px;
+  }
 }
       
     </style>
@@ -167,6 +173,35 @@
           </div>
         </div>
       </div>
+          <header class="mobile-new-navbar">
+      <div class="mobile-new-navbar__container">
+
+        <!-- Logo -->
+        <a href="https://atelier-product.vercel.app/" class="mobile-new-navbar__logo">
+          <img src="https://atelier-product.vercel.app/assets/ATS%20White%20lOGO%20PNG.png" alt="Atelier" />
+        </a>
+
+        <!-- Hamburger -->
+        <button id="mobileNewNavbarToggle" class="mobile-new-navbar__hamburger" aria-label="Toggle Menu">
+          <span class="mobile-new-navbar__line"></span>
+          <span class="mobile-new-navbar__line"></span>
+          <span class="mobile-new-navbar__line"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <nav id="mobileNewNavbarMenu" class="mobile-new-navbar__menu">
+        <a class="mobile-new-navbar__link" href="#features">Features</a>
+        <a class="mobile-new-navbar__link" href="#products">Products</a>
+        <a class="mobile-new-navbar__link" href="#benefits">Benefits</a>
+        <a class="mobile-new-navbar__link" href="#testimonial">Testimonial</a>
+        <a class="mobile-new-navbar__link" href="#our-values">Our Value</a>
+
+        <a href="/contact.html" class="mobile-new-navbar__cta">
+          Start for free
+        </a>
+      </nav>
+    </header>
     </div>
     <main class="page-main">
       <section class="overflow-x-hidden">
@@ -185,7 +220,7 @@
 
             <div class="main-container ">
               <div
-                class="flex items-start gap-12 xl:gap-0 flex-col lg:flex-row justify-between pt-4 lg:pt-[200px] pb-[110px]"
+                class="flex tech-index-page-hero items-start gap-12 xl:gap-0 flex-col lg:flex-row justify-between pt-4 lg:pt-[200px] pb-[110px]"
               >
                 <!-- Text -->
                 <div
@@ -3742,6 +3777,14 @@ function raf(time) {
 requestAnimationFrame(raf)
 </script>
 
+<script>
+  const toggleBtn = document.getElementById("mobileNewNavbarToggle");
+  const menu = document.getElementById("mobileNewNavbarMenu");
+
+  toggleBtn.addEventListener("click", () => {
+    menu.style.display = menu.style.display === "block" ? "none" : "block";
+  });
+</script>
 
 
 

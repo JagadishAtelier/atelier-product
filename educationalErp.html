@@ -622,6 +622,14 @@ Get started section
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const toggleBtn = document.getElementById("mobileNewNavbarToggle");
+  const menu = document.getElementById("mobileNewNavbarMenu");
+
+  toggleBtn.addEventListener("click", () => {
+    menu.style.display = menu.style.display === "block" ? "none" : "block";
+  });
+</script>
 
 </body>
 

@@ -9,14 +9,14 @@
     <meta
         content="Want a bug-free, high-performing product? Our expert testing team has you covered. Book your consultation today and take the first step toward quality perfection!"
         name="description" />
-    <meta content="Tactix — Webflow HTML website template" property="og:title" />
+    <meta content="Atelier Technology" property="og:title" />
     <meta
         content="Want a bug-free, high-performing product? Our expert testing team has you covered. Book your consultation today and take the first step toward quality perfection!"
         property="og:description" />
     <meta
         content="https://cdn.prod.website-files.com/65cc742940cb3798ef9ade41/65cdf2ccc11b511655ad316d_Opengaph%20-%20Home.webp"
         property="og:image" />
-    <meta content="Tactix — Webflow HTML website template" property="twitter:title" />
+    <meta content="Atelier Technology" property="twitter:title" />
     <meta
         content="Want a bug-free, high-performing product? Our expert testing team has you covered. Book your consultation today and take the first step toward quality perfection!"
         property="twitter:description" />
@@ -49,6 +49,7 @@
     <link href="assets/cdn.prod.website-files.com/65cc742940cb3798ef9ade41/65ce10e4c7866a6592467e32_Webclip.png"
         rel="apple-touch-icon" />
         <link rel="stylesheet" href="../Footer/footer.css">
+        <link rel="stylesheet" href="../css/navbar.css">
     <style>
         body {
             -webkit-font-smoothing: antialiased;
@@ -381,6 +382,48 @@ body.active-bg {
           </div>
         </div>
       </div>
+              <header class="mobile-new-navbar">
+  <div class="mobile-new-navbar__container">
+
+    <!-- Logo -->
+    <a href="https://atelier-product.vercel.app/" class="mobile-new-navbar__logo">
+      <img
+        src="https://atelier-product.vercel.app/assets/ATS%20White%20lOGO%20PNG.png"
+        alt="Atelier"
+      />
+    </a>
+
+    <!-- Hamburger -->
+    <button
+      id="mobileNewNavbarToggle"
+      class="mobile-new-navbar__hamburger"
+      aria-label="Toggle Menu"
+    >
+      <span class="mobile-new-navbar__line"></span>
+      <span class="mobile-new-navbar__line"></span>
+      <span class="mobile-new-navbar__line"></span>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <nav
+    id="mobileNewNavbarMenu"
+    class="mobile-new-navbar__menu"
+  >
+    <a class="mobile-new-navbar__link" href="#features">Features</a>
+    <a class="mobile-new-navbar__link" href="#products">Products</a>
+    <a class="mobile-new-navbar__link" href="#benefits">Benefits</a>
+    <a class="mobile-new-navbar__link" href="#testimonial">Testimonial</a>
+    <a class="mobile-new-navbar__link" href="#our-values">Our Value</a>
+
+    <a
+      href="/contact.html"
+      class="mobile-new-navbar__cta"
+    >
+      Start for free
+    </a>
+  </nav>
+</header>
             <div class="hero-content-wrapper">
                 <div data-w-id="7c39f3ff-c097-70d0-5a9e-b8e925a08f6e" style="
               -webkit-transform: translate3d(0, 0, 0) scale3d(0.85, 0.85, 1)
@@ -653,13 +696,13 @@ Empowering businesses to move faster, make smarter decisions, and scale sustaina
                             Fintech
                         </h4>
                         <p class="regular-l text-color-black-opacity-60">
-                            At Tactix, our workflow ensures project success. From planning
+                            At Atelier Technology, our workflow ensures project success. From planning
                             to delivery, we prioritize efficiency and excellence, resulting
                             in exceptional results.
                         </p>
                     </div>
                     <img src="assets/cdn.prod.website-files.com/65cc742940cb3798ef9ade41/65ccd513c67165dd4e1c9bbb_Illustration%25207.svg"
-                        loading="lazy" alt="Tactix Workflow" class="illustation-in-block" />
+                        loading="lazy" alt="Atelier Technology Workflow" class="illustation-in-block" />
                 </div>
             </div>
             <div class="big-banner white">
@@ -673,7 +716,7 @@ Empowering businesses to move faster, make smarter decisions, and scale sustaina
                             Edu-tech
                         </h3>
                         <p class="regular-l text-color-black-opacity-60">
-                            At Tactix, collaboration drives success. From ideation to
+                            At Atelier Technology, collaboration drives success. From ideation to
                             execution, we work together to deliver outstanding results that
                             propel your business forward.
                         </p>
@@ -1012,7 +1055,7 @@ Yes. We provide post-deployment support, performance checks, UI/UX optimization 
                 </h2>
             </div>
             <div class="w-layout-grid two-blocks-grid tablet-two margin-bottom-16-mobile-12">
-                <a id="w-node-b70bd833-e217-7288-ac96-bbc3487eac63-ef9ade48" href="mailto:hello@tactix.com"
+                <a id="w-node-b70bd833-e217-7288-ac96-bbc3487eac63-ef9ade48" href="Atelierhub.assist@gmail.com"
                     class="contact-block w-inline-block"><img
                         src="assets/cdn.prod.website-files.com/65cc742940cb3798ef9ade41/65ccebe2fe7b9903b3b18093_Mail.svg"
                         loading="lazy" alt="" class="icon-size-48" />
@@ -1160,6 +1203,14 @@ fetch("../Footer/testingFooter.html")
   });
 </script>
 
+<script>
+  const toggleBtn = document.getElementById("mobileNewNavbarToggle");
+  const menu = document.getElementById("mobileNewNavbarMenu");
+
+  toggleBtn.addEventListener("click", () => {
+    menu.style.display = menu.style.display === "block" ? "none" : "block";
+  });
+</script>
 
 
 

@@ -217,7 +217,7 @@
 }
 @media screen and (max-width: 480px) {
   .footer-menu-wrap {
-    grid-column-gap: 2.5rem;
+    grid-column-gap: 0;
     grid-row-gap: 2.5rem;
     flex-flow: column;
     grid-template-rows: auto auto;

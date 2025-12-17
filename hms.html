@@ -3302,6 +3302,7 @@
       background-color: #0000;
       position: fixed;
       inset: 0% 0% auto;
+      z-index: 99;
     }
 
     .w-nav {
@@ -18677,6 +18678,15 @@ article, aside, details, footer, header, hgroup, main, menu, nav, section, summa
   <script type="text/javascript"
     src="data:text/javascript;base64,alF1ZXJ5KGRvY3VtZW50KS5yZWFkeShmdW5jdGlvbigkKXtmdW5jdGlvbiBpbml0VGVsSW5wdXQoKXtpZih0eXBlb2YgaW50bFRlbElucHV0PT0ndW5kZWZpbmVkJyl7cmV0dXJufQp2YXIgdGVsSW5wdXQ9alF1ZXJ5KCcuZmZfZm9ybV9pbnN0YW5jZV8xXzQnKS5maW5kKCIjZmZfMV80X3Bob25lX251bWJlciIpO2lmKCF0ZWxJbnB1dC5sZW5ndGgpe3JldHVybn0KdmFyIGl0bE9wdGlvbnM9SlNPTi5wYXJzZSgneyJzZXBhcmF0ZURpYWxDb2RlIjpmYWxzZSwibmF0aW9uYWxNb2RlIjp0cnVlLCJhdXRvUGxhY2Vob2xkZXIiOiJwb2xpdGUiLCJmb3JtYXRPbkRpc3BsYXkiOnRydWUsImluaXRpYWxDb3VudHJ5IjoiSU4ifScpO3ZhciBpdGk9aW50bFRlbElucHV0KHRlbElucHV0WzBdLGl0bE9wdGlvbnMpO2lmKHRlbElucHV0LnZhbCgpKXtpdGkuc2V0TnVtYmVyKHRlbElucHV0LnZhbCgpKTtpdGkuZC5hdXRvUGxhY2Vob2xkZXI9J3BvbGl0ZSd9CnRlbElucHV0Lm9uKCJrZXl1cCBjaGFuZ2UiLGZ1bmN0aW9uKCl7aWYodHlwZW9mIGludGxUZWxJbnB1dFV0aWxzIT09J3VuZGVmaW5lZCcpe3ZhciBjdXJyZW50VGV4dD1pdGkuZ2V0TnVtYmVyKGludGxUZWxJbnB1dFV0aWxzLm51bWJlckZvcm1hdC5FMTY0KTtpZihpdGkuaXNWYWxpZE51bWJlcigpJiZ0eXBlb2YgY3VycmVudFRleHQ9PT0nc3RyaW5nJyl7aXRpLnNldE51bWJlcihjdXJyZW50VGV4dCl9fX0pfQppbml0VGVsSW5wdXQoKTskKGRvY3VtZW50KS5vbigncmVJbml0RXh0cmFzJywnLmZmX2Zvcm1faW5zdGFuY2VfMV80JyxmdW5jdGlvbigpe2luaXRUZWxJbnB1dCgpfSl9KQ=="
     defer></script>
+    <script>
+  const toggleBtn = document.getElementById("mobileNewNavbarToggle");
+  const menu = document.getElementById("mobileNewNavbarMenu");
+
+  toggleBtn.addEventListener("click", () => {
+    menu.style.display = menu.style.display === "block" ? "none" : "block";
+  });
+</script>
+
 </body>
 
 </html>
