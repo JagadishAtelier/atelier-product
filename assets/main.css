@@ -21232,7 +21232,7 @@ body {
     }
 
     .lg\:top-\[3px\] {
-      top: 3px;
+      top: -45px;
     }
 
     .lg\:top-\[8\%\] {
@@ -24554,7 +24554,7 @@ body {
     }
 
     .xl\:left-\[-107px\] {
-      left: -107px;
+      left: -160px;
     }
 
     .xl\:left-\[-111px\] {
@@ -25190,7 +25190,7 @@ body {
     }
 
     .xl\:max-w-\[408px\] {
-      max-width: 408px;
+      max-width: 470px;
     }
 
     .xl\:max-w-\[409px\] {
@@ -25254,7 +25254,7 @@ body {
     }
 
     .xl\:max-w-\[629px\] {
-      max-width: 629px;
+      max-width: 580px;
     }
 
     .xl\:max-w-\[649px\] {

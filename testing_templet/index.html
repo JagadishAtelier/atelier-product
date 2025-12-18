@@ -83,7 +83,7 @@
 }
 .nav-wrap {
     margin-top: 1rem;
-    padding: 0.5rem;
+    padding:0 0.5rem;
     border: 1px solid #99a0ae1a;
     border-radius: 1rem;
     background-color: #99a0ae1a;
@@ -304,6 +304,21 @@ body {
 
 body.active-bg {
   background-color: #0e121b;
+}
+/* Navbar scroll behavior */
+.navigation {
+  transition: transform 0.35s ease, opacity 0.35s ease;
+  will-change: transform;
+}
+
+.navigation.nav-hidden {
+  transform: translateY(-120%);
+  opacity: 0;
+}
+
+.navigation.nav-visible {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 
@@ -1214,6 +1229,33 @@ fetch("../Footer/testingFooter.html")
 
 
 
+<script>
+  let lastScrollTop = 0;
+  const navbar = document.querySelector(".navigation");
+
+  window.addEventListener("scroll", () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    // small buffer to avoid flicker
+    if (scrollTop <= 10) {
+      navbar.classList.remove("nav-hidden");
+      navbar.classList.add("nav-visible");
+      return;
+    }
+
+    if (scrollTop > lastScrollTop) {
+      // scrolling DOWN → hide navbar
+      navbar.classList.add("nav-hidden");
+      navbar.classList.remove("nav-visible");
+    } else {
+      // scrolling UP → show navbar
+      navbar.classList.remove("nav-hidden");
+      navbar.classList.add("nav-visible");
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+  });
+</script>
 
 
 </body>

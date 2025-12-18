@@ -131,6 +131,27 @@
         object-fit: cover;
       }
     }
+/* Navbar scroll behavior */
+.container-small.navigation {
+  position: fixed;
+  top: 1rem;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  transition: transform 0.35s ease, opacity 0.35s ease;
+  will-change: transform;
+}
+
+.container-small.navigation.nav-hidden {
+  transform: translateY(-120%);
+  opacity: 0;
+}
+
+.container-small.navigation.nav-visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
   </style>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -638,6 +659,34 @@ Get started section
 
   toggleBtn.addEventListener("click", () => {
     menu.style.display = menu.style.display === "block" ? "none" : "block";
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    let lastScrollTop = 0;
+    const navbar = document.querySelector(".container-small.navigation");
+
+    if (!navbar) return;
+
+    window.addEventListener("scroll", () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+      if (scrollTop <= 10) {
+        navbar.classList.remove("nav-hidden");
+        navbar.classList.add("nav-visible");
+        return;
+      }
+
+      if (scrollTop > lastScrollTop) {
+        navbar.classList.add("nav-hidden");
+        navbar.classList.remove("nav-visible");
+      } else {
+        navbar.classList.remove("nav-hidden");
+        navbar.classList.add("nav-visible");
+      }
+
+      lastScrollTop = scrollTop;
+    });
   });
 </script>
 

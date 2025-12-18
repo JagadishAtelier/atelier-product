@@ -3298,6 +3298,22 @@
   </style>
 
   <style>
+    /* Navbar scroll behavior */
+.navigation {
+  transition: transform 0.35s ease, opacity 0.35s ease;
+  will-change: transform;
+}
+
+.navigation.nav-hidden {
+  transform: translateY(-120%);
+  opacity: 0;
+}
+
+.navigation.nav-visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
     .navigation {
       background-color: #0000;
       position: fixed;
@@ -18685,6 +18701,33 @@ article, aside, details, footer, header, hgroup, main, menu, nav, section, summa
 
   toggleBtn.addEventListener("click", () => {
     menu.style.display = menu.style.display === "block" ? "none" : "block";
+  });
+</script>
+<script>
+  let lastScrollTop = 0;
+  const navbar = document.querySelector(".navigation");
+
+  window.addEventListener("scroll", () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    // small buffer to avoid flicker
+    if (scrollTop <= 10) {
+      navbar.classList.remove("nav-hidden");
+      navbar.classList.add("nav-visible");
+      return;
+    }
+
+    if (scrollTop > lastScrollTop) {
+      // scrolling DOWN → hide navbar
+      navbar.classList.add("nav-hidden");
+      navbar.classList.remove("nav-visible");
+    } else {
+      // scrolling UP → show navbar
+      navbar.classList.remove("nav-hidden");
+      navbar.classList.add("nav-visible");
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
   });
 </script>
 

@@ -3024,8 +3024,7 @@ blockquote {
 }
 .nav-wrap {
   margin-top: var(--_spacing---space--spacing-lg);
-  padding: var(--_spacing---space--spacing-sm) 0.5rem
-    var(--_spacing---space--spacing-sm) 1rem;
+  padding: 0 1rem 0 0.5rem;
   border: 1px solid var(--_colors---flat--neutral-10);
   border-radius: var(--radius--large);
   background-color: var(--_colors---flat--neutral-10);
