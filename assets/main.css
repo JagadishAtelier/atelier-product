@@ -2466,6 +2466,7 @@ body {
 
   .top-\[-5px\] {
     top: -5px;
+    z-index: 999;
   }
 
   .top-\[-6\%\] {
@@ -2837,7 +2838,7 @@ body {
   }
 
   .top-\[100px\] {
-    top: 100px;
+    top: 0px;
   }
 
   .top-\[106px\] {
@@ -3124,7 +3125,7 @@ body {
     right: -52px;
   }
   .right-\[-40px\] {
-    right: -40px;
+    right: 30px;
   }
 
   .right-\[-64\%\] {
@@ -3144,11 +3145,11 @@ body {
   }
 
   .right-\[-83px\] {
-    right: -83px;
+    right: 0px;
   }
 
   .right-\[-88px\] {
-    right: -88px;
+    right: 0px;
   }
 
   .right-\[-93px\] {
@@ -3812,7 +3813,7 @@ body {
   }
 
   .left-\[30px\] {
-    left: 30px;
+    left: 0px;
   }
 
   .left-\[31\%\] {
@@ -6484,7 +6485,7 @@ body {
   }
 
   .max-w-\[280px\] {
-    max-width: 280px;
+    max-width: 100%;
   }
 
   .max-w-\[281px\] {
@@ -18397,7 +18398,7 @@ body {
     }
 
     .md\:top-\[52px\] {
-      top: 52px;
+      top: 100px;
     }
 
     .md\:top-\[58\%\] {
@@ -18433,7 +18434,7 @@ body {
     }
 
     .md\:top-\[366px\] {
-      top: 366px;
+      top: 300px;
     }
 
     .md\:-right-0\.5 {
@@ -18521,7 +18522,7 @@ body {
     }
 
     .md\:right-\[-85px\] {
-      right: -85px;
+      right: -230px;
     }
 
     .md\:right-\[-149px\] {
@@ -18537,11 +18538,11 @@ body {
     }
 
     .md\:right-\[-247px\] {
-      right: -247px;
+      right: -230px;
     }
 
     .md\:right-\[-313px\] {
-      right: -313px;
+      right: 20px;
     }
 
     .md\:right-\[-322px\] {
@@ -18841,7 +18842,7 @@ body {
     }
 
     .md\:left-\[23px\] {
-      left: 23px;
+      left: 120px;
     }
 
     .md\:left-\[28px\] {
@@ -18853,7 +18854,8 @@ body {
     }
 
     .md\:left-\[41px\] {
-      left: 41px;
+      left: 120px;
+      z-index: 999;
     }
 
     .md\:left-\[60\%\] {
@@ -18869,7 +18871,7 @@ body {
     }
 
     .md\:left-\[160px\] {
-      left: 160px;
+      left: 140px;
     }
 
     .md\:left-\[210px\] {
@@ -19775,7 +19777,7 @@ body {
     }
 
     .md\:max-w-\[403px\] {
-      max-width: 403px;
+      max-width: 500px;
     }
 
     .md\:max-w-\[405px\] {
@@ -24206,7 +24208,7 @@ body {
     }
 
     .xl\:top-\[266px\] {
-      top: 266px;
+      top: 244px;
     }
 
     .xl\:top-\[411px\] {
@@ -24334,7 +24336,7 @@ body {
     }
 
     .xl\:right-\[7px\] {
-      right: 7px;
+      right: 227px;
     }
 
     .xl\:right-\[9\%\] {
@@ -30709,5 +30711,12 @@ svg.leaflet-zoom-animated {
 @keyframes pulse {
   50% {
     opacity: .5;
+  }
+}
+
+@media (max-width:480px) {
+  .features-grid-flex{
+    display: flex;
+    flex-direction: column;
   }
 }
