@@ -44,11 +44,11 @@
                 (n.className += t + "touch");
         })(window, document);
     </script>
-<link rel="icon" href="../images/favicon.png" type="image/png">
-<link rel="icon" href="../images/favicon.png" type="image/png">
+    <link rel="icon" href="../images/favicon.png" type="image/png">
+    <link rel="icon" href="../images/favicon.png" type="image/png">
 
-        <link rel="stylesheet" href="../Footer/footer.css">
-        <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../Footer/footer.css">
+    <link rel="stylesheet" href="../css/navbar.css">
     <style>
         body {
             -webkit-font-smoothing: antialiased;
@@ -56,271 +56,325 @@
             -o-font-smoothing: antialiased;
         }
     </style>
-      <style>
-    .navigation {
-    background-color: #0000;
-    position: fixed;
-    inset: 0% 0% auto;
-}
-.w-nav {
-    z-index: 1000;
-    background: #ddd;
-    position: relative;
-}
-.w-nav:before, .w-nav:after {
-    content: " ";
-    grid-area: 1 / 1 / 2 / 2;
-    display: table;
-}
-.container-small {
-    max-width: 64rem;
-    padding-right: 2rem;
-    padding-left:2rem;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.nav-wrap {
-    margin-top: 1rem;
-    padding:0 0.5rem;
-    border: 1px solid #99a0ae1a;
-    border-radius: 1rem;
-    background-color: #99a0ae1a;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    position: relative;
-}
-.nav-blur-layer {
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    inset: 0%;
-}
-.nav-layout.grid-3-cols {
-    grid-template-columns: 1fr 2.5fr 1fr;
-}
-.nav-layout {
-    justify-content: center;
-    align-items: center;
-}
-.grid-3-cols {
-    grid-column-gap: 1.5rem;
-    grid-row-gap: 1.5rem;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-columns: 1fr;
-    display: grid;
-}
-#w-node-ed1a30f1-6737-bc57-209a-0418d51ae10e-d51ae109 {
-    justify-self: start;
-    display: flex;
-    align-items: center;
-}
-.logo-link {
-    grid-column-gap: 0.5rem;
-    grid-row-gap: 0.5rem;
-    justify-content: flex-start;
-    align-items: center;
-    display: flex;
-}
-.w-inline-block {
-    max-width: 100%;
-    display: inline-block;
-}
-.logo {
-    object-fit: contain;
-    height: 1.75rem;
-}
-.logo-text {
-    color: #fff;
-    font-size: 1.7rem;
-    line-height: 1;
-    font-weight: 500;
-}
-.nav-menu {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-.w-nav-menu {
-    float: right;
-    position: relative;
-}
-.nav-links-list {
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-}
-.nav-link {
-    padding: 0.5rem 1rem;
-    grid-column-gap: 0.5rem;
-    grid-row-gap: 0.5rem;
-    color: #fff;
-    font-size: 0.875rem;
-    line-height: 1.6;
-    font-weight: 400;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: 0;
-    margin-right: 0;
-    transition: opacity 0.2s;
-    display: flex;
-}
-.w-inline-block {
-    max-width: 100%;
-    display: inline-block;
-}
-#w-node-ed1a30f1-6737-bc57-209a-0418d51ae124-d51ae109 {
-    justify-self: end;
-}
-.nav-right {
-    grid-column-gap: 0.5rem;
-    grid-row-gap: 0.5rem;
-    justify-content: flex-start;
-    align-items: center;
-    display: flex;
-}
-.button-main.small:where(.w-variant-4f1ced44-5afc-4753-1771-3275f473f97b) {
-    --_button-style---button--background: #f5f7fa !important;
-    --_button-style---button--text: #0e121b !important;
-}
-
-.button-main.small {
-    padding: 0.5rem 1rem ;
-    font-size: 0.875rem;
-    line-height: 1.6;
-    letter-spacing: 0rem;
-    height: 2.5rem;
-}
-.button-main {
-    padding: var(--_spacing---space--spacing-md) var(--_spacing---space--spacing-xl);
-    border-radius: 0.5rem;
-    background-color: #f5f7fa;
-    color: #0e121b;
-    font-weight: 500;
-    --_button-style---button--background: #f5f7fa;
-    --_button-style---button--text: #0e121b;
-    justify-content: center;
-    align-items: center;
-    height: 3.25rem;
-    display: flex;
-    overflow: hidden;
-}
-.w-inline-block {
-    max-width: 100%;
-    display: inline-block;
-}
-.button-text-wrap {
-    text-align: center;
-    flex-flow: column;
-    height: 1.5rem;
-    display: flex;
-}
-.button-text-reveal {
-    transform: translateY(80%);
-}
-.nav-menu-button {
-    padding: 0.75rem;
-}
-.w-nav-button {
-    float: right;
-    cursor: pointer;
-    -webkit-tap-highlight-color: #0000;
-    tap-highlight-color: #0000;
-    -webkit-user-select: none;
-    user-select: none;
-    padding: 18px;
-    font-size: 24px;
-    display: none;
-    position: relative;
-}
-.w-nav-overlay {
-    width: 100%;
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    overflow: hidden;
-}
-.w-nav-button {
-    float: right;
-    cursor: pointer;
-    -webkit-tap-highlight-color: #0000;
-    tap-highlight-color: #0000;
-    -webkit-user-select: none;
-    user-select: none;
-    padding: 18px;
-    font-size: 24px;
-    display: none;
-    position: relative;
-}
-.main-sec{
-  padding-top: 5%;
-}
-@media screen and (max-width: 991px) {
-    .w-nav[data-collapse="medium"] .w-nav-button {
-        display: block;
-    }
-            .menu-button-icon-line {
-            background-color: #fff;
-            width: 1.25rem;
-            height: 1px;
-            padding: 0;
+    <style>
+        .navigation {
+            background-color: #0000;
+            position: fixed;
+            inset: 0% 0% auto;
         }
+
+        .w-nav {
+            z-index: 1000;
+            background: #ddd;
+            position: relative;
+        }
+
+        .w-nav:before,
+        .w-nav:after {
+            content: " ";
+            grid-area: 1 / 1 / 2 / 2;
+            display: table;
+        }
+
+        .container-small {
+            max-width: 64rem;
+            padding-right: 2rem;
+            padding-left: 2rem;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .nav-wrap {
+            margin-top: 1rem;
+            padding: 0 0.5rem;
+            border: 1px solid #99a0ae1a;
+            border-radius: 1rem;
+            background-color: #99a0ae1a;
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            position: relative;
+        }
+
+        .nav-blur-layer {
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            inset: 0%;
+        }
+
+        .nav-layout.grid-3-cols {
+            grid-template-columns: 1fr 2.5fr 1fr;
+        }
+
+        .nav-layout {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .grid-3-cols {
+            grid-column-gap: 1.5rem;
+            grid-row-gap: 1.5rem;
+            grid-template-rows: auto;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-auto-columns: 1fr;
+            display: grid;
+        }
+
+        #w-node-ed1a30f1-6737-bc57-209a-0418d51ae10e-d51ae109 {
+            justify-self: start;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-link {
+            grid-column-gap: 0.5rem;
+            grid-row-gap: 0.5rem;
+            justify-content: flex-start;
+            align-items: center;
+            display: flex;
+        }
+
+        .w-inline-block {
+            max-width: 100%;
+            display: inline-block;
+        }
+
+        .logo {
+            object-fit: contain;
+            height: 1.75rem;
+        }
+
+        .logo-text {
+            color: #fff;
+            font-size: 1.7rem;
+            line-height: 1;
+            font-weight: 500;
+        }
+
+        .nav-menu {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .w-nav-menu {
+            float: right;
+            position: relative;
+        }
+
+        .nav-links-list {
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+        }
+
+        .nav-link {
+            padding: 0.5rem 1rem;
+            grid-column-gap: 0.5rem;
+            grid-row-gap: 0.5rem;
+            color: #fff;
+            font-size: 0.875rem;
+            line-height: 1.6;
+            font-weight: 400;
+            justify-content: flex-start;
+            align-items: center;
+            margin-left: 0;
+            margin-right: 0;
+            transition: opacity 0.2s;
+            display: flex;
+        }
+
+        .w-inline-block {
+            max-width: 100%;
+            display: inline-block;
+        }
+
+        #w-node-ed1a30f1-6737-bc57-209a-0418d51ae124-d51ae109 {
+            justify-self: end;
+        }
+
+        .nav-right {
+            grid-column-gap: 0.5rem;
+            grid-row-gap: 0.5rem;
+            justify-content: flex-start;
+            align-items: center;
+            display: flex;
+        }
+
+        .button-main.small:where(.w-variant-4f1ced44-5afc-4753-1771-3275f473f97b) {
+            --_button-style---button--background: #f5f7fa !important;
+            --_button-style---button--text: #0e121b !important;
+        }
+
+        .button-main.small {
+            padding: 0.5rem 1rem;
+            font-size: 0.875rem;
+            line-height: 1.6;
+            letter-spacing: 0rem;
+            height: 2.5rem;
+        }
+
+        .button-main {
+            padding: var(--_spacing---space--spacing-md) var(--_spacing---space--spacing-xl);
+            border-radius: 0.5rem;
+            background-color: #f5f7fa;
+            color: #0e121b;
+            font-weight: 500;
+            --_button-style---button--background: #f5f7fa;
+            --_button-style---button--text: #0e121b;
+            justify-content: center;
+            align-items: center;
+            height: 3.25rem;
+            display: flex;
+            overflow: hidden;
+        }
+
+        .w-inline-block {
+            max-width: 100%;
+            display: inline-block;
+        }
+
+        .button-text-wrap {
+            text-align: center;
+            flex-flow: column;
+            height: 1.5rem;
+            display: flex;
+        }
+
+        .button-text-reveal {
+            transform: translateY(80%);
+        }
+
+        .nav-menu-button {
+            padding: 0.75rem;
+        }
+
+        .w-nav-button {
+            float: right;
+            cursor: pointer;
+            -webkit-tap-highlight-color: #0000;
+            tap-highlight-color: #0000;
+            -webkit-user-select: none;
+            user-select: none;
+            padding: 18px;
+            font-size: 24px;
+            display: none;
+            position: relative;
+        }
+
+        .w-nav-overlay {
+            width: 100%;
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            overflow: hidden;
+        }
+
+        .w-nav-button {
+            float: right;
+            cursor: pointer;
+            -webkit-tap-highlight-color: #0000;
+            tap-highlight-color: #0000;
+            -webkit-user-select: none;
+            user-select: none;
+            padding: 18px;
+            font-size: 24px;
+            display: none;
+            position: relative;
+        }
+
+        .main-sec {
+            padding-top: 5%;
+        }
+
+        @media screen and (max-width: 991px) {
+            .w-nav[data-collapse="medium"] .w-nav-button {
+                display: block;
+            }
+
             .menu-button-icon-line {
-        background-color: #fff;
-        width: 1.25rem;
-        height: 1px;
-        padding: 0;
-    }
-    .nav-links-list{
-      display: none;
-    }
-    .menu-button-icon {
-        grid-column-gap: 6px;
-        grid-row-gap: 6px;
-        flex-flow: column;
-        display: flex;
-    }
-}
-  </style>
-      <style>
-          .logo-new-div{
-      height: 80px;
-      width: 100%;
-      display: flex;
-      justify-content: start;
-    }
-    .logo-new{
-      height: 100%;
-      width: auto;
-    }
-body {
-  transition: background-color 2s ease;
-}
+                background-color: #fff;
+                width: 1.25rem;
+                height: 1px;
+                padding: 0;
+            }
 
-body.active-bg {
-  background-color: #0e121b;
-}
-/* Navbar scroll behavior */
-.navigation {
-  transition: transform 0.35s ease, opacity 0.35s ease;
-  will-change: transform;
-}
-
-.navigation.nav-hidden {
-  transform: translateY(-120%);
-  opacity: 0;
-}
-
-.navigation.nav-visible {
-  transform: translateY(0);
-  opacity: 1;
-}
+            .menu-button-icon-line {
+                background-color: #fff;
+                width: 1.25rem;
+                height: 1px;
+                padding: 0;
+            }
 
 
+            .menu-button-icon {
+                grid-column-gap: 6px;
+                grid-row-gap: 6px;
+                flex-flow: column;
+                display: flex;
+            }
+        }
+        @media (max-width:768px) {
+  .container-small{
+    display: block !important;
+  }
+  .container-small.navigation{
+    display: none !important;
+  }
+}
+    </style>
+    <style>
+        .logo-new-div {
+            height: 80px;
+            width: 100%;
+            display: flex;
+            justify-content: start;
+        }
+
+        .logo-new {
+            height: 100%;
+            width: auto;
+        }
+
+        body {
+            transition: background-color 2s ease;
+        }
+
+        body.active-bg {
+            background-color: #0e121b;
+        }
+
+        /* Navbar scroll behavior */
+        .navigation {
+            transition: transform 0.35s ease, opacity 0.35s ease;
+            will-change: transform;
+        }
+
+        .navigation.nav-hidden {
+            transform: translateY(-120%);
+            opacity: 0;
+        }
+
+        .navigation.nav-visible {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        @media (max-width:768px) {
+            .hero.w-container {
+                padding: 0 !important;
+            }
+        }
+
+        @media (max-width:480px) {
+            .hero.w-container {
+                padding: 0 !important;
+            }
+        }
     </style>
 </head>
 
@@ -331,113 +385,82 @@ body.active-bg {
     <div style="opacity: 0" class="bg-color-mixed-black"></div>
     <main id="Hero" class="section hero">
         <div class="w-layout-blockcontainer container hero w-container">
-          <div class="container-small navigation">
-        <div class="nav-wrap">
-          <div class="nav-blur-layer"></div>
-          <div class="nav-layout grid-3-cols">
-            <a
-              href="/"
-              id="w-node-ed1a30f1-6737-bc57-209a-0418d51ae10e-d51ae109"
-              aria-current="page"
-              class="logo-link w-inline-block w--current logo-new-div"
-              ><img
-                src="https://atelier-product.vercel.app/assets/ATS%20White%20lOGO%20PNG.png"
-                loading="lazy"
-                alt="Atelier"
-                class="logo-new"
-              />
-            </a>
-            <nav role="navigation" class="nav-menu w-nav-menu">
-              <div class="nav-links-list">
-                <a href="#features" class="nav-link w-inline-block">
-                  <div class="nav-link-text">Features</div> </a
-                ><a href="#products" class="nav-link w-inline-block">
-                  <div class="nav-link-text">Products</div>
-                </a>
-                <a href="#benefits" class="nav-link w-inline-block">
-                  <div class="nav-link-text">Benefits</div> </a
-                ><a href="#testimonial" class="nav-link w-inline-block">
-                  <div class="nav-link-text">Testimonial</div> </a
-                ><a href="#our-values" class="nav-link w-inline-block">
-                  <div class="nav-link-text">Our Value</div>
-                </a>
-              </div>
-            </nav>
-            <div
-              id="w-node-ed1a30f1-6737-bc57-209a-0418d51ae124-d51ae109"
-              class="nav-right"
-            >
-              <div class="landscape-hide">
-                <a
-                  data-wf--button-small--style="secondary"
-                  href="/contact.html"
-                  class="button-main small w-variant-4f1ced44-5afc-4753-1771-3275f473f97b w-inline-block"
-                >
-                  <div class="button-text-wrap">
-                    <div class="button-text-initial">Start for free</div>
-                    <div class="button-text-reveal">Start for free</div>
-                  </div>
-                </a>
-              </div>
-              <div class="nav-menu-button w-nav-button">
-                <div class="menu-button-icon">
-                  <div
-                    class="menu-button-icon-line"
-                  ></div>
-                  <div
-                    class="menu-button-icon-line"
-                  ></div>
-                  <div
-                    class="menu-button-icon-line"
-                  ></div>
+            <div class="container-small navigation">
+                <div class="nav-wrap">
+                    <div class="nav-blur-layer"></div>
+                    <div class="nav-layout grid-3-cols">
+                        <a href="/" id="w-node-ed1a30f1-6737-bc57-209a-0418d51ae10e-d51ae109" aria-current="page"
+                            class="logo-link w-inline-block w--current logo-new-div"><img
+                                src="https://atelier-product.vercel.app/assets/ATS%20White%20lOGO%20PNG.png"
+                                loading="lazy" alt="Atelier" class="logo-new" />
+                        </a>
+                        <nav role="navigation" class="nav-menu w-nav-menu">
+                            <div class="nav-links-list">
+                                <a href="#features" class="nav-link w-inline-block">
+                                    <div class="nav-link-text">Features</div>
+                                </a><a href="#products" class="nav-link w-inline-block">
+                                    <div class="nav-link-text">Products</div>
+                                </a>
+                                <a href="#benefits" class="nav-link w-inline-block">
+                                    <div class="nav-link-text">Benefits</div>
+                                </a><a href="#testimonial" class="nav-link w-inline-block">
+                                    <div class="nav-link-text">Testimonial</div>
+                                </a><a href="#our-values" class="nav-link w-inline-block">
+                                    <div class="nav-link-text">Our Value</div>
+                                </a>
+                            </div>
+                        </nav>
+                        <div id="w-node-ed1a30f1-6737-bc57-209a-0418d51ae124-d51ae109" class="nav-right">
+                            <div class="landscape-hide">
+                                <a data-wf--button-small--style="secondary" href="/contact.html"
+                                    class="button-main small w-variant-4f1ced44-5afc-4753-1771-3275f473f97b w-inline-block">
+                                    <div class="button-text-wrap">
+                                        <div class="button-text-initial">Start for free</div>
+                                        <div class="button-text-reveal">Start for free</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nav-menu-button w-nav-button">
+                                <div class="menu-button-icon">
+                                    <div class="menu-button-icon-line"></div>
+                                    <div class="menu-button-icon-line"></div>
+                                    <div class="menu-button-icon-line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-              <header class="mobile-new-navbar">
-  <div class="mobile-new-navbar__container">
+            <header class="mobile-new-navbar">
+                <div class="mobile-new-navbar__container">
 
-    <!-- Logo -->
-    <a href="https://atelier-product.vercel.app/" class="mobile-new-navbar__logo">
-      <img
-        src="https://atelier-product.vercel.app/assets/ATS%20White%20lOGO%20PNG.png"
-        alt="Atelier"
-      />
-    </a>
+                    <!-- Logo -->
+                    <a href="https://atelier-product.vercel.app/" class="mobile-new-navbar__logo">
+                        <img src="https://atelier-product.vercel.app/assets/ATS%20White%20lOGO%20PNG.png"
+                            alt="Atelier" />
+                    </a>
 
-    <!-- Hamburger -->
-    <button
-      id="mobileNewNavbarToggle"
-      class="mobile-new-navbar__hamburger"
-      aria-label="Toggle Menu"
-    >
-      <span class="mobile-new-navbar__line"></span>
-      <span class="mobile-new-navbar__line"></span>
-      <span class="mobile-new-navbar__line"></span>
-    </button>
-  </div>
+                    <!-- Hamburger -->
+                    <button id="mobileNewNavbarToggle" class="mobile-new-navbar__hamburger" aria-label="Toggle Menu">
+                        <span class="mobile-new-navbar__line"></span>
+                        <span class="mobile-new-navbar__line"></span>
+                        <span class="mobile-new-navbar__line"></span>
+                    </button>
+                </div>
 
-  <!-- Mobile Menu -->
-  <nav
-    id="mobileNewNavbarMenu"
-    class="mobile-new-navbar__menu"
-  >
-    <a class="mobile-new-navbar__link" href="#features">Features</a>
-    <a class="mobile-new-navbar__link" href="#products">Products</a>
-    <a class="mobile-new-navbar__link" href="#benefits">Benefits</a>
-    <a class="mobile-new-navbar__link" href="#testimonial">Testimonial</a>
-    <a class="mobile-new-navbar__link" href="#our-values">Our Value</a>
+                <!-- Mobile Menu -->
+                <nav id="mobileNewNavbarMenu" class="mobile-new-navbar__menu">
+                    <a class="mobile-new-navbar__link" href="#features">Features</a>
+                    <a class="mobile-new-navbar__link" href="#products">Products</a>
+                    <a class="mobile-new-navbar__link" href="#benefits">Benefits</a>
+                    <a class="mobile-new-navbar__link" href="#testimonial">Testimonial</a>
+                    <a class="mobile-new-navbar__link" href="#our-values">Our Value</a>
 
-    <a
-      href="/contact.html"
-      class="mobile-new-navbar__cta"
-    >
-      Start for free
-    </a>
-  </nav>
-</header>
+                    <a href="/contact.html" class="mobile-new-navbar__cta">
+                        Start for free
+                    </a>
+                </nav>
+            </header>
             <div class="hero-content-wrapper">
                 <div data-w-id="7c39f3ff-c097-70d0-5a9e-b8e925a08f6e" style="
               -webkit-transform: translate3d(0, 0, 0) scale3d(0.85, 0.85, 1)
@@ -450,7 +473,8 @@ body.active-bg {
                 rotateY(0) rotateZ(0) skew(0, 0);
               opacity: 0;
             " class="hero-content">
-                    <a href="#Testimonials" class="link-chips w-inline-block" style="display: flex; align-items: center;">
+                    <a href="#Testimonials" class="link-chips w-inline-block"
+                        style="display: flex; align-items: center;">
                         <div class="semibold-s text-color-accent">
                             Intelligent and Innovative software testing
                         </div>
@@ -463,11 +487,15 @@ body.active-bg {
                                 Because quality affects your competitive edge & brand
                             </h1>
                             <p class="regular-l center-text text-color-white max-width-752-tablet-560">
-                                we craft Atelier experiences that elevate how your business looks, feels, and performs. Our global expertise helps organisations build refined digital ecosystems through thoughtful design, precision engineering, and innovative creation.
+                                we craft Atelier experiences that elevate how your business looks, feels, and performs.
+                                Our global expertise helps organisations build refined digital ecosystems through
+                                thoughtful design, precision engineering, and innovative creation.
                             </p>
                         </div>
                         <div class="hero-buttons-wrapper">
-                            <a href="/contact.html" target="_blank" class="button primary w-button">Talk To Us</a><a href="./files/QA Testing Report.pdf" download="Brochure.pdf" class="button secondary w-button">Summary Report</a>
+                            <a href="/contact.html" target="_blank" class="button primary w-button">Talk To Us</a><a
+                                href="./files/QA Testing Report.pdf" download="Brochure.pdf"
+                                class="button secondary w-button">Summary Report</a>
                         </div>
                     </div>
                     <img src="assets/cdn.prod.website-files.com/65cc742940cb3798ef9ade41/65cc8657acc7ac557a3a3c7f_Illustration%2520-%25202.svg"
@@ -513,7 +541,8 @@ body.active-bg {
                     teams to move fast and scale in digital
                 </h2>
                 <p class="regular-xs text-color-black-opacity-60 max-width-360">
-Empowering businesses to move faster, make smarter decisions, and scale sustainably through advanced Atelier Technology designed to strengthen brand identity and digital performance.
+                    Empowering businesses to move faster, make smarter decisions, and scale sustainably through advanced
+                    Atelier Technology designed to strengthen brand identity and digital performance.
                 </p>
             </div>
             <div class="big-banner black margin-bottom-16-mobile-12">
@@ -527,7 +556,8 @@ Empowering businesses to move faster, make smarter decisions, and scale sustaina
                             MOBILE TEST ENGINEERING
                         </h3>
                         <p class="regular-l">
-                            Learn about how we carved a testing strategy for a super-app that facilitated us to release updates every fortnight
+                            Learn about how we carved a testing strategy for a super-app that facilitated us to release
+                            updates every fortnight
                         </p>
                     </div>
                 </div>
@@ -544,7 +574,9 @@ Empowering businesses to move faster, make smarter decisions, and scale sustaina
                             Platform Dedicated Testing
                         </h4>
                         <p class="regular-l">
-                            Explore our strategic approach to testing a micro-services platform that onboards a suite of products, ensuring seamless integration, robust performance, and scalable quality across diverse environments.
+                            Explore our strategic approach to testing a micro-services platform that onboards a suite of
+                            products, ensuring seamless integration, robust performance, and scalable quality across
+                            diverse environments.
                         </p>
                     </div>
                 </div>
@@ -557,7 +589,9 @@ Empowering businesses to move faster, make smarter decisions, and scale sustaina
                             De-Centralised Testing
                         </h4>
                         <p class="regular-l text-color-black-opacity-60">
-                            Discover how our de-centralised testing approach empowers distributed teams to achieve faster deployments and more frequent releases, while maintaining quality standards across your entire organization.
+                            Discover how our de-centralised testing approach empowers distributed teams to achieve
+                            faster deployments and more frequent releases, while maintaining quality standards across
+                            your entire organization.
                         </p>
                     </div>
                 </div>
@@ -575,19 +609,17 @@ Empowering businesses to move faster, make smarter decisions, and scale sustaina
                 <div class="w-layout-grid logos-grid">
                     <a id="w-node-_0a28a694-9928-f085-75a6-f07555616582-ef9ade48" href="https://www.google.com/"
                         target="_blank" class="logos-grid-logo-wrapper w-inline-block"><img
-                            src="assets/images/graphql.png"
-                            loading="lazy" alt="Logo Ipsum" class="logos-grid-logo" /></a><a
-                        id="w-node-bf5cf906-b4aa-6043-72ff-6834dd3ae5f5-ef9ade48" href="https://www.google.com/"
-                        target="_blank" class="logos-grid-logo-wrapper w-inline-block"><img
-                            src="assets/images/OIP.webp"
-                            loading="lazy" alt="Logo Ipsum" class="logos-grid-logo" /></a><a
+                            src="assets/images/graphql.png" loading="lazy" alt="Logo Ipsum"
+                            class="logos-grid-logo" /></a><a id="w-node-bf5cf906-b4aa-6043-72ff-6834dd3ae5f5-ef9ade48"
+                        href="https://www.google.com/" target="_blank"
+                        class="logos-grid-logo-wrapper w-inline-block"><img src="assets/images/OIP.webp" loading="lazy"
+                            alt="Logo Ipsum" class="logos-grid-logo" /></a><a
                         id="w-node-_37c8d510-e5c8-388d-7ea3-ad2e8d4dfeab-ef9ade48" href="https://www.google.com/"
                         target="_blank" class="logos-grid-logo-wrapper w-inline-block"><img
-                            src="assets/images/Ranorex-new-logo.png"
-                            loading="lazy" alt="Logo Ipsum" class="logos-grid-logo" /></a><a
-                        id="w-node-_7e618653-5db9-a33d-d83d-23019ca82032-ef9ade48" href="https://www.google.com/"
-                        target="_blank" class="logos-grid-logo-wrapper w-inline-block"><img
-                            src="assets/images/rest-api.png"
+                            src="assets/images/Ranorex-new-logo.png" loading="lazy" alt="Logo Ipsum"
+                            class="logos-grid-logo" /></a><a id="w-node-_7e618653-5db9-a33d-d83d-23019ca82032-ef9ade48"
+                        href="https://www.google.com/" target="_blank"
+                        class="logos-grid-logo-wrapper w-inline-block"><img src="assets/images/rest-api.png"
                             loading="lazy" alt="Logo Ipsum" class="logos-grid-logo" /></a>
                 </div>
             </div>
@@ -598,7 +630,7 @@ Empowering businesses to move faster, make smarter decisions, and scale sustaina
             <div class="section-heading margin-bottom-16-mobile-12 yellow-light">
                 <h2 class="h2 text-color-black max-width-640-tablet-520-mobile-320">
                     <span class="text-color-yellow-dark">Top Five</span>
-                     Use cases that clients are starting with
+                    Use cases that clients are starting with
                 </h2>
             </div>
             <div class="w-layout-grid four-blocks-grid margin-bottom-16-mobile-12">
@@ -612,7 +644,8 @@ Empowering businesses to move faster, make smarter decisions, and scale sustaina
                             Mobile & Micro-services Testing
                         </h5>
                         <p class="regular-l text-color-black-opacity-60">
-                            Functional & visual testing, Test automation and infrastructure, Device cloud integration, micro-services testing strategy.
+                            Functional & visual testing, Test automation and infrastructure, Device cloud integration,
+                            micro-services testing strategy.
                         </p>
                     </div>
                 </div>
@@ -626,7 +659,8 @@ Empowering businesses to move faster, make smarter decisions, and scale sustaina
                             Testing Transformation
                         </h5>
                         <p class="regular-l text-color-black-opacity-60">
-                           Assessments for QA process, design and solution maturity, Setting up QA process and practices, Roadmap for transformation.
+                            Assessments for QA process, design and solution maturity, Setting up QA process and
+                            practices, Roadmap for transformation.
                         </p>
                     </div>
                 </div>
@@ -640,7 +674,8 @@ Empowering businesses to move faster, make smarter decisions, and scale sustaina
                             Rapid test automation
                         </h5>
                         <p class="regular-l text-color-black-opacity-60">
-                            Rapid test asset development of Web, REST APIs and Mobile applications. Unified & low-code test automation solutions. TestOps.
+                            Rapid test asset development of Web, REST APIs and Mobile applications. Unified & low-code
+                            test automation solutions. TestOps.
                         </p>
                     </div>
                 </div>
@@ -654,7 +689,8 @@ Empowering businesses to move faster, make smarter decisions, and scale sustaina
                             Product test engineering
                         </h5>
                         <p class="regular-l text-color-black-opacity-60">
-                            QA solutions for Digital Transformation, BI & Analytics QA, Integration Testing across Cloud and Platform, Accelerated Time to Production.
+                            QA solutions for Digital Transformation, BI & Analytics QA, Integration Testing across Cloud
+                            and Platform, Accelerated Time to Production.
                         </p>
                     </div>
                 </div>
@@ -670,7 +706,8 @@ Empowering businesses to move faster, make smarter decisions, and scale sustaina
                             Early adoption of emerging tech
                         </h3>
                         <p class="regular-l">
-                            Flutter, React Native, JS umbrella of tech, Micro-services testing strategy, and Advanced test analytics.
+                            Flutter, React Native, JS umbrella of tech, Micro-services testing strategy, and Advanced
+                            test analytics.
                         </p>
                     </div>
                 </div>
@@ -762,7 +799,9 @@ Empowering businesses to move faster, make smarter decisions, and scale sustaina
                             </div>
                         </div>
                         <p class="regular-l">
-Partnering with Atelier Technology transformed the way our team operates. Their structured approach, combined with a deep understanding of our business needs, delivered results far beyond what we anticipated. It felt like working with an extension of our own team
+                            Partnering with Atelier Technology transformed the way our team operates. Their structured
+                            approach, combined with a deep understanding of our business needs, delivered results far
+                            beyond what we anticipated. It felt like working with an extension of our own team
                         </p>
                     </div>
                     <div class="testimonial">
@@ -776,7 +815,9 @@ Partnering with Atelier Technology transformed the way our team operates. Their 
                             </div>
                         </div>
                         <p class="regular-l">
-Working with Atelier Technology marked a significant shift in our growth journey. Their attention to detail and commitment to delivering high-impact solutions helped us scale faster and more efficiently than we imagined. Truly an exceptional experience.
+                            Working with Atelier Technology marked a significant shift in our growth journey. Their
+                            attention to detail and commitment to delivering high-impact solutions helped us scale
+                            faster and more efficiently than we imagined. Truly an exceptional experience.
                         </p>
                     </div>
                     <div class="testimonial">
@@ -790,7 +831,9 @@ Working with Atelier Technology marked a significant shift in our growth journey
                             </div>
                         </div>
                         <p class="regular-l">
-Choosing Atelier Technology turned out to be one of our best decisions. Their strategic insights and hands-on guidance elevated our operations and opened doors to new opportunities. The progress we achieved together was remarkable.
+                            Choosing Atelier Technology turned out to be one of our best decisions. Their strategic
+                            insights and hands-on guidance elevated our operations and opened doors to new
+                            opportunities. The progress we achieved together was remarkable.
                         </p>
                     </div>
                     <!-- <div class="testimonial">
@@ -820,7 +863,9 @@ Atelier Creation brought clarity and innovation to our entire workflow. Their pr
                             </div>
                         </div>
                         <p class="regular-l">
-From start to finish, Atelier Technology demonstrated unparalleled professionalism and expertise. Their collaborative approach empowered our team and led to outcomes that genuinely surpassed our goals. A partnership we truly value.
+                            From start to finish, Atelier Technology demonstrated unparalleled professionalism and
+                            expertise. Their collaborative approach empowered our team and led to outcomes that
+                            genuinely surpassed our goals. A partnership we truly value.
                         </p>
                     </div>
                     <div class="testimonial">
@@ -834,7 +879,9 @@ From start to finish, Atelier Technology demonstrated unparalleled professionali
                             </div>
                         </div>
                         <p class="regular-l">
-Collaborating with Atelier Technology reshaped our entire operational flow. Their forward-thinking solutions and seamless execution elevated our performance beyond what we believed possible, making a profound impact on our long-term growth
+                            Collaborating with Atelier Technology reshaped our entire operational flow. Their
+                            forward-thinking solutions and seamless execution elevated our performance beyond what we
+                            believed possible, making a profound impact on our long-term growth
                         </p>
                     </div>
                     <div class="testimonial">
@@ -848,7 +895,9 @@ Collaborating with Atelier Technology reshaped our entire operational flow. Thei
                             </div>
                         </div>
                         <p class="regular-l">
-Partnering with Atelier Technology was a turning point for our organization. Their strategic clarity and consistent support empowered us to break limitations and achieve milestones we once thought were out of reach.
+                            Partnering with Atelier Technology was a turning point for our organization. Their strategic
+                            clarity and consistent support empowered us to break limitations and achieve milestones we
+                            once thought were out of reach.
                         </p>
                     </div>
                     <!-- <div class="testimonial">
@@ -869,7 +918,7 @@ Working with Atelier Technology brought a new level of efficiency and innovation
             </div>
         </div>
         <div class="black-linear"></div>
-        </section>
+    </section>
     <section id="Statistics" class="section section-padding">
         <div class="w-layout-blockcontainer container-small w-container">
             <div class="section-heading margin-bottom-16-mobile-12 black">
@@ -888,7 +937,8 @@ Working with Atelier Technology brought a new level of efficiency and innovation
                             Conversion Rate
                         </div>
                         <p class="regular-l">
-Atelier Technology delivers measurable impact with a strong 17.6% conversion rate, showcasing the precision and effectiveness of our digital strategies.
+                            Atelier Technology delivers measurable impact with a strong 17.6% conversion rate,
+                            showcasing the precision and effectiveness of our digital strategies.
                         </p>
                     </div>
                 </div>
@@ -901,7 +951,8 @@ Atelier Technology delivers measurable impact with a strong 17.6% conversion rat
                             Potential Customers
                         </div>
                         <p class="regular-l">
-Atelier Technology targeted digital outreach expands your audience reach, connecting your brand with high-intent customers who are ready to engage and convert.
+                            Atelier Technology targeted digital outreach expands your audience reach, connecting your
+                            brand with high-intent customers who are ready to engage and convert.
                         </p>
                     </div>
                 </div>
@@ -914,7 +965,8 @@ Atelier Technology targeted digital outreach expands your audience reach, connec
                             Latest Project Revenue
                         </div>
                         <p class="regular-l">
-Our recent projects have generated significant revenue growth, showcasing Atelier Technology ability to convert strategic planning into measurable financial impact.
+                            Our recent projects have generated significant revenue growth, showcasing Atelier Technology
+                            ability to convert strategic planning into measurable financial impact.
                         </p>
                     </div>
                 </div>
@@ -927,7 +979,8 @@ Our recent projects have generated significant revenue growth, showcasing Atelie
                             Impressive ROI
                         </div>
                         <p class="regular-l">
-With data-driven execution and optimized campaign strategies, Atelier Technology ensures every investment delivers meaningful returns and long-term business value.
+                            With data-driven execution and optimized campaign strategies, Atelier Technology ensures
+                            every investment delivers meaningful returns and long-term business value.
                         </p>
                     </div>
                 </div>
@@ -943,7 +996,8 @@ With data-driven execution and optimized campaign strategies, Atelier Technology
                             Enhancing Brand Recognition
                         </h3>
                         <p class="regular-l">
-Atelier Technology strengthens your brand identity through strategic visibility and consistent messaging, helping your business stand out in a competitive digital landscape.
+                            Atelier Technology strengthens your brand identity through strategic visibility and
+                            consistent messaging, helping your business stand out in a competitive digital landscape.
                         </p>
                     </div>
                 </div>
@@ -973,7 +1027,11 @@ Atelier Technology strengthens your brand identity through strategic visibility 
                     </div>
                     <div class="accordion-item-content">
                         <p class="regular-l faq-text">
-We specialize in Atelier Technology, helping brands build high-end, tailor-made digital experiences. Our services include custom UI/UX design, full-stack development, product workflow setup, component creation, scalable architecture planning, and professional branding integration. Every solution is crafted to reflect your brand’s identity with precision.
+                            We specialize in Atelier Technology, helping brands build high-end, tailor-made digital
+                            experiences. Our services include custom UI/UX design, full-stack development, product
+                            workflow setup, component creation, scalable architecture planning, and professional
+                            branding integration. Every solution is crafted to reflect your brand’s identity with
+                            precision.
                         </p>
                     </div>
                 </div>
@@ -989,14 +1047,17 @@ We specialize in Atelier Technology, helping brands build high-end, tailor-made 
                     </div>
                     <div class="accordion-item-content">
                         <p class="regular-l faq-text">
-We begin with a detailed understanding of your brand, workflow needs, design preferences, target audience, and product vision. Based on this analysis, we recommend the ideal Atelier structure—whether you need a minimal setup, a fully custom interactive system, or a scalable enterprise-ready environment.
+                            We begin with a detailed understanding of your brand, workflow needs, design preferences,
+                            target audience, and product vision. Based on this analysis, we recommend the ideal Atelier
+                            structure—whether you need a minimal setup, a fully custom interactive system, or a scalable
+                            enterprise-ready environment.
                         </p>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <div class="accordion-item-trigger">
                         <div class="semibold-l text-color-white max-width-720">
-What sets your Atelier Technology services apart?
+                            What sets your Atelier Technology services apart?
                         </div>
                         <div class="accordion-item-icon">
                             <img src="https://cdn.prod.website-files.com/65cc742940cb3798ef9ade41/65cce6a3041513d097054dca_Dismiss.svg"
@@ -1005,14 +1066,17 @@ What sets your Atelier Technology services apart?
                     </div>
                     <div class="accordion-item-content">
                         <p class="regular-l faq-text">
-Our Atelier approach focuses on craftsmanship, clarity, and creativity. We don’t just build pages—we build complete systems where design, functionality, and performance work seamlessly together. Every element is handcrafted, ensuring pixel-perfect layouts, smooth interactions, and future-ready scalability.
+                            Our Atelier approach focuses on craftsmanship, clarity, and creativity. We don’t just build
+                            pages—we build complete systems where design, functionality, and performance work seamlessly
+                            together. Every element is handcrafted, ensuring pixel-perfect layouts, smooth interactions,
+                            and future-ready scalability.
                         </p>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <div class="accordion-item-trigger">
                         <div class="semibold-l text-color-white max-width-720">
-How long does it take to build an Atelier setup?
+                            How long does it take to build an Atelier setup?
                         </div>
                         <div class="accordion-item-icon">
                             <img src="https://cdn.prod.website-files.com/65cc742940cb3798ef9ade41/65cce6a3041513d097054dca_Dismiss.svg"
@@ -1021,14 +1085,17 @@ How long does it take to build an Atelier setup?
                     </div>
                     <div class="accordion-item-content">
                         <p class="regular-l faq-text">
-Timeline depends on the complexity—such as number of custom components, animations, integrations, and product pages. A basic Atelier setup may take 1–2 weeks, while a more advanced system with unique interactions or API-driven modules may take 3–6 weeks. We ensure delivery with both quality and efficiency.
+                            Timeline depends on the complexity—such as number of custom components, animations,
+                            integrations, and product pages. A basic Atelier setup may take 1–2 weeks, while a more
+                            advanced system with unique interactions or API-driven modules may take 3–6 weeks. We ensure
+                            delivery with both quality and efficiency.
                         </p>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <div class="accordion-item-trigger">
                         <div class="semibold-l text-color-white max-width-720">
-How much does an Atelier Technology cost?
+                            How much does an Atelier Technology cost?
                         </div>
                         <div class="accordion-item-icon">
                             <img src="https://cdn.prod.website-files.com/65cc742940cb3798ef9ade41/65cce6a3041513d097054dca_Dismiss.svg"
@@ -1037,14 +1104,18 @@ How much does an Atelier Technology cost?
                     </div>
                     <div class="accordion-item-content">
                         <p class="regular-l faq-text">
-The cost of an Atelier setup depends on the depth of customization you need—whether it’s a foundational framework, advanced interactive components, a complete product ecosystem, or a fully integrated multi-page design system. We offer flexible pricing suitable for startups to enterprise clients, ensuring exceptional craftsmanship and long-term value in every build.
+                            The cost of an Atelier setup depends on the depth of customization you need—whether it’s a
+                            foundational framework, advanced interactive components, a complete product ecosystem, or a
+                            fully integrated multi-page design system. We offer flexible pricing suitable for startups
+                            to enterprise clients, ensuring exceptional craftsmanship and long-term value in every
+                            build.
                         </p>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <div class="accordion-item-trigger">
                         <div class="semibold-l text-color-white max-width-720">
-Do you offer performance tracking or updates for the Atelier setup?
+                            Do you offer performance tracking or updates for the Atelier setup?
                         </div>
                         <div class="accordion-item-icon">
                             <img src="https://cdn.prod.website-files.com/65cc742940cb3798ef9ade41/65cce6a3041513d097054dca_Dismiss.svg"
@@ -1053,7 +1124,9 @@ Do you offer performance tracking or updates for the Atelier setup?
                     </div>
                     <div class="accordion-item-content">
                         <p class="regular-l faq-text">
-Yes. We provide post-deployment support, performance checks, UI/UX optimization recommendations, continuous improvements, and structural updates to keep your Atelier modern, fast, and aligned with your brand’s growth.
+                            Yes. We provide post-deployment support, performance checks, UI/UX optimization
+                            recommendations, continuous improvements, and structural updates to keep your Atelier
+                            modern, fast, and aligned with your brand’s growth.
                         </p>
                     </div>
                 </div>
@@ -1140,13 +1213,13 @@ Yes. We provide post-deployment support, performance checks, UI/UX optimization 
     </section>
     <div id="footer-container"></div>
 
-<script>
-fetch("../Footer/testingFooter.html")
-  .then(res => res.text())
-  .then(html => document.getElementById("footer-container").innerHTML = html);
-</script>
+    <script>
+        fetch("../Footer/testingFooter.html")
+            .then(res => res.text())
+            .then(html => document.getElementById("footer-container").innerHTML = html);
+    </script>
 
-     <!-- <footer id="Footer" class="footer">
+    <!-- <footer id="Footer" class="footer">
         <div class="w-layout-blockcontainer container-small w-container">
             <div class="footer-content-wrapper">
                 <div class="footer-content">
@@ -1182,79 +1255,79 @@ fetch("../Footer/testingFooter.html")
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="assets/assets-global.website-files.com/65cc742940cb3798ef9ade41/js/webflow.0cf3ebde2.js"
         type="text/javascript"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const start = document.querySelector(".scroll-start");
-    const end = document.querySelector(".scroll-end");
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const start = document.querySelector(".scroll-start");
+            const end = document.querySelector(".scroll-end");
 
-    if (!start || !end) return;
+            if (!start || !end) return;
 
-    function updateBodyBackground() {
-      const startRect = start.getBoundingClientRect();
-      const endRect = end.getBoundingClientRect();
-      const vh = window.innerHeight;
+            function updateBodyBackground() {
+                const startRect = start.getBoundingClientRect();
+                const endRect = end.getBoundingClientRect();
+                const vh = window.innerHeight;
 
-      // 🔥 Core condition: viewport is between start & end
-      const isActive =
-        startRect.top < vh && endRect.bottom > 0;
+                // 🔥 Core condition: viewport is between start & end
+                const isActive =
+                    startRect.top < vh && endRect.bottom > 0;
 
-      if (isActive) {
-        document.body.classList.add("active-bg");
-      } else {
-        document.body.classList.remove("active-bg");
-      }
-    }
+                if (isActive) {
+                    document.body.classList.add("active-bg");
+                } else {
+                    document.body.classList.remove("active-bg");
+                }
+            }
 
-    const observer = new IntersectionObserver(updateBodyBackground, {
-      threshold: [0, 0.1, 0.5, 1]
-    });
+            const observer = new IntersectionObserver(updateBodyBackground, {
+                threshold: [0, 0.1, 0.5, 1]
+            });
 
-    observer.observe(start);
-    observer.observe(end);
+            observer.observe(start);
+            observer.observe(end);
 
-    window.addEventListener("scroll", updateBodyBackground);
-    window.addEventListener("resize", updateBodyBackground);
-  });
-</script>
+            window.addEventListener("scroll", updateBodyBackground);
+            window.addEventListener("resize", updateBodyBackground);
+        });
+    </script>
 
-<script>
-  const toggleBtn = document.getElementById("mobileNewNavbarToggle");
-  const menu = document.getElementById("mobileNewNavbarMenu");
+    <script>
+        const toggleBtn = document.getElementById("mobileNewNavbarToggle");
+        const menu = document.getElementById("mobileNewNavbarMenu");
 
-  toggleBtn.addEventListener("click", () => {
-    menu.style.display = menu.style.display === "block" ? "none" : "block";
-  });
-</script>
+        toggleBtn.addEventListener("click", () => {
+            menu.style.display = menu.style.display === "block" ? "none" : "block";
+        });
+    </script>
 
 
 
-<script>
-  let lastScrollTop = 0;
-  const navbar = document.querySelector(".navigation");
+    <script>
+        let lastScrollTop = 0;
+        const navbar = document.querySelector(".navigation");
 
-  window.addEventListener("scroll", () => {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        window.addEventListener("scroll", () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    // small buffer to avoid flicker
-    if (scrollTop <= 10) {
-      navbar.classList.remove("nav-hidden");
-      navbar.classList.add("nav-visible");
-      return;
-    }
+            // small buffer to avoid flicker
+            if (scrollTop <= 10) {
+                navbar.classList.remove("nav-hidden");
+                navbar.classList.add("nav-visible");
+                return;
+            }
 
-    if (scrollTop > lastScrollTop) {
-      // scrolling DOWN → hide navbar
-      navbar.classList.add("nav-hidden");
-      navbar.classList.remove("nav-visible");
-    } else {
-      // scrolling UP → show navbar
-      navbar.classList.remove("nav-hidden");
-      navbar.classList.add("nav-visible");
-    }
+            if (scrollTop > lastScrollTop) {
+                // scrolling DOWN → hide navbar
+                navbar.classList.add("nav-hidden");
+                navbar.classList.remove("nav-visible");
+            } else {
+                // scrolling UP → show navbar
+                navbar.classList.remove("nav-hidden");
+                navbar.classList.add("nav-visible");
+            }
 
-    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-  });
-</script>
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+    </script>
 
 
 </body>
