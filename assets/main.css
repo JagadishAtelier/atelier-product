@@ -3125,7 +3125,7 @@ body {
     right: -52px;
   }
   .right-\[-40px\] {
-    right: 30px;
+    right: 0px;
   }
 
   .right-\[-64\%\] {
@@ -21078,7 +21078,7 @@ body {
     }
 
     .lg\:-top-\[110px\] {
-      top: -110px;
+      top: -70px;
     }
 
     .lg\:-top-\[133\%\] {
@@ -21154,7 +21154,7 @@ body {
     }
 
     .lg\:top-40 {
-      top: calc(var(--spacing) * 40);
+      top: calc(var(--spacing) * 50);
     }
 
     .lg\:top-\[-12px\] {
@@ -21234,7 +21234,7 @@ body {
     }
 
     .lg\:top-\[3px\] {
-      top: -45px;
+      top: -100px;
     }
 
     .lg\:top-\[8\%\] {
@@ -21438,7 +21438,7 @@ body {
     }
 
     .lg\:right-\[8px\] {
-      right: 8px;
+      right: -20px;
     }
 
     .lg\:right-\[13\%\] {
@@ -24052,7 +24052,7 @@ body {
     }
 
     .xl\:top-6 {
-      top: calc(var(--spacing) * 6);
+      top: calc(var(--spacing) * 15);
     }
 
     .xl\:top-\[-4px\] {
@@ -24208,7 +24208,7 @@ body {
     }
 
     .xl\:top-\[266px\] {
-      top: 244px;
+      top: 300px;
     }
 
     .xl\:top-\[411px\] {
@@ -24336,7 +24336,7 @@ body {
     }
 
     .xl\:right-\[7px\] {
-      right: 227px;
+      right:-20px;
     }
 
     .xl\:right-\[9\%\] {
@@ -24380,11 +24380,11 @@ body {
     }
 
     .xl\:right-\[75px\] {
-      right: 75px;
+      right: -25px;
     }
 
     .xl\:right-\[76px\] {
-      right: 76px;
+      right: -23px;
     }
 
     .xl\:right-\[236px\] {
@@ -24556,19 +24556,19 @@ body {
     }
 
     .xl\:left-\[-107px\] {
-      left: -160px;
+      left: 20px;
     }
 
     .xl\:left-\[-111px\] {
-      left: -111px;
+      left: 35px;
     }
 
     .xl\:left-\[-203px\] {
-      left: -203px;
+      left:32px;
     }
 
     .xl\:left-\[-206px\] {
-      left: -206px;
+      left: -18px;
     }
 
     .xl\:left-\[8\%\] {
@@ -25192,7 +25192,7 @@ body {
     }
 
     .xl\:max-w-\[408px\] {
-      max-width: 470px;
+      max-width: 1000px;
     }
 
     .xl\:max-w-\[409px\] {
