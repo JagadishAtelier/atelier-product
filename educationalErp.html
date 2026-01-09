@@ -105,22 +105,27 @@
       width: 70%;
       margin-bottom: 0;
     }
+
     @media (max-width:768px) {
-      .ERP-hero-con{
-          padding-top: 100px;
+      .ERP-hero-con {
+        padding-top: 100px;
       }
-      .heroTextSwiper{
+
+      .heroTextSwiper {
         width: 100%;
       }
     }
+
     @media (max-width:480px) {
-      .ERP-hero-con{
-          padding-top: 100px;
+      .ERP-hero-con {
+        padding-top: 100px;
       }
-      .heroTextSwiper{
+
+      .heroTextSwiper {
         width: 100%;
       }
-            .fch-dashboard-img {
+
+      .fch-dashboard-img {
         width: 80%;
         max-width: none;
       }
@@ -130,27 +135,27 @@
         object-fit: cover;
       }
     }
-/* Navbar scroll behavior */
-.container-small.navigation {
-  position: fixed;
-  top: 1rem;
-  left: 0;
-  right: 0;
-  z-index: 9999;
-  transition: transform 0.35s ease, opacity 0.35s ease;
-  will-change: transform;
-}
 
-.container-small.navigation.nav-hidden {
-  transform: translateY(-120%);
-  opacity: 0;
-}
+    /* Navbar scroll behavior */
+    .container-small.navigation {
+      position: fixed;
+      top: 1rem;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+      transition: transform 0.35s ease, opacity 0.35s ease;
+      will-change: transform;
+    }
 
-.container-small.navigation.nav-visible {
-  transform: translateY(0);
-  opacity: 1;
-}
+    .container-small.navigation.nav-hidden {
+      transform: translateY(-120%);
+      opacity: 0;
+    }
 
+    .container-small.navigation.nav-visible {
+      transform: translateY(0);
+      opacity: 1;
+    }
   </style>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -214,47 +219,34 @@
       </div>
     </div>
     <header class="mobile-new-navbar">
-  <div class="mobile-new-navbar__container">
+      <div class="mobile-new-navbar__container">
 
-    <!-- Logo -->
-    <a href="https://atelier-product.vercel.app/" class="mobile-new-navbar__logo">
-      <img
-        src="https://atelier-product.vercel.app/assets/ATS%20White%20lOGO%20PNG.png"
-        alt="Atelier"
-      />
-    </a>
+        <!-- Logo -->
+        <a href="https://atelier-product.vercel.app/" class="mobile-new-navbar__logo">
+          <img src="https://atelier-product.vercel.app/assets/ATS%20White%20lOGO%20PNG.png" alt="Atelier" />
+        </a>
 
-    <!-- Hamburger -->
-    <button
-      id="mobileNewNavbarToggle"
-      class="mobile-new-navbar__hamburger"
-      aria-label="Toggle Menu"
-    >
-      <span class="mobile-new-navbar__line"></span>
-      <span class="mobile-new-navbar__line"></span>
-      <span class="mobile-new-navbar__line"></span>
-    </button>
-  </div>
+        <!-- Hamburger -->
+        <button id="mobileNewNavbarToggle" class="mobile-new-navbar__hamburger" aria-label="Toggle Menu">
+          <span class="mobile-new-navbar__line"></span>
+          <span class="mobile-new-navbar__line"></span>
+          <span class="mobile-new-navbar__line"></span>
+        </button>
+      </div>
 
-  <!-- Mobile Menu -->
-  <nav
-    id="mobileNewNavbarMenu"
-    class="mobile-new-navbar__menu"
-  >
-    <a class="mobile-new-navbar__link" href="#features">Features</a>
-    <a class="mobile-new-navbar__link" href="#products">Products</a>
-    <a class="mobile-new-navbar__link" href="#benefits">Benefits</a>
-    <a class="mobile-new-navbar__link" href="#testimonial">Testimonial</a>
-    <a class="mobile-new-navbar__link" href="#our-values">Our Value</a>
+      <!-- Mobile Menu -->
+      <nav id="mobileNewNavbarMenu" class="mobile-new-navbar__menu">
+        <a class="mobile-new-navbar__link" href="#features">Features</a>
+        <a class="mobile-new-navbar__link" href="#products">Products</a>
+        <a class="mobile-new-navbar__link" href="#benefits">Benefits</a>
+        <a class="mobile-new-navbar__link" href="#testimonial">Testimonial</a>
+        <a class="mobile-new-navbar__link" href="#our-values">Our Value</a>
 
-    <a
-      href="/contact.html"
-      class="mobile-new-navbar__cta"
-    >
-      Start for free
-    </a>
-  </nav>
-</header>
+        <a href="/contact.html" class="mobile-new-navbar__cta">
+          Start for free
+        </a>
+      </nav>
+    </header>
 
   </div>
   <main class="page-main">
@@ -291,7 +283,7 @@
                       <h1 class="text-color-gradient text-center">
                         Simplify School Operations with Intelligent Automation
                       </h1>
-                      <p class="text-gray-50 mt-4"style="margin-top: 15px;">
+                      <p class="text-gray-50 mt-4" style="margin-top: 15px;">
                         Automate admissions, attendance, exams, and fees with real-time visibility.
                       </p>
                     </div>
@@ -589,13 +581,20 @@ Get started section
         </div>
       </div>
     </section>
-      <div id="footer-container"></div>
+    <div id="footer-container"></div>
   </main>
 
+  <script src="assets/contact-form.js"></script>
   <script>
-    fetch("../Footer/footer.html")
+    fetch("Footer/footer.html")
       .then(res => res.text())
-      .then(html => document.getElementById("footer-container").innerHTML = html);
+      .then(html => {
+        document.getElementById("footer-container").innerHTML = html;
+        const footerForm = document.querySelector('#footer-container .js-ajax-form');
+        if (footerForm && typeof attachFormHandler === 'function') {
+          attachFormHandler(footerForm);
+        }
+      });
   </script>
   <script src="js/jquery.js?site=688727629d9df45fec1ac128" type="text/javascript"></script>
   <script src="js/webflow.schunk.36b8fb49256177c8.js" type="text/javascript"></script>
@@ -652,42 +651,42 @@ Get started section
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-  const toggleBtn = document.getElementById("mobileNewNavbarToggle");
-  const menu = document.getElementById("mobileNewNavbarMenu");
+  <script>
+    const toggleBtn = document.getElementById("mobileNewNavbarToggle");
+    const menu = document.getElementById("mobileNewNavbarMenu");
 
-  toggleBtn.addEventListener("click", () => {
-    menu.style.display = menu.style.display === "block" ? "none" : "block";
-  });
-</script>
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    let lastScrollTop = 0;
-    const navbar = document.querySelector(".container-small.navigation");
-
-    if (!navbar) return;
-
-    window.addEventListener("scroll", () => {
-      const scrollTop = window.scrollY || document.documentElement.scrollTop;
-
-      if (scrollTop <= 10) {
-        navbar.classList.remove("nav-hidden");
-        navbar.classList.add("nav-visible");
-        return;
-      }
-
-      if (scrollTop > lastScrollTop) {
-        navbar.classList.add("nav-hidden");
-        navbar.classList.remove("nav-visible");
-      } else {
-        navbar.classList.remove("nav-hidden");
-        navbar.classList.add("nav-visible");
-      }
-
-      lastScrollTop = scrollTop;
+    toggleBtn.addEventListener("click", () => {
+      menu.style.display = menu.style.display === "block" ? "none" : "block";
     });
-  });
-</script>
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      let lastScrollTop = 0;
+      const navbar = document.querySelector(".container-small.navigation");
+
+      if (!navbar) return;
+
+      window.addEventListener("scroll", () => {
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+        if (scrollTop <= 10) {
+          navbar.classList.remove("nav-hidden");
+          navbar.classList.add("nav-visible");
+          return;
+        }
+
+        if (scrollTop > lastScrollTop) {
+          navbar.classList.add("nav-hidden");
+          navbar.classList.remove("nav-visible");
+        } else {
+          navbar.classList.remove("nav-hidden");
+          navbar.classList.add("nav-visible");
+        }
+
+        lastScrollTop = scrollTop;
+      });
+    });
+  </script>
 
 </body>
 

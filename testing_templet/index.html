@@ -318,14 +318,16 @@
                 display: flex;
             }
         }
+
         @media (max-width:768px) {
-  .container-small{
-    display: block !important;
-  }
-  .container-small.navigation{
-    display: none !important;
-  }
-}
+            .container-small {
+                display: block !important;
+            }
+
+            .container-small.navigation {
+                display: none !important;
+            }
+        }
     </style>
     <style>
         .logo-new-div {
@@ -1142,8 +1144,8 @@ Working with Atelier Technology brought a new level of efficiency and innovation
                 </h2>
             </div>
             <div class="w-layout-grid two-blocks-grid tablet-two margin-bottom-16-mobile-12">
-                <a id="w-node-b70bd833-e217-7288-ac96-bbc3487eac63-ef9ade48" href="Atelierhub.assist@gmail.com"
-                    class="contact-block w-inline-block"><img
+                <a id="w-node-b70bd833-e217-7288-ac96-bbc3487eac63-ef9ade48"
+                    href="mailto:business@ateliertechnologysolutions.com" class="contact-block w-inline-block"><img
                         src="assets/cdn.prod.website-files.com/65cc742940cb3798ef9ade41/65ccebe2fe7b9903b3b18093_Mail.svg"
                         loading="lazy" alt="" class="icon-size-48" />
                     <h5 class="h5 text-color-white max-width-440">
@@ -1171,8 +1173,8 @@ Working with Atelier Technology brought a new level of efficiency and innovation
                         </p>
                     </div>
                     <div class="form-block w-form">
-                        <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form"
-                            data-wf-page-id="65cc742940cb3798ef9ade48"
+                        <form id="email-form" name="email-form" data-name="Email Form" method="POST"
+                            class="form js-ajax-form" action="#"
                             data-wf-element-id="6e38dbda-ab76-4b75-1f48-4e42ed3af17c">
                             <input class="input w-input" maxlength="256" name="Full-Name" data-name="Full Name"
                                 placeholder="Full Name" type="text" id="Full-Name" required="" /><input
@@ -1213,10 +1215,17 @@ Working with Atelier Technology brought a new level of efficiency and innovation
     </section>
     <div id="footer-container"></div>
 
+    <script src="../assets/contact-form.js"></script>
     <script>
         fetch("../Footer/testingFooter.html")
             .then(res => res.text())
-            .then(html => document.getElementById("footer-container").innerHTML = html);
+            .then(html => {
+                document.getElementById("footer-container").innerHTML = html;
+                const footerForm = document.querySelector('#footer-container .js-ajax-form');
+                if (footerForm && typeof attachFormHandler === 'function') {
+                    attachFormHandler(footerForm);
+                }
+            });
     </script>
 
     <!-- <footer id="Footer" class="footer">

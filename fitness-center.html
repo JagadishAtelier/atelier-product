@@ -395,7 +395,7 @@
 
     .nav-wrap {
       margin-top: 1rem;
-      padding:0 0.5rem 0 0.5rem;
+      padding: 0 0.5rem 0 0.5rem;
       border: 1px solid #99a0ae1a;
       border-radius: 1rem;
       background-color: #99a0ae1a;
@@ -776,62 +776,72 @@
     }
 
     .text-h1-tag {
-      font-size: 5rem ;
+      font-size: 5rem;
     }
-    #wrapwrap > header + main > #wrap:not(.o_wblog_cover_post):not(.js_hr_recruitment) > :first-child{
+
+    #wrapwrap>header+main>#wrap:not(.o_wblog_cover_post):not(.js_hr_recruitment)> :first-child {
       border-top: 0 !important;
     }
+
     @media (max-width:768px) {
-          .text-h1-tag {
-      font-size: 3rem;
+      .text-h1-tag {
+        font-size: 3rem;
+      }
+
+      .fch-dashboard-img {
+        width: 90%;
+      }
+
+      .fch-bg-dots-img {
+        height: 120vh;
+      }
+
+      .fch-start-now {
+        margin-bottom: 3%;
+      }
     }
-    .fch-dashboard-img{
-      width: 90%;
-    }
-    .fch-bg-dots-img{
-      height: 120vh;
-    }
-    .fch-start-now{
-      margin-bottom: 3%;
-    }
-    }
+
     @media (max-width:480px) {
-          .text-h1-tag {
-      font-size: 2.5rem;
+      .text-h1-tag {
+        font-size: 2.5rem;
+      }
+
+      .fch-dashboard-img {
+        width: 90%;
+      }
+
+      .fch-dashboard-img img {
+        object-fit: cover;
+      }
+
+      .fch-bg-dots-img {
+        height: 90vh;
+      }
+
+      .fch-start-now {
+        margin-bottom: 3%;
+      }
+
+      .fc-bg-image {
+        padding-top: 0 !important;
+      }
     }
-    .fch-dashboard-img{
-      width: 90%;
-    }
-    .fch-dashboard-img img{
-      object-fit: cover;
-    }
-    .fch-bg-dots-img{
-      height: 90vh;
-    }
-        .fch-start-now{
-      margin-bottom: 3%;
-    }
-    .fc-bg-image{
-      padding-top: 0 !important;
-    }
-    }
+
     /* Navbar scroll behavior */
-.navigation {
-  transition: transform 0.35s ease, opacity 0.35s ease;
-  will-change: transform;
-}
+    .navigation {
+      transition: transform 0.35s ease, opacity 0.35s ease;
+      will-change: transform;
+    }
 
-.navigation.nav-hidden {
-  transform: translateY(-120%);
-  opacity: 0;
-}
+    .navigation.nav-hidden {
+      transform: translateY(-120%);
+      opacity: 0;
+    }
 
-.navigation.nav-visible {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-
+    .navigation.nav-visible {
+      transform: translateY(0);
+      opacity: 1;
+    }
   </style>
 </head>
 
@@ -916,7 +926,7 @@
     </header>
     <main>
       <div id="wrap" class="oe_structure x_wd">
-        <section  class="s_wd_hero_text_image text-center text-lg-start py-6 fc-bg-image position-relative"
+        <section class="s_wd_hero_text_image text-center text-lg-start py-6 fc-bg-image position-relative"
           data-name="Text - Image" data-snippet="s_wd_hero_text_image">
           <div class="fch-bg-dots-img animate-pulse"
             style="background-image: url(https://atelier-product.vercel.app/images/ns-img-dark-126.svg); background-position: top; background-repeat: no-repeat;">
@@ -975,7 +985,8 @@
           </div>
 
           <div class="container FC-Con-hero">
-            <div class="row align-items-lg-center align-items-start justify-content-start justify-content-lg-center text-center">
+            <div
+              class="row align-items-lg-center align-items-start justify-content-start justify-content-lg-center text-center">
               <div class="col-lg-10 py-lg-5">
                 <h1 class="mb-4 text-white text-center text-h1-tag">
                   The ultimate software for your Fitness Center
@@ -1167,7 +1178,7 @@
           </div>
         </section>
 
-        <section class="overflow-x-hidden" >
+        <section class="overflow-x-hidden">
           <div class="container">
             <img src="https://odoocdn.com/openerp_website/static/src/img/arrows/grey_arrow_md_03.svg" height="100px"
               class="d-none d-lg-block rotate-40 ms-10 flip" alt="" loading="lazy" />
@@ -1702,47 +1713,54 @@
       </div>
     </div>
   </div> -->
+  <script src="assets/contact-form.js"></script>
   <script>
-    fetch("../Footer/fitnessFooter.html")
+    fetch("Footer/fitnessFooter.html")
       .then(res => res.text())
-      .then(html => document.getElementById("separatefooter-container").innerHTML = html);
+      .then(html => {
+        document.getElementById("separatefooter-container").innerHTML = html;
+        const footerForm = document.querySelector('#separatefooter-container .js-ajax-form');
+        if (footerForm && typeof attachFormHandler === 'function') {
+          attachFormHandler(footerForm);
+        }
+      });
   </script>
 
   <script>
-  const toggleBtn = document.getElementById("mobileNewNavbarToggle");
-  const menu = document.getElementById("mobileNewNavbarMenu");
+    const toggleBtn = document.getElementById("mobileNewNavbarToggle");
+    const menu = document.getElementById("mobileNewNavbarMenu");
 
-  toggleBtn.addEventListener("click", () => {
-    menu.style.display = menu.style.display === "block" ? "none" : "block";
-  });
-</script>
-<script>
-  let lastScrollTop = 0;
-  const navbar = document.querySelector(".navigation");
+    toggleBtn.addEventListener("click", () => {
+      menu.style.display = menu.style.display === "block" ? "none" : "block";
+    });
+  </script>
+  <script>
+    let lastScrollTop = 0;
+    const navbar = document.querySelector(".navigation");
 
-  window.addEventListener("scroll", () => {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    window.addEventListener("scroll", () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    // small buffer to avoid flicker
-    if (scrollTop <= 10) {
-      navbar.classList.remove("nav-hidden");
-      navbar.classList.add("nav-visible");
-      return;
-    }
+      // small buffer to avoid flicker
+      if (scrollTop <= 10) {
+        navbar.classList.remove("nav-hidden");
+        navbar.classList.add("nav-visible");
+        return;
+      }
 
-    if (scrollTop > lastScrollTop) {
-      // scrolling DOWN → hide navbar
-      navbar.classList.add("nav-hidden");
-      navbar.classList.remove("nav-visible");
-    } else {
-      // scrolling UP → show navbar
-      navbar.classList.remove("nav-hidden");
-      navbar.classList.add("nav-visible");
-    }
+      if (scrollTop > lastScrollTop) {
+        // scrolling DOWN → hide navbar
+        navbar.classList.add("nav-hidden");
+        navbar.classList.remove("nav-visible");
+      } else {
+        // scrolling UP → show navbar
+        navbar.classList.remove("nav-hidden");
+        navbar.classList.add("nav-visible");
+      }
 
-    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-  });
-</script>
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    });
+  </script>
 
 </body>
 
