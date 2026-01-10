@@ -527,7 +527,7 @@ const glossaryAnimation = {
 window.addEventListener("DOMContentLoaded", () => {
   glossaryAnimation.init();
 });
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   if (typeof gsap === "undefined") {
     console.error("GSAP is not loaded.");
     return;
@@ -868,7 +868,7 @@ if (typeof window !== "undefined") {
   headerAnimation.headerFive();
   headerAnimation.headerSix();
 }
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   if (typeof InfiniteMarquee === "undefined") {
     return;
   }
@@ -1461,7 +1461,7 @@ function initReviewsSwiper() {
       }
     },
     on: {
-      slideChange: function() {
+      slideChange: function () {
         const slides = this.slides;
         slides.forEach((slide, index) => {
           if (index === this.activeIndex) {
@@ -1471,7 +1471,7 @@ function initReviewsSwiper() {
           }
         });
       },
-      slideChangeTransitionStart: function() {
+      slideChangeTransitionStart: function () {
         const activeSlide = this.slides[this.activeIndex];
         if (activeSlide) {
           const elements = activeSlide.querySelectorAll(
@@ -1502,7 +1502,7 @@ function initReviewsSwiper() {
       prevEl: ".single-card-reviews-prev"
     },
     on: {
-      init: function() {
+      init: function () {
         const activeSlide = this.slides[this.activeIndex];
         if (activeSlide) {
           activeSlide.style.transition = "all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)";
@@ -1511,7 +1511,7 @@ function initReviewsSwiper() {
           activeSlide.style.filter = "blur(0)";
         }
       },
-      slideChange: function() {
+      slideChange: function () {
         const slides = this.slides;
         slides.forEach((slide) => {
           slide.style.transition = "all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)";
@@ -1520,7 +1520,7 @@ function initReviewsSwiper() {
           slide.style.filter = "blur(3px)";
         });
       },
-      slideChangeTransitionStart: function() {
+      slideChangeTransitionStart: function () {
         const activeSlide = this.slides[this.activeIndex];
         if (activeSlide) {
           activeSlide.style.transition = "all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)";
@@ -1556,7 +1556,7 @@ function initReviewsSwiper() {
       dynamicBullets: true
     },
     on: {
-      init: function() {
+      init: function () {
         const style = document.createElement("style");
         style.textContent = `
               .reviews-fade-in-swiper .swiper-slide {
@@ -1594,7 +1594,7 @@ function initReviewsSwiper() {
             `;
         document.head.appendChild(style);
       },
-      slideChangeTransitionStart: function() {
+      slideChangeTransitionStart: function () {
         const slides = this.slides;
         slides.forEach((slide) => {
           const elements = slide.querySelectorAll(
@@ -1608,7 +1608,7 @@ function initReviewsSwiper() {
           });
         });
       },
-      slideChangeTransitionEnd: function() {
+      slideChangeTransitionEnd: function () {
         const activeSlide = this.slides[this.activeIndex];
         if (activeSlide) {
           const elements = activeSlide.querySelectorAll(
@@ -1657,7 +1657,7 @@ function initReviewsSwiper() {
       type: "bullets"
     },
     on: {
-      slideChange: function() {
+      slideChange: function () {
         const slides = this.slides;
         slides.forEach((slide, index) => {
           if (index === this.activeIndex) {
@@ -1685,11 +1685,11 @@ function initReviewsSwiper() {
       prevEl: ".social-proof-prev"
     },
     on: {
-      init: function() {
+      init: function () {
         setupSocialProofAvatars(this);
         updateActiveAvatar(this.realIndex);
       },
-      slideChange: function() {
+      slideChange: function () {
         updateActiveAvatar(this.realIndex);
       }
     }
@@ -1697,7 +1697,7 @@ function initReviewsSwiper() {
   function setupSocialProofAvatars(swiperInstance) {
     const avatars = document.querySelectorAll(".social-proof-avatar");
     avatars.forEach((avatar) => {
-      avatar.addEventListener("click", function() {
+      avatar.addEventListener("click", function () {
         const slideIndex = parseInt(this.getAttribute("data-slide-index"));
         if (swiperInstance.realIndex === slideIndex) {
           return;
@@ -2503,7 +2503,7 @@ const commonAnimation = {
       });
     }
     if (monthCards.length > 0 && monthLinks.length > 0) {
-      let updateActiveLink2 = function() {
+      let updateActiveLink2 = function () {
         if (rafId) {
           cancelAnimationFrame(rafId);
         }
@@ -2545,7 +2545,7 @@ const commonAnimation = {
       let activeCardId = null;
       let rafId = null;
       monthLinks.forEach((link) => {
-        link.addEventListener("click", function(e) {
+        link.addEventListener("click", function (e) {
           e.preventDefault();
           const targetId = this.getAttribute("data-month-link");
           const targetCard = document.getElementById(targetId);
@@ -2574,7 +2574,7 @@ const commonAnimation = {
         let scrollTimeout;
         window.addEventListener(
           "scroll",
-          function() {
+          function () {
             if (scrollTimeout) {
               clearTimeout(scrollTimeout);
             }
@@ -3235,7 +3235,9 @@ const smoothScrolling = () => {
   const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 768 || "ontouchstart" in window;
   if (!isMobile) {
     lenis = new Lenis({
-      lerp: 0.1,
+      duration: 2.5,
+      lerp: 0.05,
+      wheelMultiplier: 3.5,
       smoothWheel: true
     });
     lenis.on("scroll", () => ScrollTrigger.update());
@@ -3274,7 +3276,7 @@ const lenisSmoothScrollLinks = () => {
   const lenisTargetElements = document.querySelectorAll(".lenis-scroll-to");
   const sidebarList = document.querySelector(".table-of-contents .table-of-list");
   lenisTargetElements.forEach((ele) => {
-    ele.addEventListener("click", function(e) {
+    ele.addEventListener("click", function (e) {
       e.preventDefault();
       const target = ele.getAttribute("href");
       if (sidebarList) {
@@ -3314,7 +3316,7 @@ const handleTocListClicks = () => {
     if (item.querySelector(".lenis-scroll-to")) {
       return;
     }
-    item.addEventListener("click", function() {
+    item.addEventListener("click", function () {
       handleTocItemClick(item, sidebarList);
     });
   });
@@ -3415,7 +3417,7 @@ const TopNav = {
   }
 };
 document.addEventListener("DOMContentLoaded", () => TopNav.init());
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const numberObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -3473,7 +3475,7 @@ const forceThemeSwitcher = {
 if (typeof window !== "undefined") {
   forceThemeSwitcher.init();
 }
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const slider = document.querySelector(".slider");
   const handle = document.querySelector(".slider-handle");
   const afterImage = document.querySelector(".after");

@@ -193,7 +193,8 @@
 
         <!-- Logo -->
         <a href="https://atelier-product.vercel.app/" class="mobile-new-navbar__logo">
-          <img loading="lazy" src="https://atelier-product.vercel.app/assets/ATS%20White%20lOGO%20PNG.png" alt="Atelier" />
+          <img loading="lazy" src="https://atelier-product.vercel.app/assets/ATS%20White%20lOGO%20PNG.png"
+            alt="Atelier" />
         </a>
 
         <!-- Hamburger -->
@@ -311,7 +312,7 @@
                       Income
                     </div>
                     <div class="text-lg flex items-center font-medium leading-[1.5] text-accent">
-                      â‚¹&nbsp;<span data-counter data-number="48000" data-speed="2000" data-interval="200"
+                      ₹<span data-counter data-number="48000" data-speed="2000" data-interval="200"
                         data-rooms="5">48,000</span>
                     </div>
                   </div>
@@ -321,7 +322,8 @@
                 <figure data-ns-animate data-delay="0.4"
                   class="absolute max-w-[96px] md:max-w-[119px] lg:max-w-[104px] xl:max-w-[119px] overflow-hidden rounded-xl left-[-5px] top-[117px] lg:top-2.5 lg:left-[-222px] xl:left-[-203px] 2xl:-left-[132px] z-[1] md:left-[23px] xl:top-6 2xl:top-2.5">
                   <div class="bg-background-6 rounded-xl p-6">
-                    <img loading="lazy" class="inline-block size-16 h-auto sm:size-14 rounded-full bg-linear-[156deg,_#FFF_32.92%,_#C6F56F_91%]"
+                    <img loading="lazy"
+                      class="inline-block size-16 h-auto sm:size-14 rounded-full bg-linear-[156deg,_#FFF_32.92%,_#C6F56F_91%]"
                       src="images/ns-avatar-9.png" alt="Avatar 1" />
                   </div>
                 </figure>
@@ -367,7 +369,7 @@
                       Expenses
                     </div>
                     <div class="text-lg flex items-center font-medium leading-[1.5] text-accent">
-                      â‚¹&nbsp;<span data-counter data-number="2321" data-speed="2000" data-interval="200"
+                      ₹<span data-counter data-number="2321" data-speed="2000" data-interval="200"
                         data-rooms="4">2,321</span>
                     </div>
                   </div>
@@ -392,7 +394,7 @@
                       <span class="font-normal text-accent">
                         Expected Revenue
                       </span>
-                      <span class="text-lg flex items-center font-medium leading-[1.5] text-accent">â‚¹&nbsp;
+                      <span class="text-lg flex items-center font-medium leading-[1.5] text-accent">₹
                         <span data-counter data-number="53224" data-speed="2000" data-interval="200" data-rooms="5"
                           data-height-space="2.5">53,224</span>
                       </span>
@@ -731,7 +733,8 @@ Get started section
                   </div>
 
                   <figure class="max-w-[385px] w-full rounded-2xl overflow-hidden">
-                    <img loading="lazy" src="images/ns-img-192.png" alt="step" class="md:max-h-[315px] md:min-h-[315px]" />
+                    <img loading="lazy" src="images/ns-img-192.png" alt="step"
+                      class="md:max-h-[315px] md:min-h-[315px]" />
                   </figure>
                 </div>
               </div>
@@ -755,7 +758,8 @@ Get started section
                   </div>
 
                   <figure class="max-w-[403px] w-full rounded-2xl overflow-hidden">
-                    <img loading="lazy" src="images/ns-img-dark-131.png" alt="step" class="md:max-h-[315px] md:min-h-[315px]" />
+                    <img loading="lazy" src="images/ns-img-dark-131.png" alt="step"
+                      class="md:max-h-[315px] md:min-h-[315px]" />
                   </figure>
                 </div>
               </div>
@@ -801,7 +805,8 @@ Get started section
                   </div>
 
                   <figure class="max-w-[403px] w-full rounded-2xl overflow-hidden">
-                    <img loading="lazy" src="images/ns-img-dark-133.png" alt="step" class="md:max-h-[315px] md:min-h-[315px]" />
+                    <img loading="lazy" src="images/ns-img-dark-133.png" alt="step"
+                      class="md:max-h-[315px] md:min-h-[315px]" />
                   </figure>
                 </div>
               </div>
@@ -897,10 +902,9 @@ Get started section
               <div class="rive-animation-wrap">
                 <div class="benefits-image"
                   data-rive-url="https://cdn.prod.website-files.com/688727629d9df45fec1ac128/68b6ae753ac7a8ac3c937488_a44c8568db6e7f43979175d1156b26ba_orizon_features.riv"
-                  data-rive-state-machine="State Machine 1" data-rive-artboard="Atelier Features"
-                  data-rive-autoplay="true" data-rive-is-touch-scroll-enabled="false"
-                  data-rive-automatically-handle-events="false" data-rive-fit="contain" data-rive-alignment="center"
-                  data-animation-type="rive">
+                  data-rive-state-machine="State Machine 1" data-rive-autoplay="true"
+                  data-rive-is-touch-scroll-enabled="false" data-rive-automatically-handle-events="false"
+                  data-rive-fit="contain" data-rive-alignment="center" data-animation-type="rive">
                   <canvas style="height: 100%; width: 100%"></canvas>
                 </div>
               </div>
@@ -2630,22 +2634,7 @@ Get started section
       },
     });
   </script>
-  <script src="https://unpkg.com/@studio-freight/lenis"></script>
-  <script>
-    const lenis = new Lenis({
-      duration: 2.5,         // smooth long animation
-      smooth: true,
-      lerp: 0.05,            // buttery smooth glide
-      wheelMultiplier: 3.5   // fast but still smooth
-    })
 
-    function raf(time) {
-      lenis.raf(time)
-      requestAnimationFrame(raf)
-    }
-
-    requestAnimationFrame(raf)
-  </script>
 
   <script>
     const toggleBtn = document.getElementById("mobileNewNavbarToggle");
