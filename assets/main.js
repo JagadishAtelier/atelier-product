@@ -3240,7 +3240,13 @@ const smoothScrolling = () => {
       wheelMultiplier: 3.5,
       smoothWheel: true
     });
-    lenis.on("scroll", () => ScrollTrigger.update());
+    lenis.on("scroll", () => {
+      try {
+        ScrollTrigger.update();
+      } catch (e) {
+        console.warn("ScrollTrigger update failed:", e);
+      }
+    });
     gsap.ticker.add((time) => {
       lenis.raf(time * 1e3);
     });
@@ -3702,3 +3708,80 @@ const themeSwitcher = {
 if (typeof window !== "undefined") {
   themeSwitcher.init();
 }
+
+// Moved from index.html inline scripts
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Testimonial Swiper
+  if (document.querySelector(".testimonial-swiper-container")) {
+    var testimonialSwiper = new Swiper(".testimonial-swiper-container", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      speed: 600,
+      pagination: {
+        el: ".testimonial-swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".slider-arrow.is-bottom-next",
+        prevEl: ".slider-arrow.is-bottom-previous",
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 4,
+        },
+      },
+    });
+  }
+
+  // Mobile Navbar Toggle
+  const toggleBtn = document.getElementById("mobileNewNavbarToggle");
+  const menu = document.getElementById("mobileNewNavbarMenu");
+  if (toggleBtn && menu) {
+    toggleBtn.addEventListener("click", () => {
+      menu.style.display = menu.style.display === "block" ? "none" : "block";
+    });
+  }
+
+  // Hero Slider
+  const track = document.querySelector(".hero-slider-track");
+  const slides = document.querySelectorAll(".hero-slide");
+  if (track && slides.length > 0) {
+    let currentIndex = 0;
+    function moveSlide() {
+      currentIndex = (currentIndex + 1) % slides.length;
+      track.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+    setInterval(moveSlide, 4000);
+  }
+
+  // Navbar Scroll Behavior
+  let lastScrollTop = 0;
+  const navbar = document.querySelector(".container-small.navigation");
+  if (navbar) {
+    window.addEventListener("scroll", () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      if (scrollTop <= 10) {
+        navbar.classList.remove("nav-hidden");
+        navbar.classList.add("nav-visible");
+        return;
+      }
+      if (scrollTop > lastScrollTop) {
+        navbar.classList.add("nav-hidden");
+        navbar.classList.remove("nav-visible");
+      } else {
+        navbar.classList.remove("nav-hidden");
+        navbar.classList.add("nav-visible");
+      }
+      lastScrollTop = scrollTop;
+    });
+  }
+});

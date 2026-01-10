@@ -8,6 +8,7 @@
   backdrop-filter: blur(12px);
   display: none;
 }
+
 /* Layout */
 .mobile-new-navbar__container {
   max-width: 910px;
@@ -20,6 +21,7 @@
 /* Logo */
 .mobile-new-navbar__logo img {
   height: 56px;
+  width: auto;
 }
 
 @media (min-width: 640px) {
@@ -27,11 +29,13 @@
     height: 64px;
   }
 }
+
 @media (max-width:768px) {
-  .mobile-new-navbar{
+  .mobile-new-navbar {
     display: block;
   }
-  .container-small{
+
+  .container-small {
     display: none;
   }
 }
