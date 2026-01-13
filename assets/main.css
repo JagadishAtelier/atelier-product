@@ -2043,6 +2043,7 @@ body {
     visibility: visible;
   }
 
+
   .btn {
     cursor: pointer;
     border-style: var(--tw-border-style);
@@ -2050,7 +2051,7 @@ body {
     --tw-font-weight: var(--font-weight-normal);
     font-weight: var(--font-weight-normal);
     text-wrap: nowrap;
-    text-transform: lowercase;
+    /* text-transform: lowercase; */
     transition-property: all;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
@@ -30719,4 +30720,11 @@ svg.leaflet-zoom-animated {
     display: flex;
     flex-direction: column;
   }
+}
+.bg-grid-pattern {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: center center;
 }
