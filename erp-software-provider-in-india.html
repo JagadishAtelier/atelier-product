@@ -108,6 +108,360 @@
             height: 100%;
             width: auto;
         }
+
+        /* Added for About Section Text enhancement */
+        .hero-subtitle-like {
+            font-size: 1.125rem;
+            line-height: 1.6;
+        }
+
+        @media (min-width: 768px) {
+            .hero-subtitle-like {
+                font-size: 1.25rem;
+            }
+        }
+
+        .text-scroll-reveal {
+            color: rgba(255, 255, 255, 0.4);
+            /* Initial dimmed state */
+        }
+
+        .Our-Product-Services-card {
+            transition: background-color 0.3s ease;
+        }
+
+        .Our-Product-Services-card:hover {
+            background-color: #000;
+        }
+
+        /* Testimonial Section Styles */
+        .testimonial-swiper-container {
+            width: 100%;
+            padding-bottom: 3rem;
+            overflow: hidden;
+        }
+
+        .testimonial-slide {
+            height: auto;
+        }
+
+        .testimonial-content {
+            background-color: #1F2937;
+            /* Fallback */
+            background-color: var(--background-8, #1F2937);
+            border-radius: 20px;
+            padding: 2rem;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        @media (max-width: 767px) {
+            .testimonial-content {
+                width: 100%;
+                max-width: 100%;
+                padding: 1.5rem;
+            }
+        }
+
+        /* Stats Section Custom CSS */
+        .stats-circle-wrapper {
+            position: relative;
+            width: 180px;
+            height: 180px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .stats-circle-svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: rotate(-90deg);
+            /* Start from top */
+            overflow: visible;
+        }
+
+        .stats-circle-bg {
+            fill: none;
+            stroke: rgba(255, 255, 255, 0.1);
+            stroke-width: 6;
+        }
+
+        .stats-circle-progress {
+            fill: none;
+            stroke: url(#gradient-stats);
+            stroke-width: 6;
+            stroke-linecap: round;
+            stroke-dasharray: 339.292;
+            /* 2 * PI * 54 */
+            stroke-dashoffset: 339.292;
+            /* Start empty */
+            transition: stroke-dashoffset 1s ease-out;
+            /* Fallback */
+        }
+
+        .stats-number-content {
+            position: relative;
+            z-index: 10;
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            color: #fff;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        .stats-suffix {
+            font-size: 1.5rem;
+            margin-left: 2px;
+        }
+
+        @media (min-width: 1024px) {
+            .grid-4-cols-lg {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        @media (max-width: 1023px) and (min-width: 768px) {
+            .grid-2-cols-md {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 767px) {
+            .grid-1-col-sm {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* FAQ Section Grid Pattern */
+        .bg-grid-pattern-faq {
+            position: relative;
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+        }
+
+        .bg-grid-pattern-faq::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, #0e121b 0%, transparent 20%, transparent 80%, #0e121b 100%);
+            /* Fade top and bottom with Section Background Color */
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .bg-grid-pattern-faq>.main-container {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Industries Section Custom CSS */
+        .industries-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        @media (min-width: 640px) {
+            .industries-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .industries-grid {
+                grid-template-columns: repeat(8, 1fr);
+            }
+        }
+
+        .industry-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .industry-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .industry-icon-wrapper {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            border-radius: 12px;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.01));
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #CF208B;
+            /* Primary pink/purple brand color */
+            transition: all 0.3s ease;
+        }
+
+        .industry-item:hover .industry-icon-wrapper {
+            background: rgba(207, 32, 139, 0.1);
+            border-color: rgba(207, 32, 139, 0.3);
+            box-shadow: 0 0 20px rgba(207, 32, 139, 0.2);
+        }
+
+        .industry-label {
+            color: var(--accent);
+            font-size: 0.875rem;
+            font-weight: 500;
+            line-height: 1.2;
+        }
+
+        /* Icon Animations */
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes float-y {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-3px);
+            }
+        }
+
+        @keyframes pulse-opacity {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+        }
+
+        @keyframes shake {
+
+            0%,
+            100% {
+                transform: rotate(0deg);
+            }
+
+            25% {
+                transform: rotate(-5deg);
+            }
+
+            75% {
+                transform: rotate(5deg);
+            }
+        }
+
+        @keyframes shake-less {
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(0);
+            }
+
+            25% {
+                transform: translateY(-1px) rotate(-1deg);
+            }
+
+            50% {
+                transform: translateY(1px) rotate(1deg);
+            }
+
+            75% {
+                transform: translateY(-1px) rotate(0);
+            }
+        }
+
+        @keyframes rock {
+
+            0%,
+            100% {
+                transform: rotate(0deg);
+            }
+
+            25% {
+                transform: rotate(-15deg);
+            }
+
+            75% {
+                transform: rotate(15deg);
+            }
+        }
+
+        @keyframes draw {
+            0% {
+                stroke-dasharray: 100;
+                stroke-dashoffset: 100;
+            }
+
+            100% {
+                stroke-dasharray: 100;
+                stroke-dashoffset: 0;
+            }
+        }
+
+        .industry-item:hover svg .anim-spin {
+            animation: spin 2s linear infinite;
+            transform-origin: center;
+        }
+
+        .industry-item:hover svg .anim-float {
+            animation: float-y 2s ease-in-out infinite;
+        }
+
+        .industry-item:hover svg .anim-pulse {
+            animation: pulse-opacity 1.5s ease-in-out infinite;
+        }
+
+        .industry-item:hover svg .anim-shake {
+            animation: shake 0.5s ease-in-out infinite;
+            transform-origin: center;
+        }
+
+        .industry-item:hover svg .anim-shake-less {
+            animation: shake-less 0.3s ease-in-out infinite;
+            transform-origin: center;
+        }
+
+        .industry-item:hover svg .anim-rock {
+            animation: rock 2s ease-in-out infinite;
+            transform-origin: center;
+        }
+
+        /* Generic Draw Animation for all other paths on hover */
+        .industry-item:hover svg path:not([class*="anim-"]),
+        .industry-item:hover svg circle:not([class*="anim-"]),
+        .industry-item:hover svg rect:not([class*="anim-"]),
+        .industry-item:hover svg line:not([class*="anim-"]),
+        .industry-item:hover svg polyline:not([class*="anim-"]) {
+            animation: draw 1s ease forwards;
+        }
     </style>
 </head>
 
@@ -237,14 +591,14 @@
                         </span>
                     </h2>
                     <div class="split-text content-lead space-y-4">
-                        <p>
+                        <p class="hero-subtitle-like text-scroll-reveal">
                             Founded in 2022, Atelier Technology Solutions has solidified its position as a go-to ERP
                             Software provider in India with 50+ completed projects. Our developers hold certifications
                             in
                             leading ERP frameworks, ensuring deployments that rival global standards while focusing on
                             Indian business nuances like multilingual support and rupee-based accounting.
                         </p>
-                        <p>
+                        <p class="hero-subtitle-like text-scroll-reveal">
                             We emphasize real-world experience: From migrating legacy systems for a Mumbai manufacturer
                             to
                             deploying cloud ERP for a Bangalore retailer, our portfolio demonstrates measurable
@@ -252,6 +606,75 @@
                             This hands-on approach builds authority, as evidenced by client retention rates exceeding
                             95%.
                         </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="section-standard section-bg-dark" id="stats">
+            <div class="main-container">
+                <div class="grid-4-cols-lg grid-2-cols-md grid-1-col-sm gap-8">
+                    <!-- Stat 1 -->
+                    <div class="stats-item u-text-center">
+                        <div class="stats-circle-wrapper">
+                            <svg class="stats-circle-svg" viewBox="0 0 120 120">
+                                <circle class="stats-circle-bg" cx="60" cy="60" r="54" />
+                                <circle class="stats-circle-progress" cx="60" cy="60" r="54" data-percentage="75" />
+                                <defs>
+                                    <linearGradient id="gradient-stats" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stop-color="#CF208B" />
+                                        <stop offset="100%" stop-color="#791599" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <div class="stats-number-content">
+                                <span class="stats-value" data-target="4">0</span><span class="stats-suffix">X</span>
+                            </div>
+                        </div>
+                        <p class="text-accent u-mt-4 font-bold">Revenue Growth Rate</p>
+                    </div>
+
+                    <!-- Stat 2 -->
+                    <div class="stats-item u-text-center">
+                        <div class="stats-circle-wrapper">
+                            <svg class="stats-circle-svg" viewBox="0 0 120 120">
+                                <circle class="stats-circle-bg" cx="60" cy="60" r="54" />
+                                <circle class="stats-circle-progress" cx="60" cy="60" r="54" data-percentage="85" />
+                            </svg>
+                            <div class="stats-number-content">
+                                <span class="stats-value" data-target="120">0</span><span class="stats-suffix">+</span>
+                            </div>
+                        </div>
+                        <p class="text-accent u-mt-4 font-bold">Billing Hours Saved/month</p>
+                    </div>
+
+                    <!-- Stat 3 -->
+                    <div class="stats-item u-text-center">
+                        <div class="stats-circle-wrapper">
+                            <svg class="stats-circle-svg" viewBox="0 0 120 120">
+                                <circle class="stats-circle-bg" cx="60" cy="60" r="54" />
+                                <circle class="stats-circle-progress" cx="60" cy="60" r="54" data-percentage="90" />
+                            </svg>
+                            <div class="stats-number-content">
+                                <span class="stats-value" data-target="90">0</span><span class="stats-suffix">%</span>
+                            </div>
+                        </div>
+                        <p class="text-accent u-mt-4 font-bold">Faster Processing Time</p>
+                    </div>
+
+                    <!-- Stat 4 -->
+                    <div class="stats-item u-text-center">
+                        <div class="stats-circle-wrapper">
+                            <svg class="stats-circle-svg" viewBox="0 0 120 120">
+                                <circle class="stats-circle-bg" cx="60" cy="60" r="54" />
+                                <circle class="stats-circle-progress" cx="60" cy="60" r="54" data-percentage="99" />
+                            </svg>
+                            <div class="stats-number-content">
+                                <span class="stats-value" data-target="99">0</span><span class="stats-suffix">%</span>
+                            </div>
+                        </div>
+                        <p class="text-accent u-mt-4 font-bold">Decrease Manual Errors</p>
                     </div>
                 </div>
             </div>
@@ -273,7 +696,8 @@
                     </div>
 
                     <div class="grid-3-cols">
-                        <div data-ns-animate data-delay="0.2" class="feature-card u-p-8 space-y-4">
+                        <div data-ns-animate data-delay="0.2"
+                            class="feature-card u-p-8 space-y-4 Our-Product-Services-card">
                             <div class="text-primary-500 u-mb-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -291,7 +715,8 @@
                                 and remote access.</p>
                         </div>
 
-                        <div data-ns-animate data-delay="0.3" class="feature-card u-p-8 space-y-4">
+                        <div data-ns-animate data-delay="0.3"
+                            class="feature-card u-p-8 space-y-4 Our-Product-Services-card">
                             <div class="text-primary-500 u-mb-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -305,7 +730,8 @@
                             <p class="text-accent-80">Secure, robust systems tailored for data-sensitive industries.</p>
                         </div>
 
-                        <div data-ns-animate data-delay="0.4" class="feature-card u-p-8 space-y-4">
+                        <div data-ns-animate data-delay="0.4"
+                            class="feature-card u-p-8 space-y-4 Our-Product-Services-card">
                             <div class="text-primary-500 u-mb-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -340,11 +766,13 @@
                 <div class="grid-2-cols-lg u-items-center">
                     <div class="space-y-6">
                         <h2 class="section-heading text-color-gradient" data-ns-animate data-delay="0.2">
-                            Customizable ERP Solutions
+                            Customizable ERP Solutions by ERP Development Company in India
                         </h2>
                         <p class="text-accent-80 text-lg" data-ns-animate data-delay="0.3">
-                            Our customizable ERP solutions set us apart as a leading ERP development Company in India.
-                            Unlike generic platforms, we build bespoke systems that adapt to your unique business needs.
+                            Our customizable ERP solutions set us apart as a leading ERP development Company in India,
+                            founded in 2022 with a track record of 50+ successful implementations. Unlike generic
+                            platforms, we build bespoke systems that adapt to your unique business needs, drawing from
+                            proven models like those used by top providers.
                         </p>
                         <ul class="space-y-4" data-ns-animate data-delay="0.4">
                             <li class="u-flex u-items-start" style="gap: 12px">
@@ -361,17 +789,274 @@
                                 <span class="text-accent">Mobile-accessible dashboards for on-the-go management.</span>
                             </li>
                         </ul>
+                        <p class="text-accent-80 text-lg u-mt-4" data-ns-animate data-delay="0.5">
+                            Businesses partnering with us as their ERP Software provider in India benefit from flexible
+                            modules that evolve with growth, ensuring long-term ROI. Our development process
+                            incorporates client feedback loops, resulting in solutions that boost productivity by
+                            integrating seamlessly across departments.
+                        </p>
                     </div>
                     <div class="relative" data-ns-animate data-delay="0.3">
                         <!-- Placeholder for visual representation/dashboard -->
                         <div class="u-p-4 erp-dashboard-bg">
                             <div class="aspect-video-wrap">
                                 <img src="./assets/erpdashboard1.png" alt="Custom ERP Dashboard"
-                                    srcset="./assets/erpdashboard1.png" style="scale: 1.2;">
+                                    srcset="./assets/erpdashboard1.png" style="scale: 1.4;">
                                 <!-- <span class="text-accent/50">Custom ERP Dashboard</span> -->
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industries We Serve Section -->
+        <section class="section-standard section-bg-dark" id="industries">
+            <div class="main-container">
+                <div class="u-text-center space-y-4 u-mb-12">
+                    <h2 class="section-heading" data-ns-animate data-delay="0.2">
+                        Custom Cloud-Based <span class="text-color-gradient">ERP Software Development</span> Services
+                    </h2>
+                    <p class="text-accent-80 hero-subtitle u-text-center" data-ns-animate data-delay="0.3">
+                        ERP Software Consultant build custom ERP solutions that fulfill your unique business
+                        requirements
+                        with a focus on streamlining workflows.
+                    </p>
+                </div>
+
+                <div class="industries-grid u-mb-12" data-ns-animate data-delay="0.4">
+                    <!-- Row 1 -->
+                    <!-- Row 1 -->
+                    <div class="industry-item">
+                        <div class="industry-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path class="anim-shake-less"
+                                    d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" />
+                                <circle cx="7" cy="17" r="2" />
+                                <path class="anim-shake-less" d="M9 17h6" />
+                                <circle cx="17" cy="17" r="2" />
+                            </svg>
+                        </div>
+                        <span class="industry-label">Automotive Parts</span>
+                    </div>
+
+                    <div class="industry-item">
+                        <div class="industry-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                            </svg>
+                        </div>
+                        <span class="industry-label">Cable & Wire</span>
+                    </div>
+
+                    <div class="industry-item">
+                        <div class="industry-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path class="anim-float" d="M10 2v7.31" />
+                                <path class="anim-float" d="M14 2v7.31" />
+                                <path d="M8.5 2h7" />
+                                <path d="M14 7.31c0 1.49-1.2 2.69-2.7 2.69h-.6c-1.5 0-2.7-1.2-2.7-2.69" />
+                                <path d="M21 21v-8a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3v8" />
+                                <path d="M3 21v-5a3 3 0 0 1 3-3h1" />
+                                <path d="M15 15h1a2 2 0 0 1 2 2v2" />
+                            </svg>
+                        </div>
+                        <span class="industry-label">Chemicals</span>
+                    </div>
+
+                    <div class="industry-item">
+                        <div class="industry-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M2 12h20" />
+                                <path d="M2 12l5 5" />
+                                <path d="M22 12l-5 5" />
+                                <path d="M7 17v4h10v-4" />
+                                <path class="anim-rock" d="M4 12V7a5 5 0 0 1 5-5h6a5 5 0 0 1 5 5v5" />
+                            </svg>
+                        </div>
+                        <span class="industry-label">Concrete Ready-Mix</span>
+                    </div>
+
+                    <div class="industry-item">
+                        <div class="industry-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polygon class="anim-pulse" points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                            </svg>
+                        </div>
+                        <span class="industry-label">Electrical</span>
+                    </div>
+
+                    <div class="industry-item">
+                        <div class="industry-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M17 8h1a4 4 0 1 1 0 8h-1" />
+                                <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z" />
+                                <line x1="6" y1="2" x2="6" y2="4" />
+                                <line x1="10" y1="2" x2="10" y2="4" />
+                                <line x1="14" y1="2" x2="14" y2="4" />
+                            </svg>
+                        </div>
+                        <span class="industry-label">Food & Beverages</span>
+                    </div>
+
+                    <div class="industry-item">
+                        <div class="industry-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 11 3.8 11 8" />
+                                <path d="M5 20l5 1.5 5-2.5 5 2.5 2-1" />
+                                <path d="M11 18.5V8a6.5 6.5 0 0 1 13 0c0 2.5-3 3-5 5.5l-4 2.5" />
+                                <path d="M14 6l7 1" />
+                            </svg>
+                        </div>
+                        <span class="industry-label">Footwear</span>
+                    </div>
+
+                    <div class="industry-item">
+                        <div class="industry-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M20.38 3.46L16 2 13 6h-6L4 2l-4.38 1.46a2 2 0 0 0-1.08 2.57l1 2.97a3 3 0 0 0 1.25 1.7l6.63 3.65a3 3 0 0 1 1.58 2.65V22h6v-5a3 3 0 0 1 1.58-2.65l6.63-3.65a3 3 0 0 0 1.25-1.7l1-2.97a2 2 0 0 0-1.08-2.57Z" />
+                            </svg>
+                        </div>
+                        <span class="industry-label">Garments/Apparel</span>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="industry-item">
+                        <div class="industry-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M12 2L2 7l10 5 10-5-10-5Z" />
+                                <path d="M2 17l10 5 10-5" />
+                                <path d="M2 12l10 5 10-5" />
+                            </svg>
+                        </div>
+                        <span class="industry-label">Leather</span>
+                    </div>
+
+                    <div class="industry-item">
+                        <div class="industry-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M6 3h12l2 10-8 8-8-8 2-10Z" />
+                                <path d="M12 21V13" />
+                                <path class="anim-shake" d="M6 3l6 10 6-10" />
+                            </svg>
+                        </div>
+                        <span class="industry-label">Mining</span>
+                    </div>
+
+                    <div class="industry-item">
+                        <div class="industry-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path transform="rotate(45 12 12)"
+                                    d="M12 2a5 5 0 0 1 5 5v10a5 5 0 0 1-10 0V7a5 5 0 0 1 5-5z" />
+                                <line x1="12" y1="2" x2="12" y2="22" transform="rotate(45 12 12)" />
+                                <circle cx="18" cy="18" r="4" fill="none" />
+                            </svg>
+                        </div>
+                        <span class="industry-label">Pharmaceuticals</span>
+                    </div>
+
+                    <div class="industry-item">
+                        <div class="industry-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="3" y="11" width="18" height="10" rx="2" />
+                                <circle cx="12" cy="5" r="2" />
+                                <path d="M12 7v4" />
+                                <line x1="8" y1="16" x2="8" y2="16" />
+                                <line x1="16" y1="16" x2="16" y2="16" />
+                            </svg>
+                        </div>
+                        <span class="industry-label">Plastic</span>
+                    </div>
+
+                    <div class="industry-item">
+                        <div class="industry-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="6 9 6 2 18 2 18 9" />
+                                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+                                <rect x="6" y="14" width="12" height="8" />
+                            </svg>
+                        </div>
+                        <span class="industry-label">Printing</span>
+                    </div>
+
+                    <div class="industry-item">
+                        <div class="industry-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle class="anim-spin" cx="12" cy="12" r="10" />
+                                <circle cx="12" cy="12" r="3" />
+                                <line x1="12" y1="2" x2="12" y2="4" />
+                                <line x1="12" y1="20" x2="12" y2="22" />
+                                <line x1="2" y1="12" x2="4" y2="12" />
+                                <line x1="20" y1="12" x2="22" y2="12" />
+                            </svg>
+                        </div>
+                        <span class="industry-label">Rubber</span>
+                    </div>
+
+                    <div class="industry-item">
+                        <div class="industry-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="18" rx="2" />
+                                <line x1="6" y1="3" x2="6" y2="21" />
+                                <line x1="18" y1="3" x2="18" y2="21" />
+                                <line x1="2" y1="7" x2="22" y2="7" />
+                                <line x1="2" y1="17" x2="22" y2="17" />
+                            </svg>
+                        </div>
+                        <span class="industry-label">Steel</span>
+                    </div>
+
+                    <div class="industry-item">
+                        <div class="industry-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M3 14l10-10v5h8l-10 10v-5z" />
+                            </svg>
+                        </div>
+                        <span class="industry-label">Wood</span>
+                    </div>
+                </div>
+
+                <div class="u-text-center u-pt-12" data-ns-animate data-delay="0.5">
+                    <p class="text-accent u-mb-6 text-lg">Sick of GST paperwork eating up your time? <br
+                            class="hidden md:block">
+                        Book a quick demo for our easy ERP solutions that fix it fast!</p>
+                    <a href="/contact.html" class="btn btn-primary btn-md hover:btn-secondary">
+                        <span>Book Free Consultation</span>
+                    </a>
                 </div>
             </div>
         </section>
@@ -388,7 +1073,7 @@
                 </div>
 
                 <div class="grid-3-cols">
-                    <div class="why-card u-p-6" data-ns-animate data-delay="0.2">
+                    <div class="why-card u-p-6 Our-Product-Services-card" data-ns-animate data-delay="0.2">
                         <div class="glass-icon-container glass-icon-orange">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor">
@@ -400,7 +1085,7 @@
                         <p class="text-accent-70">50+ projects across manufacturing, retail, and services showing
                             measurable outcomes.</p>
                     </div>
-                    <div class="why-card u-p-6" data-ns-animate data-delay="0.3">
+                    <div class="why-card u-p-6 Our-Product-Services-card" data-ns-animate data-delay="0.3">
                         <div class="glass-icon-container glass-icon-purple">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor">
@@ -412,7 +1097,7 @@
                         <p class="text-accent-70">Dedicated managers for seamless ERP software development services and
                             ongoing care.</p>
                     </div>
-                    <div class="why-card u-p-6" data-ns-animate data-delay="0.4">
+                    <div class="why-card u-p-6 Our-Product-Services-card" data-ns-animate data-delay="0.4">
                         <div class="glass-icon-container glass-icon-blue">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor">
@@ -424,7 +1109,7 @@
                         <p class="text-accent-70">Sector-specific expertise solving unique challenges in pharma,
                             distribution, and more.</p>
                     </div>
-                    <div class="why-card u-p-6" data-ns-animate data-delay="0.5">
+                    <div class="why-card u-p-6 Our-Product-Services-card" data-ns-animate data-delay="0.5">
                         <div class="glass-icon-container glass-icon-green">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor">
@@ -436,7 +1121,7 @@
                         <p class="text-accent-70">Zero-downtime migration and a phased approach to minimize disruptions.
                         </p>
                     </div>
-                    <div class="why-card u-p-6" data-ns-animate data-delay="0.6">
+                    <div class="why-card u-p-6 Our-Product-Services-card" data-ns-animate data-delay="0.6">
                         <div class="glass-icon-container glass-icon-purple">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor">
@@ -448,7 +1133,7 @@
                         <p class="text-accent-70">ISO-certified protections, data encryption, and regular audits for
                             total safety.</p>
                     </div>
-                    <div class="why-card u-p-6" data-ns-animate data-delay="0.7">
+                    <div class="why-card u-p-6 Our-Product-Services-card" data-ns-animate data-delay="0.7">
                         <div class="glass-icon-container glass-icon-pink">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor">
@@ -465,7 +1150,8 @@
         </section>
 
         <!-- FAQ Section -->
-        <section class="section-bg-dark section-standard" id="faq">
+        <!-- FAQ Section -->
+        <section class="section-bg-dark section-standard bg-grid-pattern-faq" id="faq">
             <div class="main-container">
                 <div class="u-text-center u-mb-12">
                     <h2 class="section-heading text-color-gradient" data-ns-animate data-delay="0.2">
@@ -701,14 +1387,14 @@
                             <p class="text-accent-80 text-sm">Save time, money, and frustration with Atelier's modern
                                 approach</p>
                         </div>
-                        <button class="winner-btn">
+                        <a href="/contact.html" class="winner-btn">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>
                             Atelier Custom ERP
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -1293,6 +1979,66 @@
     <script defer src="vendor/stack-card.min.js"></script>
     <script defer src="assets/main.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            gsap.registerPlugin(ScrollTrigger);
+
+            const revealElements = document.querySelectorAll('.text-scroll-reveal');
+            revealElements.forEach(el => {
+                gsap.to(el, {
+                    color: "#FFFFFF",
+                    scrollTrigger: {
+                        trigger: el,
+                        start: "top 80%",
+                        end: "top 50%",
+                        scrub: true
+                    }
+                });
+            });
+
+            // Stats Section Animation
+            gsap.utils.toArray(".stats-item").forEach(item => {
+                const progressCircle = item.querySelector(".stats-circle-progress");
+                const valueElement = item.querySelector(".stats-value");
+                const targetValue = parseFloat(valueElement.getAttribute("data-target"));
+                const percentage = parseFloat(progressCircle.getAttribute("data-percentage")) || targetValue;
+
+                // Circumference of circle with r=54 is ~339.292
+                const circumference = 339.292;
+                let visualPercent = percentage;
+                if (visualPercent > 100) visualPercent = 100;
+
+                const offset = circumference - (visualPercent / 100) * circumference;
+
+                ScrollTrigger.create({
+                    trigger: item,
+                    start: "top 85%",
+                    once: true,
+                    onEnter: () => {
+                        // Animate Circle
+                        gsap.to(progressCircle, {
+                            strokeDashoffset: offset,
+                            duration: 1.5,
+                            ease: "power2.out"
+                        });
+
+                        // Animate Number
+                        let proxy = {
+                            val: 0
+                        };
+                        gsap.to(proxy, {
+                            val: targetValue,
+                            duration: 1.5,
+                            ease: "power2.out",
+                            onUpdate: function () {
+                                valueElement.innerText = Math.ceil(this.targets()[0].val);
+                            }
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
