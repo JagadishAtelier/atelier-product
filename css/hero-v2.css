@@ -1,0 +1,269 @@
+/* Hero V2 Styles - Replicating Reference Design with Atelier Colors */
+
+.section_hero-header_v4 {
+    position: relative;
+    background-color: var(--color-background-6, #0f1217);
+    background-image: url('../assets/bg_ray.png');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    color: var(--color-white, #fff);
+    overflow: hidden;
+    font-family: var(--font-inter-tight, sans-serif);
+}
+
+/* Background Effects */
+.hero_layover {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% -20%, var(--color-primary-900, #2a1b3d) 0%, transparent 60%);
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.header_v4_background {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    /* Add a subtle noise or pattern if available, or just keeping dark */
+}
+
+/* Layout */
+.padding-global {
+    padding-left: 5%;
+    padding-right: 5%;
+    position: relative;
+    z-index: 2;
+}
+
+.container-large {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.padding-section-large {
+    padding-top: 150px;
+    /* Matching the approximate spacing */
+    padding-bottom: 2rem;
+    /* Adjusted to flow into image */
+}
+
+.hero-header_v4_component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.max-width-large {
+    max-width: 54rem;
+    width: 100%;
+}
+
+/* Elements */
+.header_tag_wrapper {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.header_tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--color-stroke-6, #202731);
+    border-radius: 999px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--color-ns-cyan, #83e7ee);
+    font-size: 0.875rem;
+    font-weight: 500;
+    backdrop-filter: blur(5px);
+}
+
+.heading-style-h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.7) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@media (max-width: 767px) {
+    .heading-style-h2 {
+        font-size: 2.5rem;
+    }
+}
+
+.text-highlight {
+    color: var(--color-primary-400, #a585ff);
+    -webkit-text-fill-color: var(--color-primary-400, #a585ff);
+}
+
+.text-size-medium {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: var(--color-background-11, #b5b5b9);
+    margin-bottom: 2.5rem;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.button-hero {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem 1.75rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    font-size: 1rem;
+}
+
+.button-hero.is-primary {
+    background-color: var(--color-white, #fff);
+    color: var(--color-background-6, #0f1217);
+    border: 1px solid var(--color-white, #fff);
+}
+
+.button-hero.is-primary:hover {
+    background-color: var(--color-primary-100, #ece8ff);
+    transform: translateY(-1px);
+}
+
+.button-hero.is-secondary {
+    background-color: transparent;
+    border: 1px solid var(--color-stroke-3, #d7dde5);
+    color: var(--color-white, #fff);
+}
+
+.button-hero.is-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: var(--color-white, #fff);
+}
+
+
+/* Border Top Decoration */
+.header_border {
+    width: 100%;
+    margin-bottom: -1px;
+    /* Overlap slightly to prevent gaps */
+    display: block;
+    line-height: 0;
+}
+
+.header_border img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Image Group Container - Keeping existing styles inside but wrapping matches reference layout */
+.hero-header_v4_image-group {
+    margin-top: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+/* Hero Dashboard Image Composition */
+.hero-dashboard-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    perspective: 1000px;
+}
+
+.hero-dashboard-main {
+    position: relative;
+    z-index: 10;
+    border-radius: 1rem;
+    /* rounded-2xl */
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    /* shadow-2xl */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #0f0f0f;
+}
+
+.hero-dashboard-main img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-overlay-card {
+    position: absolute;
+    z-index: 20;
+    border-radius: 0.75rem;
+    /* rounded-xl */
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    /* shadow-2xl */
+    border: 1px solid rgba(255, 255, 255, 0.63);
+    background-color: #0f0f0f;
+    display: none;
+    height: auto;
+    /* hidden by default */
+}
+
+/* Show on tablet and up (md:block equivalent) */
+@media (min-width: 768px) {
+    .hero-overlay-card {
+        display: block;
+    }
+}
+
+.hero-overlay-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.overlay-left {
+    left: -5%;
+    bottom: -4%;
+    width: 25%;
+}
+
+.overlay-right {
+    right: -2%;
+    top: 30%;
+    width: 25%;
+}
+
+.hero-glow-effect {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 60%;
+    background-color: rgba(165, 133, 255, 0.2);
+    /* bg-primary/20 approx */
+    filter: blur(100px);
+    z-index: -10;
+    border-radius: 9999px;
+    pointer-events: none;
+}
