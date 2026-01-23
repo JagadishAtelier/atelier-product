@@ -98,6 +98,9 @@
     .heading-style-h2 {
         font-size: 2.5rem;
     }
+    .hero-overlay-card, .hero-dashboard-main{
+        border-radius: 0.25rem !important;
+    }
 }
 
 .text-highlight {
@@ -196,7 +199,7 @@
 .hero-dashboard-main {
     position: relative;
     z-index: 10;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     /* rounded-2xl */
     overflow: hidden;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
@@ -215,23 +218,16 @@
 .hero-overlay-card {
     position: absolute;
     z-index: 20;
-    border-radius: 0.75rem;
+    border-radius: 0.5rem;
     /* rounded-xl */
     overflow: hidden;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     /* shadow-2xl */
     border: 1px solid rgba(255, 255, 255, 0.63);
     background-color: #0f0f0f;
-    display: none;
+     display: block;
     height: auto;
     /* hidden by default */
-}
-
-/* Show on tablet and up (md:block equivalent) */
-@media (min-width: 768px) {
-    .hero-overlay-card {
-        display: block;
-    }
 }
 
 .hero-overlay-card img {
