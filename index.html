@@ -22,6 +22,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&amp;display=swap"
     rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+/>
+
   <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -50,6 +55,7 @@
   <!-- Please keep this css code to improve the font quality -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="../Footer/footer.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 
   <style>
@@ -160,6 +166,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      overflow: visible;
     }
 
     .stack-layer {
@@ -167,15 +174,23 @@
       height: 100%;
       /* Only show the top part of the image */
       overflow: hidden;
-      border-radius: 12px 12px 0 0;
+      border-radius: 12px;
       box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.25s ease-out !important;
+        will-change: transform;
     }
+.stack-layer:hover {
+  transform: translateY(-150px) scale(1.01) !important;
+}
+
 
     .stack-layer img {
       width: 100%;
       height: auto;
       display: block;
+            border-radius: 12px;
     }
+
 
     /* Positioning each layer higher and narrower */
     .layer-1 {
@@ -186,21 +201,21 @@
     }
 
     .layer-2 {
-      top: -90px;
+      top: -105px;
       width: 75%;
       z-index: 2;
       opacity: 1;
     }
 
     .layer-3 {
-      top: -60px;
+      top: -75px;
       width: 80%;
       z-index: 3;
       opacity: 1;
     }
 
     .layer-4 {
-      top: -30px;
+      top: -45px;
       width: 90%;
       z-index: 4;
       opacity: 1;
@@ -218,6 +233,7 @@
     .hero-dashboard-main img {
       width: 100%;
       border-radius: 12px;
+      height: 100%;
       display: block;
     }
 
@@ -231,6 +247,239 @@
       z-index: 20;
       filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.2));
     }
+  </style>
+  <style>
+    .DASH-card {
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+.Dash-legend-item-label-dot-div{
+  display: flex;
+  align-items: center;
+}
+/* Header */
+.DASH-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.DASH-title {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+
+/* Dropdown */
+.DASH-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.DASH-select-btn {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: black;
+}
+
+.DASH-dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.DASH-dropdown-content a {
+    color: #000;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+}
+
+.DASH-dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display: block;
+}
+
+/* Chart */
+.DASH-chart-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.DASH-select-btn i{
+  font-weight: bold;
+}
+.DASH-chart-container {
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 20px;
+}
+
+#DASH-main-chart {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.DASH-donut-chart {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #4285f4 0% 35%,    /* Electronics */
+        #9b51e0 35% 60%,   /* Clothing */
+        #00b894 60% 80%,   /* Food */
+        #f39c12 80% 95%,   /* Furniture */
+        #636e72 95% 100%   /* Others */
+    );
+    position: relative;
+}
+
+.DASH-donut-chart::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+/* Legend */
+.DASH-legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 14px;
+    justify-content: space-between;
+}
+
+.DASH-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.DASH-label {
+    flex-grow: 1;
+    color: #666;
+}
+
+.DASH-value {
+    font-weight: 500;
+    color: #333;
+}
+
+/* Dot Colors */
+.DASH-bg-electronics { background-color: #4285f4; }
+.DASH-bg-clothing   { background-color: #9b51e0; }
+.DASH-bg-food       { background-color: #00b894; }
+.DASH-bg-furniture  { background-color: #f39c12; }
+.DASH-bg-others     { background-color: #636e72; }
+
+  </style>
+
+  <style>
+    .INCOMEPO-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    padding: 16px 0;
+    border: 1px solid #f0f0f0;
+}
+
+.INCOMEPO-header {
+    padding: 0 20px 12px 20px;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.INCOMEPO-title {
+    margin: 0;
+    font-size: 22px;
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.INCOMEPO-list {
+    padding: 10px 20px;
+}
+
+.INCOMEPO-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    justify-content: space-between;
+}
+
+.INCOMEPO-status-dot {
+    width: 14px;
+    height: 14px;
+    background-color: #f39c12; /* Orange dot */
+    border-radius: 50%;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.INCOMEPO-details {
+    flex-grow: 1;
+}
+
+.INCOMEPO-id {
+    color: #3b82f6; /* Bright Blue */
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.INCOMEPO-name {
+    color: #888;
+    font-size: 13px;
+    text-align: start;
+}
+
+.INCOMEPO-amount {
+    font-weight: 500;
+    color: #1a1a1a;
+    font-size: 15px;
+}
+
+.INCOMEPO-footer {
+    padding: 12px 20px 4px 20px;
+    border-top: 1px solid #f5f5f5;
+    text-align: start;
+}
+
+.INCOMEPO-view-all {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.INCOMEPO-view-all:hover {
+    text-decoration: underline;
+}
   </style>
 </head>
 <!-- data-ns-animate
@@ -382,28 +631,151 @@
 
                   <div class="dashboard-stack-container">
                     <!-- <div class="stack-layer layer-1"><img src="images/inventorydashboard.png" alt=""></div> -->
-                    <div class="stack-layer layer-2" data-aos="fade-up" data-aos-delay="300" data-aos-duration="2000">
-                      <img src="images/inventorydashboard.png" alt=""></div>
-                    <div class="stack-layer layer-3" data-aos="fade-up" data-aos-delay="900" data-aos-duration="2000">
-                      <img src="images/inventorydashboard.png" alt=""></div>
-                    <div class="stack-layer layer-4" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="2000">
-                      <img src="images/inventorydashboard.png" alt=""></div>
+                    <div class="stack-layer layer-2" data-aos="slide-up" data-aos-delay="300" data-aos-duration="4000">
+                      <img src="images/HH1.png" alt=""></div>
+                    <div class="stack-layer layer-3" data-aos="slide-up" data-aos-delay="1000" data-aos-duration="2000">
+                      <img src="https://ateliertechnologysolutions.com/images/erpDash.png" alt=""></div>
+                    <div class="stack-layer layer-4" data-aos="slide-up" data-aos-delay="1700" data-aos-duration="2000">
+                      <img src="https://ateliertechnologysolutions.com/images/hms.png" alt=""></div>
 
-                    <div class="hero-dashboard-main" data-aos="fade-up" data-aos-delay="2100" data-aos-duration="2000">
-                      <img src="images/inventorydashboard.png" alt="Main Dashboard Interface" />
+<div class="hero-dashboard-main"
+     data-aos="slide-up"
+     data-aos-delay="2400"
+     data-aos-duration="2000">
 
-                      <!-- <div class="floating-card incoming-po">
-        <img src="images/incoming-po-card.png" alt="Incoming PO">
-    </div> -->
-                    </div>
+  <video 
+    src="assets/Inventory-video.mp4"
+    autoplay
+    loop
+    muted
+    playsinline
+    preload="auto"
+    class="hero-dashboard-video">
+  </video>
+
+</div>
+
                   </div>
 
-                  <div class="hero-overlay-card overlay-left" data-aos="fade-up" data-aos-delay="2500" data-aos-duration="2000">
-                    <img src="images/saleby.png" alt="Performance Stats" />
+                  <div class="hero-overlay-card overlay-left" data-aos="fade-up" data-aos-delay="3000" data-aos-duration="2000">
+<div class="DASH-card">
+    <div class="DASH-header">
+        <h2 class="DASH-title">Sales by Category</h2>
+        <div class="DASH-dropdown">
+            <button class="DASH-select-btn" onclick="toggleDropdown()">
+                <span id="DASH-selected-val">Monthly</span>
+                <i class="bi bi-chevron-down DASH-arrow"></i>
+            </button>
+            <div class="DASH-dropdown-content" id="DASH-dropdown-list">
+                <a href="#" onclick="updateData('Weekly')">Weekly</a>
+                <a href="#" onclick="updateData('Monthly')">Monthly</a>
+                <a href="#" onclick="updateData('Yearly')">Yearly</a>
+            </div>
+        </div>
+    </div>
+
+  <div class="DASH-chart-container">
+    <canvas id="DASH-main-chart"></canvas>
+  </div>
+
+    <div class="DASH-legend">
+        <div class="DASH-legend-item">
+          <div class="Dash-legend-item-label-dot-div">
+            <span class="DASH-dot DASH-bg-electronics"></span>
+            <span class="DASH-label">Electronics</span>
+            </div>
+            <span class="DASH-value">35%</span>
+        </div>
+        <div class="DASH-legend-item">
+                    <div class="Dash-legend-item-label-dot-div">
+            <span class="DASH-dot DASH-bg-clothing"></span>
+            <span class="DASH-label">Clothing</span>
+            </div>
+            <span class="DASH-value">25%</span>
+        </div>
+        <div class="DASH-legend-item">
+                    <div class="Dash-legend-item-label-dot-div">
+            <span class="DASH-dot DASH-bg-food"></span>
+            <span class="DASH-label">Food</span>
+            </div>
+
+            <span class="DASH-value">20%</span>
+        </div>
+        <div class="DASH-legend-item">
+                    <div class="Dash-legend-item-label-dot-div">
+            <span class="DASH-dot DASH-bg-furniture"></span>
+            <span class="DASH-label">Furniture</span>
+            </div>
+
+            <span class="DASH-value">15%</span>
+        </div>
+        <div class="DASH-legend-item">
+                    <div class="Dash-legend-item-label-dot-div">
+            <span class="DASH-dot DASH-bg-others"></span>
+            <span class="DASH-label">Others</span>
+            </div>
+            <span class="DASH-value">5%</span>
+        </div>
+    </div>
+</div>
                   </div>
 
-                  <div class="hero-overlay-card overlay-right" data-aos="fade-down" data-aos-delay="2500" data-aos-duration="2000">
-                    <img src="images/incomingpo.png" alt="Code Interface" />
+                  <div class="hero-overlay-card overlay-right" data-aos="fade-down" data-aos-delay="3000" data-aos-duration="2000">
+<div class="INCOMEPO-card">
+    <div class="INCOMEPO-header">
+        <h2 class="INCOMEPO-title">Incoming PO</h2>
+    </div>
+    
+    <div class="INCOMEPO-list">
+        <div class="INCOMEPO-item">
+                              <div class="Dash-legend-item-label-dot-div">
+            <div class="INCOMEPO-status-dot"></div>
+            <div class="INCOMEPO-details">
+                <div class="INCOMEPO-id">PO00015</div>
+                <div class="INCOMEPO-name">Madhavan</div>
+            </div>
+            </div>
+            <div class="INCOMEPO-amount">₹50,000</div>
+        </div>
+
+        <div class="INCOMEPO-item">
+                              <div class="Dash-legend-item-label-dot-div">
+            <div class="INCOMEPO-status-dot"></div>
+            <div class="INCOMEPO-details">
+                <div class="INCOMEPO-id">PO00010</div>
+                <div class="INCOMEPO-name">Test</div>
+            </div>
+            </div>
+            <div class="INCOMEPO-amount">₹20,000</div>
+        </div>
+
+        <div class="INCOMEPO-item">
+                              <div class="Dash-legend-item-label-dot-div">
+            <div class="INCOMEPO-status-dot"></div>
+            <div class="INCOMEPO-details">
+                <div class="INCOMEPO-id">PO00005</div>
+                <div class="INCOMEPO-name">Ravi</div>
+            </div>
+            </div>
+            <div class="INCOMEPO-amount">₹5,000</div>
+        </div>
+
+        <div class="INCOMEPO-item">
+                              <div class="Dash-legend-item-label-dot-div">
+            <div class="INCOMEPO-status-dot"></div>
+            <div class="INCOMEPO-details">
+                <div class="INCOMEPO-id">PO00004</div>
+                <div class="INCOMEPO-name">Parthiban</div>
+            </div>
+            </div>
+            <div class="INCOMEPO-amount">₹50</div>
+        </div>
+    </div>
+
+    <div class="INCOMEPO-footer">
+        <a href="#" class="INCOMEPO-view-all">View all</a>
+    </div>
+</div>
                   </div>
                   <div class="hero-glow-effect">
                   </div>
@@ -2606,9 +2978,71 @@ Get started section
 
   <!-- AOS JS -->
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+let chart;
+
+const salesData = {
+  Weekly: [40, 20, 15, 15, 10],
+  Monthly: [35, 25, 20, 15, 5],
+  Yearly: [30, 30, 20, 10, 10]
+};
+
+function initChart(data) {
+  const ctx = document.getElementById("DASH-main-chart").getContext("2d");
+
+  if (chart) chart.destroy();
+
+  chart = new Chart(ctx, {
+    type: "doughnut",
+    data: {
+      labels: ["Electronics", "Clothing", "Food", "Furniture", "Others"],
+      datasets: [{
+        data: data,
+        backgroundColor: [
+          "#4285f4",
+          "#9b51e0",
+          "#00b894",
+          "#f39c12",
+          "#636e72"
+        ],
+        borderWidth: 6
+      }]
+    },
+    options: {
+      cutout: "60%",
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: (ctx) => `${ctx.label}: ${ctx.raw}%`
+          }
+        }
+      }
+    }
+  });
+}
+
+// Dropdown logic
+function updateData(type) {
+  document.getElementById("DASH-selected-val").innerText = type;
+  initChart(salesData[type]);
+  toggleDropdown();
+}
+
+function toggleDropdown() {
+  document.getElementById("DASH-dropdown-list")
+    .classList.toggle("show");
+}
+
+// Initial load
+initChart(salesData.Monthly);
+</script>
 
   <script>
-    AOS.init();
+AOS.init({
+  once: true,   // IMPORTANT
+});
+
   </script>
 
 </body>
