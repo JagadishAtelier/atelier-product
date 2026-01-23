@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Atelier Products</title>
+  <title>Atelier Technology</title>
   <meta
     content="Atelier is a comprehensive B2B solution that provides custom product integration for Hospital Management Systems (HMS), Inventory Management Systems (IMS) and Enterprise Resource Planning (ERP)."
     name="description" />
@@ -42,7 +42,7 @@
         (n.className += t + "touch");
     })(window, document);
   </script>
-  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+  <link href="images/LogoPNG.png" rel="shortcut icon" type="image/x-icon" />
   <link href="images/app-icon.png" rel="apple-touch-icon" />
   <link rel="stylesheet" href="assets/main.css" />
   <link rel="stylesheet" href="./css/navbar.css">
@@ -150,6 +150,86 @@
 
     .bg-background-6 {
       background-color: #000;
+    }
+  </style>
+  <style>
+    .dashboard-stack-container {
+      position: relative;
+      margin: 120px auto 0;
+      /* Space for the stack */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .stack-layer {
+      position: absolute;
+      height: 100%;
+      /* Only show the top part of the image */
+      overflow: hidden;
+      border-radius: 12px 12px 0 0;
+      box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .stack-layer img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Positioning each layer higher and narrower */
+    .layer-1 {
+      top: -80px;
+      width: 70%;
+      z-index: 1;
+      opacity: 1;
+    }
+
+    .layer-2 {
+      top: -90px;
+      width: 75%;
+      z-index: 2;
+      opacity: 1;
+    }
+
+    .layer-3 {
+      top: -60px;
+      width: 80%;
+      z-index: 3;
+      opacity: 1;
+    }
+
+    .layer-4 {
+      top: -30px;
+      width: 90%;
+      z-index: 4;
+      opacity: 1;
+    }
+
+    /* The Main Foreground Image */
+    .hero-dashboard-main {
+      position: relative;
+      z-index: 10;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero-dashboard-main img {
+      width: 100%;
+      border-radius: 12px;
+      display: block;
+    }
+
+    /* Floating Card Positioning */
+    .incoming-po {
+      position: absolute;
+      bottom: 10%;
+      right: -5%;
+      width: 30%;
+      /* Adjust based on your card image size */
+      z-index: 20;
+      filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.2));
     }
   </style>
 </head>
@@ -270,41 +350,61 @@
               </div>
 
               <!-- Dashboard Image Composition -->
-              <div class="hero-header_v4_image-group">
+              <!-- <div class="hero-header_v4_image-group">
                 <div class="hero-dashboard-wrapper">
-                  <!-- Border Top Decoration -->
                   <div class="header_border" style="position: relative; z-index: 9; transform: translateY(1px);">
                     <img
                       src="images/white_Border_Top.png"
                       alt="Decorative Border" loading="lazy" class="w-full h-auto block" />
                   </div>
 
-                  <!-- Main Dashboard Image -->
                   <div class="hero-dashboard-main">
                     <img src="images/inventorydashboard.png" alt="Dashboard Main Interface" />
                   </div>
 
-                  <!-- Floating Overlay 1 (Left) -->
                   <div class="hero-overlay-card overlay-left" data-ns-animate data-delay="0.4" data-direction="up">
                     <img
                       src="images/saleby.png"
                       alt="Performance Stats" />
-                    <!-- <img
-                      src="http://cdn.prod.website-files.com/68e0e1ed739a2f137d4beefd/68e10cc7f71391dc02c68665_Bento_v1.jpg"
-                      alt="Performance Stats" /> -->
                   </div>
 
-                  <!-- Floating Overlay 2 (Right) -->
                   <div class="hero-overlay-card overlay-right" data-ns-animate data-delay="0.6" data-direction="down">
                     <img
                       src="images/incomingpo.png"
                       alt="Code Interface" />
-                    <!-- <img
-                      src="http://cdn.prod.website-files.com/68e0e1ed739a2f137d4beefd/68e25a29cc92bc704f5f19c2_Header_v2.jpg"
-                      alt="Code Interface" /> -->
+                  </div>
+                  <div class="hero-glow-effect">
+                  </div>
+                </div>
+              </div> -->
+              <div class="hero-header_v4_image-group">
+                <div class="hero-dashboard-wrapper">
+
+                  <div class="dashboard-stack-container">
+                    <!-- <div class="stack-layer layer-1"><img src="images/inventorydashboard.png" alt=""></div> -->
+                    <div class="stack-layer layer-2" data-aos="fade-up" data-aos-delay="300" data-aos-duration="2000">
+                      <img src="images/inventorydashboard.png" alt=""></div>
+                    <div class="stack-layer layer-3" data-aos="fade-up" data-aos-delay="900" data-aos-duration="2000">
+                      <img src="images/inventorydashboard.png" alt=""></div>
+                    <div class="stack-layer layer-4" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="2000">
+                      <img src="images/inventorydashboard.png" alt=""></div>
+
+                    <div class="hero-dashboard-main" data-aos="fade-up" data-aos-delay="2100" data-aos-duration="2000">
+                      <img src="images/inventorydashboard.png" alt="Main Dashboard Interface" />
+
+                      <!-- <div class="floating-card incoming-po">
+        <img src="images/incoming-po-card.png" alt="Incoming PO">
+    </div> -->
+                    </div>
                   </div>
 
-                  <!-- Glow Effect Behind -->
+                  <div class="hero-overlay-card overlay-left" data-aos="fade-up" data-aos-delay="2500" data-aos-duration="2000">
+                    <img src="images/saleby.png" alt="Performance Stats" />
+                  </div>
+
+                  <div class="hero-overlay-card overlay-right" data-aos="fade-down" data-aos-delay="2500" data-aos-duration="2000">
+                    <img src="images/incomingpo.png" alt="Code Interface" />
+                  </div>
                   <div class="hero-glow-effect">
                   </div>
                 </div>
@@ -2500,6 +2600,17 @@ Get started section
   <script defer src="vendor/stack-card.min.js"></script>
   <script defer src="assets/main.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
 </body>
 
 </html>
