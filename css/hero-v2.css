@@ -265,7 +265,7 @@
 }
 @media (max-width:480px) {
     .overlay-left,.overlay-right{
-        width: 35%;
+        width: 30%;
     }
 }
 
