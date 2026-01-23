@@ -263,3 +263,9 @@
     border-radius: 9999px;
     pointer-events: none;
 }
+@media (max-width:480px) {
+    .overlay-left,.overlay-right{
+        width: 35%;
+    }
+}
+
