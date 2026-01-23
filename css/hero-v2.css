@@ -268,16 +268,16 @@
         width: 30%;
     }
     .layer-4{
-        top: -20px;
+        top: -20px !important;
     }
     .layer-3{
-        top: -35px;
+        top: -35px !important;
     }
     .layer-2{
-        top: -50px;
+        top: -50px !important;
     }
     .layer-1{
-        top: -65px;
+        top: -65px !important;
     }
 }
 
