@@ -267,5 +267,17 @@
     .overlay-left,.overlay-right{
         width: 30%;
     }
+    .layer-4{
+        top: -20px;
+    }
+    .layer-3{
+        top: -35px;
+    }
+    .layer-2{
+        top: -50px;
+    }
+    .layer-1{
+        top: -65px;
+    }
 }
 
