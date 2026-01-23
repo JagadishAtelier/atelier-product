@@ -176,12 +176,8 @@
       overflow: hidden;
       border-radius: 12px;
       box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
-        transition: transform 0.25s ease-out !important;
-        will-change: transform;
+        
     }
-.stack-layer:hover {
-  transform: translateY(-150px) scale(1.01) !important;
-}
 
 
     .stack-layer img {
@@ -200,11 +196,20 @@
       opacity: 1;
     }
 
+
     .layer-2 {
       top: -105px;
       width: 75%;
       z-index: 2;
       opacity: 1;
+  transition: top 0.9s ease-in-out;
+  will-change: top;
+    }
+        .layer-2:hover,
+        .layer-3:hover,
+        .layer-4:hover
+        {
+            top: -250px;
     }
 
     .layer-3 {
@@ -212,6 +217,8 @@
       width: 80%;
       z-index: 3;
       opacity: 1;
+  transition: top 0.4s ease-in-out;
+  will-change: top;
     }
 
     .layer-4 {
@@ -219,6 +226,8 @@
       width: 90%;
       z-index: 4;
       opacity: 1;
+  transition: top 0.4s ease-in-out;
+  will-change: top;
     }
 
     /* The Main Foreground Image */
@@ -631,30 +640,16 @@
 
                   <div class="dashboard-stack-container">
                     <!-- <div class="stack-layer layer-1"><img src="images/inventorydashboard.png" alt=""></div> -->
-                    <div class="stack-layer layer-2" data-aos="slide-up" data-aos-delay="300" data-aos-duration="4000">
-                      <img src="images/HH1.png" alt=""></div>
-                    <div class="stack-layer layer-3" data-aos="slide-up" data-aos-delay="1000" data-aos-duration="2000">
-                      <img src="https://ateliertechnologysolutions.com/images/erpDash.png" alt=""></div>
-                    <div class="stack-layer layer-4" data-aos="slide-up" data-aos-delay="1700" data-aos-duration="2000">
-                      <img src="https://ateliertechnologysolutions.com/images/hms.png" alt=""></div>
+                    <a href="https://ateliertechnologysolutions.com/tms_web/index.html" class="stack-layer layer-2" data-aos="slide-up" data-aos-delay="300" data-aos-duration="4000">
+                      <img src="images/tmsDash.png" alt=""></a>
+                    <a href="/educationalErp.html" class="stack-layer layer-3" data-aos="slide-up" data-aos-delay="1000" data-aos-duration="2000">
+                      <img src="https://ateliertechnologysolutions.com/images/erpDash.png" alt=""></a>
+                    <a href="/hms.html" class="stack-layer layer-4" data-aos="slide-up" data-aos-delay="1700" data-aos-duration="2000">
+                      <img src="https://ateliertechnologysolutions.com/images/hms.png" alt=""></a>
 
-<div class="hero-dashboard-main"
-     data-aos="slide-up"
-     data-aos-delay="2400"
-     data-aos-duration="2000">
-
-  <video 
-    src="assets/Inventory-video.mp4"
-    autoplay
-    loop
-    muted
-    playsinline
-    preload="auto"
-    class="hero-dashboard-video">
-  </video>
-
-</div>
-
+                    <a href="/inventory/index.html" class="hero-dashboard-main" data-aos="slide-up" data-aos-delay="2400" data-aos-duration="2000">
+                      <img src="images/inventorydashboard.png" alt="Main Dashboard Interface" />
+                    </a>
                   </div>
 
                   <div class="hero-overlay-card overlay-left" data-aos="fade-up" data-aos-delay="3000" data-aos-duration="2000">
