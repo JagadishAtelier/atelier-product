@@ -3322,16 +3322,21 @@ Get started section
     document.querySelector('.layer-4')
   ];
 
-  const originalTops = layers.map(layer => parseInt(getComputedStyle(layer).top));
+  const originalTops = layers.map(layer =>
+    parseInt(getComputedStyle(layer).top)
+  );
 
-  const hoverOffsets = [60, 50, 40]; // Hover offsets for layer-2,3,4
-  const speed = 4; // higher = faster movement
+  // offset for ALL 4 layers
+  const hoverOffsets = [70, 60, 50, 40]; 
+  const speed = 4;
 
   function animateTop(layer, targetTop) {
-    cancelAnimationFrame(layer._anim); // cancel previous animation if any
+    cancelAnimationFrame(layer._anim);
+
     function step() {
       let current = parseFloat(layer.style.top);
       if (isNaN(current)) current = parseFloat(getComputedStyle(layer).top);
+
       const diff = targetTop - current;
       if (Math.abs(diff) > 0.5) {
         layer.style.top = current + diff / speed + 'px';
@@ -3345,21 +3350,25 @@ Get started section
 
   layers.forEach((layer, index) => {
     layer.addEventListener('mouseenter', () => {
-      // Hovered layer
+
+      // hovered layer (NOW works for layer-4)
       animateTop(layer, originalTops[index] - hoverOffsets[index]);
 
-      // Layers behind (lower index)
+      // layers behind move more
       for (let i = 0; i < index; i++) {
-        animateTop(layers[i], originalTops[i] - (hoverOffsets[i] + 20));
+        animateTop(
+          layers[i],
+          originalTops[i] - (hoverOffsets[index] + 20 + (index - i) * 10)
+        );
       }
     });
 
     layer.addEventListener('mouseleave', () => {
-      // Reset all layers
       layers.forEach((l, i) => animateTop(l, originalTops[i]));
     });
   });
 </script>
+
 
 
 
