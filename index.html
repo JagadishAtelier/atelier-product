@@ -935,18 +935,14 @@
                   </div>
                   <div class="mobile-view-stack-cont">
                     <a class="stack-layer layer-1"><img src="images/gymD.png" alt=""></a>
-                    <a  class="stack-layer layer-2"
-                      data-aos="slide-up" data-aos-delay="300" data-aos-duration="4000">
+                    <a  class="stack-layer layer-2">
                       <img src="images/tmsDash.png" alt=""></a>
-                    <a class="stack-layer layer-3" data-aos="slide-up" data-aos-delay="1000"
-                      data-aos-duration="2000">
+                    <a class="stack-layer layer-3" >
                       <img src="https://ateliertechnologysolutions.com/images/erpDash.png" alt=""></a>
-                    <a  class="stack-layer layer-4" data-aos="slide-up" data-aos-delay="1700"
-                      data-aos-duration="2000">
+                    <a  class="stack-layer layer-4" >
                       <img src="https://ateliertechnologysolutions.com/images/hms.png" alt=""></a>
 
-                    <a  class="hero-dashboard-main" data-aos="slide-up"
-                      data-aos-delay="2400" data-aos-duration="2000">
+                    <a  class="hero-dashboard-main" >
 
   <video 
     src="assets/Inventory-video.mp4"
@@ -3475,25 +3471,29 @@ Get started section
 <script>
 gsap.registerPlugin(ScrollTrigger);
 
-const freezeTL = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".hero-pin-btn",          
-    start: "top+=10 top+=10",           
-    end: "+=500",                       
-    pin: ".section_hero-header_v4",     
-    pinSpacing: true,    // ✅ IMPORTANT FIX
-    anticipatePin: 1
-  }
-});
+// Only run on desktop (e.g., width >= 1024px)
+if (window.innerWidth >= 1024) {
+  const freezeTL = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".hero-pin-btn",
+      start: "top+=10 top+=10",
+      end: "+=500",
+      pin: ".section_hero-header_v4",
+      pinSpacing: true,
+      anticipatePin: 1
+    }
+  });
 
-freezeTL.to(".fade-text", {
-  opacity: 1,
-  y: 0,
-  stagger: 0.25,
-  duration: 0.8,
-  ease: "power3.out"
-});
+  freezeTL.to(".fade-text", {
+    opacity: 1,
+    y: 0,
+    stagger: 0.25,
+    duration: 0.8,
+    ease: "power3.out"
+  });
+}
 </script>
+
 
 
 
