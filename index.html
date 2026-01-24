@@ -869,7 +869,7 @@
                   Atelier Tech brings you a powerful, all-in-one smart application
                   designed to streamline your operations and accelerate growth.
                 </p>
-                <div class="button-group">
+                <div class="button-group hero-pin-btn">
                   <a href="/contact.html" class="button-hero is-primary">Get Started</a>
                   <a href="#products" class="button-hero is-secondary">Learn More</a>
                 </div>
@@ -903,6 +903,7 @@
                   </div>
                 </div>
               </div> -->
+              
               <div class="hero-header_v4_image-group">
                 <div class="hero-dashboard-wrapper">
 
@@ -911,7 +912,7 @@
                     <a href="https://ateliertechnologysolutions.com/tms_web/index.html" class="stack-layer layer-2"
                       data-aos="slide-up" data-aos-delay="300" data-aos-duration="4000">
                       <img src="images/tmsDash.png" alt=""></a>
-                    <a href="/educationalErp.html" class="stack-layer layer-3" data-aos="slide-up" data-aos-delay="1000"
+                    <a href="/images/Shcl.png" class="stack-layer layer-3" data-aos="slide-up" data-aos-delay="1000"
                       data-aos-duration="2000">
                       <img src="https://ateliertechnologysolutions.com/images/erpDash.png" alt=""></a>
                     <a href="/hms.html" class="stack-layer layer-4" data-aos="slide-up" data-aos-delay="1700"
@@ -1023,7 +1024,7 @@
                     </div>
                   </div>
 
-                  <div style="background: white;" class="hero-overlay-card overlay-right" data-aos="fade-down" data-aos-delay="3000"
+                  <div style="background: white;" class="hero-overlay-card overlay-right" data-aos="fade-up" data-aos-delay="3000"
                     data-aos-duration="2000">
                     <div class="INCOMEPO-card">
                       <div class="INCOMEPO-header">
@@ -3468,6 +3469,33 @@ Get started section
     }, totalLayerTime);
   });
 </script>
+
+<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script>
+gsap.registerPlugin(ScrollTrigger);
+
+const freezeTL = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".hero-pin-btn",          
+    start: "top+=10 top+=10",           
+    end: "+=500",                       
+    pin: ".section_hero-header_v4",     
+    pinSpacing: true,    // ✅ IMPORTANT FIX
+    anticipatePin: 1
+  }
+});
+
+freezeTL.to(".fade-text", {
+  opacity: 1,
+  y: 0,
+  stagger: 0.25,
+  duration: 0.8,
+  ease: "power3.out"
+});
+</script>
+
+
 
 
 </body>
