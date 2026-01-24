@@ -281,3 +281,48 @@
     }
 }
 
+/* Overlay cards hidden initially */
+.hero-overlay-card {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Text fade setup */
+.fade-text {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* When active */
+.fade-text.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.hero-overlay-card {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.hero-overlay-card.show {
+  opacity: 1;
+}
+.mobile-view-stack-cont{
+    display: none;
+}
+@media (max-width:768px) {
+    .mobile-view-stack-cont{
+        display: block;
+                position: relative;
+    margin: 120px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: visible;
+    }
+    .dashboard-stack-container {
+        display: none !important;
+    }
+}
+
+
